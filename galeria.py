@@ -1,22 +1,21 @@
-from utils import *
-# base de dados
+from utils import*
+"""
+Galeria de Plantas!
+"""
 plantas = [
-    # MEDICINAIS
+        # MEDICINAIS
     {"nome": "Babosa", "tipo": "Medicinal", "curiosidades": "Ajuda na pele", "origem": "África", "cuidados": "Regar pouco"},
     {"nome": "Hortelã", "tipo": "Medicinal", "curiosidades": "Ajuda na digestão", "origem": "Europa", "cuidados": "Regar frequentemente"},
     {"nome": "Camomila", "tipo": "Medicinal", "curiosidades": "Calmante natural", "origem": "Ásia", "cuidados": "Sol moderado"},
-
-    # VENENOSAS
+        # VENENOSAS
     {"nome": "Comigo-ninguém-pode", "tipo": "Venenosa", "curiosidades": "Muito usada para proteção espiritual", "origem": "América do Sul", "cuidados": "Evitar contato"},
     {"nome": "Mamona", "tipo": "Venenosa", "curiosidades": "Produz o óleo de rícino e a ricina", "origem": "África", "cuidados": "Manter longe de crianças"},
     {"nome": "Espada-de-são-jorge", "tipo": "Venenosa", "curiosidades": "Purificadora de Ar", "origem": "África", "cuidados": "Pouca água"},
-
-    # AQUÁTICAS
+        # AQUÁTICAS
     {"nome": "Vitória-régia", "tipo": "Aquatica", "curiosidades": "Folhas gigantes", "origem": "Amazônia", "cuidados": "Água constante"},
     {"nome": "Lótus", "tipo": "Aquatica", "curiosidades": "Flor simbólica", "origem": "Ásia", "cuidados": "Água limpa"},
     {"nome": "Alface-d'água", "tipo": "Aquatica", "curiosidades": "Flutua na água", "origem": "América Tropical/América do Sul", "cuidados": "Ambiente úmido"}
-]
-
+    ]
 
 while True:
     clear_screen()
@@ -45,7 +44,7 @@ while True:
         print("Opção inválida!\n")
         continue
 
-    # filtrar plantas
+    # filtrar plantas 
     filtradas = [p for p in plantas if p["tipo"].lower() == tipo]
     # mostrar plantas
     clear_screen()
@@ -89,4 +88,4 @@ while True:
     else:
         print("Opção inválida!")
 
-    input("\nPressione ENTER para voltar ao menu...")
+    input("\nPressione ENTER para voltar ao menu...")    

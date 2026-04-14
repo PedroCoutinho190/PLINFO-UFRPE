@@ -39,12 +39,48 @@ def primary_menu():
             print(colorir("Em Desenvolvimento" , Fore.BLUE))
             time.sleep(2)
         elif user_choice == 2:
-            print(colorir("Em Desenvolvimento!" , Fore.BLUE))
+            filter_menu()
             time.sleep(2)
         elif user_choice == 3:
             print(colorir("Em Desenvolvimento!" , Fore.BLUE))
             time.sleep(2)
         elif user_choice == 4: # O Break aqui vai puxar pra o Menu inicial (Vai fazer a função de voltar!)
+            break
+        else:
+            invalid_option()
+
+"""
+Menu da Vitrine
+"""
+
+
+"""
+Menu dos Filtros
+"""
+def filter_menu():
+    
+    while True:
+
+        clear_screen()
+
+        print("=" * 40)
+        print(colorir("🔎 Filtros 🔎".center(40) , Fore.GREEN ))
+        print("=" * 40)
+        print(colorir("[1]" , Fore.CYAN) + " Plantas Medicinais ")
+        print(colorir("[2]" , Fore.CYAN) + " Plantas Venenosas ")
+        print(colorir("[3]" , Fore.CYAN) + " Plantas Aquáticas ")
+        print(colorir("[4]" , Fore.CYAN) + " Voltar ")
+        print("=" * 40)
+
+        user_choice = option()
+
+        if user_choice == 1:
+            print("...")
+        elif user_choice == 2:
+            print("...")
+        elif user_choice == 3:
+            print("...")
+        elif user_choice == 4:
             break
         else:
             invalid_option()
