@@ -16,76 +16,77 @@ plantas = [
     {"nome": "Lótus", "tipo": "Aquatica", "curiosidades": "Flor simbólica", "origem": "Ásia", "cuidados": "Água limpa"},
     {"nome": "Alface-d'água", "tipo": "Aquatica", "curiosidades": "Flutua na água", "origem": "América Tropical/América do Sul", "cuidados": "Ambiente úmido"}
     ]
+def filter_menu():
+    while True:
 
-while True:
-    clear_screen()
-    print(Fore.YELLOW + "\n=== MENU DE PLANTAS ===" + Style.RESET_ALL)
-    print(Fore.GREEN + "1 - Plantas medicinais" + Style.RESET_ALL)
-    print(Fore.RED + "2 - Plantas venenosas" + Style.RESET_ALL)
-    print(Fore.BLUE + "3 - Plantas aquáticas" + Style.RESET_ALL)
-    print(Fore.WHITE + "0 - Sair" + Style.RESET_ALL)
-          
+        clear_screen()
 
-    opcao = input("Escolha: ")
+        print("=" * 40)
+        print(colorir("🔎 Filtros 🔎".center(40) , Fore.GREEN ))
+        print("=" * 40)
+        print(colorir("[1]" , Fore.CYAN) + " Plantas Medicinais ")
+        print(colorir("[2]" , Fore.CYAN) + " Plantas Venenosas ")
+        print(colorir("[3]" , Fore.CYAN) + " Plantas Aquáticas ")
+        print(colorir("[4]" , Fore.CYAN) + " Voltar ")
+        print("=" * 40)
 
-    # sair
-    if opcao == "0":
-        print("Encerrando...")
-        break
+        opcao = input("Escolha: ")
 
-    # escolher tipo
-    if opcao == "1":
-        tipo = "medicinal"
-    elif opcao == "2":
-        tipo = "venenosa"
-    elif opcao == "3":
-        tipo = "aquatica"
-    else:
-        print("Opção inválida!\n")
-        continue
+        # sair
+        if opcao == "4":
+            print("Encerrando...")
+            break
 
-    # filtrar plantas 
-    filtradas = [p for p in plantas if p["tipo"].lower() == tipo]
-    # mostrar plantas
-    clear_screen()
-    print("\n=== PLANTAS ===")
-    for i, planta in enumerate(filtradas):
-        print(f"{i+1} - {planta['nome']}")
-    print("0 - Voltar")
-    
-    escolha = input("Escolha a Planta: ")
+        # escolher tipo
+        if opcao == "1":
+            tipo = "medicinal"
+        elif opcao == "2":
+            tipo = "venenosa"
+        elif opcao == "3":
+            tipo = "aquatica"
+        else:
+            print("Opção inválida!\n")
+            continue
 
-    if escolha == "0": 
-        continue
+        # filtrar plantas 
+        filtradas = [p for p in plantas if p["tipo"].lower() == tipo]
+        # mostrar plantas
+        clear_screen()
+        print("\n=== PLANTAS ===")
+        for i, planta in enumerate(filtradas):
+            print(f"{i+1} - {planta['nome']}")
+        print("4 - Voltar")
+        
+        try:
+            escolha = int(input("Escolha a planta: ")) - 1
+            planta = filtradas[escolha]
+            if escolha == "4":
+                return
+        except:
+            print("Escolha inválida!\n")
+            continue
 
-    try:
-        escolha = int(input("Escolha a planta: ")) - 1
-        planta = filtradas[escolha]
-    except:
-        print("Escolha inválida!\n")
-        continue
+        # submenu
+        clear_screen()
+        print(f"\n=== {planta['nome']} ===")
+        print("""
+    1 - Curiosidades
+    2 - Origem
+    3 - Cuidados
+    4 - Voltar
+    """)
 
-    # submenu
-    clear_screen()
-    print(f"\n=== {planta['nome']} ===")
-    print("""
-1 - Curiosidades
-2 - Origem
-3 - Cuidados
-0 - Voltar
-""")
+        info = input("Escolha: ")
 
-    info = input("Escolha: ")
+        if info == "4":
+            continue
+        elif info == "1":
+            print("\nCuriosidades:", planta["curiosidades"])
+        elif info == "2":
+            print("\nOrigem:", planta["origem"])
+        elif info == "3":
+            print("\nCuidados:", planta["cuidados"])
+        else:
+            print("Opção inválida!")
 
-    if info == "0":
-        continue
-    elif info == "1":
-        print("\nCuriosidades:", planta["curiosidades"])
-    elif info == "2":
-        print("\nOrigem:", planta["origem"])
-    elif info == "3":
-        print("\nCuidados:", planta["cuidados"])
-    else:
-        print("Opção inválida!")
-
-    input("\nPressione ENTER para voltar ao menu...")    
+        input("\nPressione ENTER para voltar ao menu...")    
