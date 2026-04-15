@@ -25,15 +25,19 @@ Função para adicionar dados no banco!
 def insert_database(user_name , email , password):
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
-
-    cursor.execute("""INSERT INTO users_informations
-                   (user_name , email , password) VALUES
-                   (? , ? , ?) 
-                """ , (user_name , email , password)) #O (?,?,?) = Para evitar ataques de sqlinjection , ai o sqlite vai substit. os "?" pelos valores fora da tripe" de forma segura!
+    try:
+        cursor.execute("""INSERT INTO users_informations
+                    (user_name , email , password) VALUES
+                    (? , ? , ?) 
+                    """ , (user_name , email , password)) #O (?,?,?) = Para evitar ataques de sqlinjection , ai o sqlite vai substit. os "?" pelos valores fora da tripe" de forma segura!
+        
+        conexao.commit()
+        conexao.close()
+        return True , "Usuario Cadastrado com sucesso!✅"
     
-    conexao.commit()
-    conexao.close()
-
+    except sqlite3.IntegrityError:    #Aqui ele vai pegar a excessão (que seria quando o usuario ja tem o email cadastrado e ele quer cadastrar outro email igual...)
+        conexao.close()               #Impedindo do codigo quebrar por errointegrity do sqlite3.
+        return False , "E-mail já cadastrado!"
 """
 Função para validar o Login
 """
@@ -54,3 +58,18 @@ def search_user(email , password):
             return False , "Senha incorreta!"  #Retorna a senha incorrreta ou email n encontrado!
     else:
         return False , "E-mail não encontrado!"
+
+
+"""
+Função para verificar se o email ja esta cadastrado!
+"""
+
+def email_exists(email):
+    conexao = sqlite3.connect("Plinfo.db")
+    cursor = conexao.cursor()
+
+    cursor.execute("SELECT email FROM users_informations WHERE email = ?", (email,)) #O , Transforma em uma tupla!
+    result = cursor.fetchone()
+    conexao.close
+
+    return result is not None 

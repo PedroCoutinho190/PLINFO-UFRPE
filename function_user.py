@@ -3,12 +3,14 @@ from validations import*
 from colorama import Fore
 from __menus_interfaces import initial_menu , primary_menu
 import time
-from __database import insert_database ,search_user
+from __database import insert_database ,search_user ,email_exists
 
 """ 
 Função para cadastro do usuario!
 """
 def record_newuser():
+    
+    cancel = False #Aqui vai ser meu ponto de retorno , caso o usuario tenha um email cadastrado (Vai voltar pro menu e dar a opção de login!)
 
     while True:
 
@@ -33,13 +35,22 @@ def record_newuser():
         result = validadion_email(email)
 
         if result:
-            print(colorir("  E-mail validado ✅" , Fore.GREEN))
-            time.sleep(2)
-            break
+            if email_exists(email):
+                print(colorir("⚠️  E-mail já cadastrado! Faça Login." , Fore.YELLOW))
+                time.sleep(2)
+                cancel = True
+                break
+            else:
+                print(colorir("  E-mail validado ✅" , Fore.GREEN))
+                time.sleep(2)
+                break
         else:
-            print(colorir("E-mail Inválido ❌  , Tente novamente!" , Fore.RED))
-            time.sleep(2) #2s de aviso
+            print(colorir(" E-mail Inválido ❌  , Tente novamente!" , Fore.RED))
+            time.sleep(2) 
     
+    if cancel:
+        return #Vai retornar para meu ponto de retorno , ou seja , vai encerrar os loops e ir para o menu inicial!
+
     while True:
 
         clear_screen()
@@ -52,8 +63,8 @@ def record_newuser():
             confirmation = input(colorir("-> Confirme sua senha: " , Fore.YELLOW)).strip()   
             if password == confirmation:
                 insert_database(user_name , email , password)
-                print(colorir("Usuario Cadastrado com sucesso!✅" , Fore.GREEN))
-                time.sleep(2) # Pausa antes do menu
+                print(colorir("Usuário cadastrado com sucesso! ✅" , Fore.GREEN))
+                time.sleep(2)
                 break
             else:
                 print(colorir("⚠️ As senhas não correspondem!" , Fore.RED))
@@ -79,9 +90,9 @@ def login():
         valid , message = search_user(email , password)
 
         if valid:
-            print(colorir(f"Bem vindo, {message}! ✅" , Fore.GREEN))
+            print(colorir(f"Bem vindo, {message}! ✅" , Fore.GREEN)) #Esse message guarda o user_information [1] = name , do banco de dados !
             time.sleep(2)
-            primary_menu()
+            primary_menu(message , email)
             break
         else:
             print(colorir(message , Fore.RED))

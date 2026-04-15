@@ -19,13 +19,13 @@ def initial_menu():
 """
 Menu Principal!
 """
-def primary_menu():
+def primary_menu(name , email): #Utilizar esses parametros para a parte de config do usuario! 
     while True:  
         
         clear_screen()
 
         print("=" * 40) 
-        print(colorir("🌿 Menu Principal 🌿".center(40) , Fore.GREEN )) 
+        print(colorir(f"🌿 Seja Bem-Vindo: {name} 🌿".center(40) , Fore.GREEN )) 
         print("=" * 40)
         print(colorir("[1]" , Fore.CYAN) + " Mostrar Vitrine ")
         print(colorir("[2]" , Fore.CYAN) + " Filtros ")
@@ -40,11 +40,10 @@ def primary_menu():
             time.sleep(2)
         elif user_choice == 2:
             filter_menu()
-            time.sleep(2)
         elif user_choice == 3:
             print(colorir("Em Desenvolvimento!" , Fore.BLUE))
             time.sleep(2)
-        elif user_choice == 4: # O Break aqui vai puxar pra o Menu inicial (Vai fazer a função de voltar!)
+        elif user_choice == 4: 
             break
         else:
             invalid_option()
@@ -84,3 +83,7 @@ def filter_menu():
             break
         else:
             invalid_option()
+
+"""
+Config. Usuário!
+"""
