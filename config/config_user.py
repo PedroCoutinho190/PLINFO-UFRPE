@@ -1,12 +1,17 @@
-from utils.utils import*     
-
+from colorama import Fore
+from utils.utilities import clear_screen, invalid_option, option, colorir , desenvolvimento
+from config.view_data import view_data
+from config.delete_account import delete_account  
+"""
+Menu da config
+"""
 def config_menu(name , email):
     while True:
 
         clear_screen()
         
         print(colorir("=" * 45, Fore.GREEN))
-        print(colorir("Configurações do Usuário".center(45), Fore.GREEN))
+        print(colorir(" Configurações do Usuário".center(45), Fore.GREEN))
         print(colorir("=" * 45, Fore.GREEN))
         print()
 
@@ -21,16 +26,12 @@ def config_menu(name , email):
         user_choice = option()
 
         if user_choice == 1:
-            desenvolvimento()
+            view_data(name , email)
         elif user_choice == 2:
             desenvolvimento()
         elif user_choice == 3:
-            desenvolvimento()
+            delete_account(email)
         elif user_choice == 0:
             break
         else:
             invalid_option()
-
-
-
-

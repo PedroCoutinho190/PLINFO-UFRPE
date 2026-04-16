@@ -1,8 +1,8 @@
-from utils.utils import clear_screen , colorir
+from utils.utilities import clear_screen , colorir
 from colorama import Fore
 from database.__database import search_user
 import time
-from interfaces.menus_interfaces import primary_menu
+from interfaces.primary_menu import primary_menu
 
 """
 Função Login

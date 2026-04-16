@@ -1,8 +1,8 @@
 from colorama import init
-from services.record import record_newuser 
+from services.register import record_newuser 
 from services.login import login
-from interfaces.menus_interfaces import initial_menu 
-from utils.utils import clear_screen , invalid_option , option , colorir
+from interfaces.initial_menu import initial_menu 
+from utils.utilities import clear_screen , invalid_option , option , colorir
 from database.__database import creat_database
 from colorama import Fore
 

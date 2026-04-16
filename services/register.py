@@ -1,7 +1,7 @@
-from utils.utils import colorir , clear_screen
+from utils.utilities import colorir , clear_screen
 from utils.validations import*
 from colorama import Fore
-from interfaces.menus_interfaces import initial_menu 
+from interfaces.initial_menu import initial_menu 
 import time
 from database.__database import insert_database ,email_exists
 

@@ -22,7 +22,7 @@ def option ():
     try:
         return int(input(colorir("-> Digite uma opção: " , Fore.YELLOW)))
     except:
-        return 0 # Vai jogar o usuario na invalid_option()
+        return "a" # Vai jogar o usuario na invalid_option()
 """
 Função Opção Inválida
 """
@@ -38,3 +38,5 @@ Em desenvolvimento
 def desenvolvimento():
     print(colorir("Em desenvolvimento..." , Fore.BLUE))
     time.sleep(2)
+
+

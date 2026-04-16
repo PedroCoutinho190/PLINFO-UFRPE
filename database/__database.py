@@ -73,3 +73,14 @@ def email_exists(email):
     conexao.close
 
     return result is not None 
+
+"""
+Deletar Usuário
+"""
+
+def delete_user(email):
+    conexao = sqlite3.connect("Plinfo.db")
+    cursor = conexao.cursor()
+    cursor.execute("""DELETE FROM users_informations WHERE email = ?""", (email,))
+    conexao.commit()
+    conexao.close()
