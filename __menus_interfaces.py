@@ -3,7 +3,7 @@ import os
 from utils import colorir , invalid_option , option ,clear_screen
 from colorama import Fore
 import time
-from galeria import filter_menu
+from filter import filter_menu
 from vitrine import galeria_menu
 
 
