@@ -4,6 +4,7 @@ from utils import colorir , invalid_option , option ,clear_screen
 from colorama import Fore
 import time
 from galeria import filter_menu
+from vitrine import galeria_menu
 
 
 """
@@ -38,7 +39,7 @@ def primary_menu(name , email): #Utilizar esses parametros para a parte de confi
         user_choice = option()
 
         if user_choice == 1:
-            print(colorir("Em Desenvolvimento" , Fore.BLUE))
+            galeria_menu()
             time.sleep(2)
         elif user_choice == 2:
             filter_menu()
