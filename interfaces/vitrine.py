@@ -15,9 +15,9 @@ plantas = [
     {"nome": "Espada-de-são-jorge", "tipo": "Venenosa", "curiosidades": "Purificadora de Ar", "origem": "África", "cuidados": "Pouca água"},
 
     # AQUÁTICAS
-    {"nome": "Vitória-régia", "tipo": "Aquatica", "curiosidades": "Folhas gigantes", "origem": "Amazônia", "cuidados": "Água constante"},
-    {"nome": "Lótus", "tipo": "Aquatica", "curiosidades": "Flor simbólica", "origem": "Ásia", "cuidados": "Água limpa"},
-    {"nome": "Alface-d'água", "tipo": "Aquatica", "curiosidades": "Flutua na água", "origem": "América Tropical/América do Sul", "cuidados": "Ambiente úmido"}
+    {"nome": "Vitória-régia", "tipo": "Aquática", "curiosidades": "Folhas gigantes", "origem": "Amazônia", "cuidados": "Água constante"},
+    {"nome": "Lótus", "tipo": "Aquática", "curiosidades": "Flor simbólica", "origem": "Ásia", "cuidados": "Água limpa"},
+    {"nome": "Alface-d'água", "tipo": "Aquática", "curiosidades": "Flutua na água", "origem": "América Tropical/América do Sul", "cuidados": "Ambiente úmido"}
 ]
 
 
