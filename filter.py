@@ -1,4 +1,4 @@
-from utils import *
+from utils.utils import *
 
 """
 Galeria de Plantas!
@@ -39,7 +39,7 @@ def filter_menu():
         print()
         print(colorir("=" * 45, Fore.GREEN))
 
-        entrada = input("Escolha: ").strip()
+        entrada = input(colorir("-> Digite uma opção: " , Fore.YELLOW)).strip()
 
         if not entrada.isdigit():
             print(colorir("Digite apenas números!", Fore.RED))
@@ -57,7 +57,7 @@ def filter_menu():
         elif opcao == 3:
             tipo = "aquatica"
         else:
-            print(colorir("Opção inválida!", Fore.RED))
+            print(colorir("Opção inválida! ❌", Fore.RED))
             input("Pressione ENTER...")
             continue
 
@@ -122,7 +122,7 @@ def filter_menu():
                 print()
                 print(colorir("=" * 45, Fore.GREEN))
 
-                entrada = input("Escolha: ").strip()
+                entrada = input("-> Digite uma opção: ").strip()
 
                 if not entrada.isdigit():
                     print(colorir("Digite apenas números!", Fore.RED))
@@ -140,6 +140,6 @@ def filter_menu():
                 elif info == 3:
                     print("\n💧 Cuidados:", planta["cuidados"])
                 else:
-                    print(colorir("Opção inválida!", Fore.RED))
+                    print(colorir("Opção inválida! ❌", Fore.RED))
 
                 input("\nPressione ENTER para continuar...")

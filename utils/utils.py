@@ -1,4 +1,3 @@
-
 import os
 from colorama import Back , Fore , Style 
 import time
@@ -31,3 +30,11 @@ def invalid_option ():
     print(colorir("-> Opção Inválida! ❌" , Fore.RED))
     time.sleep(2)
     input(colorir("Digite uma tecla para continuar... " , Fore.LIGHTWHITE_EX))
+
+
+"""
+Em desenvolvimento
+"""
+def desenvolvimento():
+    print(colorir("Em desenvolvimento..." , Fore.BLUE))
+    time.sleep(2)

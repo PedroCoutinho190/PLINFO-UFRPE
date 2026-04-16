@@ -1,4 +1,4 @@
-from utils import *
+from utils.utils import *
 
 """
 Galeria de Plantas!
@@ -45,7 +45,7 @@ def galeria_menu():
         print(colorir("=" * 45, Fore.GREEN))
 
         # 🔥 tratamento de erro
-        entrada = input("Escolha a planta: ").strip()
+        entrada = input("-> Escolha a Planta: ").strip()
 
         if not entrada.isdigit():
             print(colorir("Digite apenas números!", Fore.RED))
@@ -58,7 +58,7 @@ def galeria_menu():
             break
 
         if escolha < 1 or escolha > len(plantas):
-            print(colorir("Número fora da lista!", Fore.RED))
+            print(colorir("Opção inválida! ❌", Fore.RED))
             input("Pressione ENTER...")
             continue
 
@@ -81,7 +81,7 @@ def galeria_menu():
             print()
             print(colorir("=" * 45, Fore.GREEN))
 
-            entrada = input("Escolha: ").strip()
+            entrada = input("-> Digite uma opção: ").strip()
 
             if not entrada.isdigit():
                 print(colorir("Digite apenas números!", Fore.RED))
@@ -99,6 +99,6 @@ def galeria_menu():
             elif info == 3:
                 print("\n💧 Cuidados:", planta["cuidados"])
             else:
-                print(colorir("Opção inválida!", Fore.RED))
+                print(colorir("Opção inválida! ❌", Fore.RED))
 
             input("\nPressione ENTER para continuar...")

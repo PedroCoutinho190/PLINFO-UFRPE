@@ -1,9 +1,9 @@
-from utils import colorir , clear_screen
-from validations import*
+from utils.utils import colorir , clear_screen
+from utils.validations import*
 from colorama import Fore
-from __menus_interfaces import initial_menu , primary_menu
+from interfaces.menus_interfaces import initial_menu 
 import time
-from __database import insert_database ,search_user ,email_exists
+from database.__database import insert_database ,email_exists
 
 """ 
 Função para cadastro do usuario!
@@ -73,28 +73,3 @@ def record_newuser():
             print(colorir(message , Fore.RED))
             time.sleep(2)
             continue
-
-
-"""
-Função Login
-"""
-def login():
-
-    while True:
-
-        clear_screen()
-
-        email = input(colorir("-> Digite seu E-mail: " , Fore.YELLOW)).strip().lower()
-        password = input(colorir("-> Digite sua Senha: " , Fore.YELLOW)).strip()
-
-        valid , message = search_user(email , password)
-
-        if valid:
-            print(colorir(f"Bem vindo, {message}! ✅" , Fore.GREEN)) #Esse message guarda o user_information [1] = name , do banco de dados !
-            time.sleep(2)
-            primary_menu(message , email)
-            break
-        else:
-            print(colorir(message , Fore.RED))
-            time.sleep(2)
-                  

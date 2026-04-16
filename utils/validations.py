@@ -1,5 +1,5 @@
 import re 
-from utils import colorir
+from utils.utils import colorir
 from colorama import Fore
 
 
