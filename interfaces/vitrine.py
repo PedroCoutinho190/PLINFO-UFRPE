@@ -5,21 +5,74 @@ Galeria de Plantas!
 """
 plantas = [
     # MEDICINAIS
-    {"nome": "Babosa", "tipo": "Medicinal", "curiosidades": "Ajuda na pele", "origem": "África", "cuidados": "Regar pouco"},
-    {"nome": "Hortelã", "tipo": "Medicinal", "curiosidades": "Ajuda na digestão", "origem": "Europa", "cuidados": "Regar frequentemente"},
-    {"nome": "Camomila", "tipo": "Medicinal", "curiosidades": "Calmante natural", "origem": "Ásia", "cuidados": "Sol moderado"},
+    {
+        "nome": "Babosa",
+        "tipo": "Medicinal",
+        "curiosidades": "Muito usada em cosméticos, ajuda na cicatrização e hidratação da pele.",
+        "origem": "África",
+        "cuidados": "Regar pouco, solo bem drenado e bastante luz solar. Evitar excesso de água."
+    },
+    {
+        "nome": "Hortelã",
+        "tipo": "Medicinal",
+        "curiosidades": "Usada em chás e remédios naturais, ajuda na digestão e refresca o hálito.",
+        "origem": "Europa",
+        "cuidados": "Regar frequentemente, manter em local com meia sombra e solo úmido."
+    },
+    {
+        "nome": "Camomila",
+        "tipo": "Medicinal",
+        "curiosidades": "Muito conhecida por seu efeito calmante e ajuda no sono.",
+        "origem": "Ásia",
+        "cuidados": "Precisa de sol moderado e solo bem drenado. Regar regularmente sem encharcar."
+    },
 
     # VENENOSAS
-    {"nome": "Comigo-ninguém-pode", "tipo": "Venenosa", "curiosidades": "Muito usada para proteção espiritual", "origem": "América do Sul", "cuidados": "Evitar contato"},
-    {"nome": "Mamona", "tipo": "Venenosa", "curiosidades": "Produz o óleo de rícino e a ricina", "origem": "África", "cuidados": "Manter longe de crianças"},
-    {"nome": "Espada-de-são-jorge", "tipo": "Venenosa", "curiosidades": "Purificadora de Ar", "origem": "África", "cuidados": "Pouca água"},
+    {
+        "nome": "Comigo-ninguém-pode",
+        "tipo": "Venenosa",
+        "curiosidades": "Popular em casas brasileiras, associada à proteção espiritual.",
+        "origem": "América do Sul",
+        "cuidados": "Evitar contato direto, manter fora do alcance de crianças e animais."
+    },
+    {
+        "nome": "Mamona",
+        "tipo": "Venenosa",
+        "curiosidades": "Produz o óleo de rícino, mas suas sementes são altamente tóxicas.",
+        "origem": "África",
+        "cuidados": "Manter longe de crianças, usar luvas ao manusear."
+    },
+    {
+        "nome": "Espada-de-são-jorge",
+        "tipo": "Venenosa",
+        "curiosidades": "Conhecida por purificar o ar e por simbolizar proteção.",
+        "origem": "África",
+        "cuidados": "Pouca água, resistente e ideal para ambientes internos."
+    },
 
     # AQUÁTICAS
-    {"nome": "Vitória-régia", "tipo": "Aquática", "curiosidades": "Folhas gigantes", "origem": "Amazônia", "cuidados": "Água constante"},
-    {"nome": "Lótus", "tipo": "Aquática", "curiosidades": "Flor simbólica", "origem": "Ásia", "cuidados": "Água limpa"},
-    {"nome": "Alface-d'água", "tipo": "Aquática", "curiosidades": "Flutua na água", "origem": "América Tropical/América do Sul", "cuidados": "Ambiente úmido"}
+    {
+        "nome": "Vitória-régia",
+        "tipo": "Aquatica",
+        "curiosidades": "Possui folhas gigantes que podem suportar peso.",
+        "origem": "Amazônia",
+        "cuidados": "Precisa de muita água e luz solar direta."
+    },
+    {
+        "nome": "Lótus",
+        "tipo": "Aquatica",
+        "curiosidades": "Símbolo de pureza em várias culturas asiáticas.",
+        "origem": "Ásia",
+        "cuidados": "Água limpa, bastante luz e ambiente calmo."
+    },
+    {
+        "nome": "Alface-d'água",
+        "tipo": "Aquatica",
+        "curiosidades": "Planta flutuante que ajuda a limpar a água.",
+        "origem": "América Tropical",
+        "cuidados": "Ambiente úmido, água limpa e temperatura estável."
+    }
 ]
-
 
 def galeria_menu():
     while True:
