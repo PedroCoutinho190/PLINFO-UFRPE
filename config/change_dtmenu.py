@@ -1,10 +1,11 @@
 from colorama import Fore
 from utils.utilities import clear_screen, invalid_option, option, colorir , desenvolvimento
 from services.change_name import change_name
+from services.change_email import change_email
 """
 Menu de alteração de Dados
 """
-def change_dtmenu (email):
+def change_dtmenu (name, email):
     while True:
         clear_screen()
         
@@ -26,12 +27,14 @@ def change_dtmenu (email):
         if user_choice == 1:
             new_name = change_name(email)
             if new_name:
-                return new_name #Isso vai arrumar o "Bug" do nome não ser atualizado na parte do primary menu!
+                name = new_name 
         elif user_choice == 2:
-            desenvolvimento()
+            new_email = change_email(email)
+            if new_email:
+                email = new_email
         elif user_choice == 3:
             desenvolvimento()
         elif user_choice == 0:
-            break
+            return name, email #Vai retornar os 02 valores sempre!
         else:
             invalid_option()

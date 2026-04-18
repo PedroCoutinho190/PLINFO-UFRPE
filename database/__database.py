@@ -75,12 +75,26 @@ def email_exists(email):
     return result is not None 
 
 """
+Função para pegar os dados do usuario
+"""
+
+def get_user_data(email):
+    conexao =sqlite3.connect("Plinfo.db")
+    cursor = conexao.cursor()
+
+    cursor.execute("SELECT * FROM users_informations WHERE email = ?", (email,))
+    user = cursor.fetchone()
+    conexao.close()
+    return user
+
+"""
 Deletar Usuário
 """
 
 def delete_user(email):
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
+
     cursor.execute("""DELETE FROM users_informations WHERE email = ?""", (email,))
     conexao.commit()
     conexao.close()
@@ -92,6 +106,7 @@ Alteração de nome
 def update_name(email, new_name):
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
+
     cursor.execute("UPDATE users_informations SET user_name = ? WHERE email = ?", (new_name, email))
     conexao.commit()
     conexao.close()
@@ -103,6 +118,7 @@ Alteração de E-mail
 def update_email(old_email, new_email):
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
+    
     cursor.execute("UPDATE users_informations SET email = ? WHERE email = ?", (new_email, old_email))
     conexao.commit()
     conexao.close()
@@ -116,3 +132,5 @@ def update_password(email, new_password):
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
     cursor.execute("UPDATE users_informations SET password = ? WHERE email = ?", (new_password, email))
+    conexao.commit()
+    conexao.close()

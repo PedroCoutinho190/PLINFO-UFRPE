@@ -27,17 +27,14 @@ def config_menu(name , email):
         user_choice = option()
 
         if user_choice == 1:
-            view_data(name , email)
+            view_data(email)
         elif user_choice == 2:
-            new_name = change_dtmenu(email)
-            if new_name:
-                name = new_name
-                return ("nome_atualizado", name) #Atualizando o novo nome..., precisa disso já que, a variavel nome não atualiza sozinha enquanto o usuario ta logado! ent fazemos uma conexao de sinais entre menus
+            name, email = change_dtmenu(name, email)
         elif user_choice == 3:
             deleted = delete_account(email)
             if deleted:
-                return ("Logout", None)
+                return "Logout"
         elif user_choice == 0:
-            break
+            return name, email #Isso é pra fazer o menu primario retornar o valor atualizado dos dados!...
         else:
             invalid_option()
