@@ -2,6 +2,7 @@ from colorama import Fore
 from utils.utilities import clear_screen, invalid_option, option, colorir , desenvolvimento
 from services.change_name import change_name
 from services.change_email import change_email
+from services.change_password import change_password
 """
 Menu de alteração de Dados
 """
@@ -33,7 +34,7 @@ def change_dtmenu (name, email):
             if new_email:
                 email = new_email
         elif user_choice == 3:
-            desenvolvimento()
+            change_password(email)
         elif user_choice == 0:
             return name, email #Vai retornar os 02 valores sempre!
         else:
