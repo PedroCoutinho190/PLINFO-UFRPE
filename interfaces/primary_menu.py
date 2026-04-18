@@ -32,7 +32,13 @@ def primary_menu(name , email): #Utilizar esses parametros para a parte de confi
         elif user_choice == 2:
             filter_menu()
         elif user_choice == 3:
-            config_menu(name , email)
+            result = config_menu(name , email)
+            if result:
+                sinal, valor = result
+                if sinal == "Logout":
+                    break #Sai para o menu inicial / deletou a conta!
+                elif sinal == "nome_atualizado":
+                    name = valor # Nome atualizad
         elif user_choice == 0: 
             break
         else:

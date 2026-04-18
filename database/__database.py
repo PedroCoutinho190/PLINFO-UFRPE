@@ -22,14 +22,14 @@ def creat_database():
 Função para adicionar dados no banco!
 """
 
-def insert_database(user_name , email , password):
+def insert_database(user_name, email, password):
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
     try:
         cursor.execute("""INSERT INTO users_informations
                     (user_name , email , password) VALUES
                     (? , ? , ?) 
-                    """ , (user_name , email , password)) #O (?,?,?) = Para evitar ataques de sqlinjection , ai o sqlite vai substit. os "?" pelos valores fora da tripe" de forma segura!
+                    """ , (user_name, email, password)) #O (?,?,?) = Para evitar ataques de sqlinjection , ai o sqlite vai substit. os "?" pelos valores fora da tripe" de forma segura!
         
         conexao.commit()
         conexao.close()
@@ -42,7 +42,7 @@ def insert_database(user_name , email , password):
 Função para validar o Login
 """
 
-def search_user(email , password):
+def search_user(email, password):
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
 
@@ -84,3 +84,35 @@ def delete_user(email):
     cursor.execute("""DELETE FROM users_informations WHERE email = ?""", (email,))
     conexao.commit()
     conexao.close()
+
+"""
+Alteração de nome
+"""
+
+def update_name(email, new_name):
+    conexao = sqlite3.connect("Plinfo.db")
+    cursor = conexao.cursor()
+    cursor.execute("UPDATE users_informations SET user_name = ? WHERE email = ?", (new_name, email))
+    conexao.commit()
+    conexao.close()
+
+"""
+Alteração de E-mail
+"""
+
+def update_email(old_email, new_email):
+    conexao = sqlite3.connect("Plinfo.db")
+    cursor = conexao.cursor()
+    cursor.execute("UPDATE users_informations SET email = ? WHERE email = ?", (new_email, old_email))
+    conexao.commit()
+    conexao.close()
+
+
+"""
+Alteração de Senha
+"""
+
+def update_password(email, new_password):
+    conexao = sqlite3.connect("Plinfo.db")
+    cursor = conexao.cursor()
+    cursor.execute("UPDATE users_informations SET password = ? WHERE email = ?", (new_password, email))

@@ -18,7 +18,7 @@ def delete_account(email):
         return False
     
     senha = input(colorir("-> Confirme sua senha para deletar: " , Fore.YELLOW)).strip()
-    valid , message =search_user(email , senha)
+    valid , message =search_user(email , senha) #Aqui o message fica guardado , mas não to chamdno ele! poderia usar o _ tbm
 
     if not valid:
         print(colorir(" Senha incorreta! Operação cancelada." , Fore.RED))
