@@ -1,5 +1,4 @@
 # Aqui irá ficar as funções que irão guardar os menus:
-import os
 from utils.utilities import colorir 
 from colorama import Fore
 
