@@ -8,71 +8,128 @@ plantas = [
     {
         "nome": "Babosa",
         "tipo": "Medicinal",
-        "curiosidades": "Muito usada em cosméticos, ajuda na cicatrização e hidratação da pele.",
-        "origem": "África",
-        "cuidados": "Regar pouco, solo bem drenado e bastante luz solar. Evitar excesso de água."
+        "curiosidades": """A babosa (Aloe vera) é uma planta suculenta, perene, pertencente à família Asphodelaceae. Apresenta folhas espessas, carnosas e dispostas em roseta, com bordas serrilhadas. Essas folhas armazenam água, caracterizando sua adaptação a ambientes áridos.
+
+O interior das folhas contém um gel rico em compostos bioativos, como polissacarídeos, vitaminas e enzimas, amplamente estudados por suas propriedades medicinais e cicatrizantes.""",
+        "origem": """A espécie é originária de regiões de clima seco, especialmente do norte da África e da região do Mediterrâneo. Atualmente, encontra-se amplamente distribuída em áreas tropicais e subtropicais ao redor do mundo, incluindo o Brasil.""",
+        "cuidados": """A babosa apresenta baixa exigência de manutenção, mas requer condições específicas para bom desenvolvimento:
+
+- Necessita de alta luminosidade ou sol pleno
+- Deve ser cultivada em solo bem drenado, preferencialmente arenoso
+- A irrigação deve ser moderada, evitando encharcamento
+- É sensível a baixas temperaturas e geadas
+
+O excesso de água é o principal fator de risco, podendo causar apodrecimento das raízes."""
     },
+
     {
         "nome": "Hortelã",
         "tipo": "Medicinal",
-        "curiosidades": "Usada em chás e remédios naturais, ajuda na digestão e refresca o hálito.",
-        "origem": "Europa",
-        "cuidados": "Regar frequentemente, manter em local com meia sombra e solo úmido."
+        "curiosidades": """A hortelã é uma planta aromática muito utilizada na culinária e na medicina natural. Possui propriedades digestivas, refrescantes e pode ajudar no alívio de dores de cabeça e congestão nasal.""",
+        "origem": """Originária da Europa e Ásia, a hortelã se adaptou facilmente a diferentes regiões do mundo, sendo hoje amplamente cultivada em climas temperados e tropicais.""",
+        "cuidados": """A hortelã cresce com facilidade, mas requer alguns cuidados:
+
+- Prefere locais com meia sombra
+- Solo deve ser úmido e rico em matéria orgânica
+- Regas frequentes, sem deixar o solo seco
+- Pode se espalhar rapidamente, então é ideal controlar seu crescimento"""
     },
+
     {
         "nome": "Camomila",
         "tipo": "Medicinal",
-        "curiosidades": "Muito conhecida por seu efeito calmante e ajuda no sono.",
-        "origem": "Ásia",
-        "cuidados": "Precisa de sol moderado e solo bem drenado. Regar regularmente sem encharcar."
+        "curiosidades": """A camomila é famosa por seu efeito calmante, sendo amplamente utilizada em chás para reduzir ansiedade e melhorar o sono. Também possui propriedades anti-inflamatórias.""",
+        "origem": """Originária da Europa e da Ásia Ocidental, a camomila se espalhou por diversas partes do mundo devido ao seu uso medicinal.""",
+        "cuidados": """Para um bom cultivo:
+
+- Necessita de sol moderado
+- Solo leve e bem drenado
+- Regas regulares, evitando excesso de água
+- Prefere climas amenos"""
     },
 
     # VENENOSAS
     {
         "nome": "Comigo-ninguém-pode",
         "tipo": "Venenosa",
-        "curiosidades": "Popular em casas brasileiras, associada à proteção espiritual.",
-        "origem": "América do Sul",
-        "cuidados": "Evitar contato direto, manter fora do alcance de crianças e animais."
+        "curiosidades": """Muito popular no Brasil, essa planta é associada à proteção espiritual. No entanto, é altamente tóxica se ingerida, podendo causar irritações severas.""",
+        "origem": """Originária da América do Sul, especialmente de regiões tropicais.""",
+        "cuidados": """Apesar de resistente:
+
+- Manter fora do alcance de crianças e animais
+- Evitar contato com a seiva
+- Prefere ambientes internos com luz indireta
+- Regas moderadas"""
     },
+
     {
         "nome": "Mamona",
         "tipo": "Venenosa",
-        "curiosidades": "Produz o óleo de rícino, mas suas sementes são altamente tóxicas.",
-        "origem": "África",
-        "cuidados": "Manter longe de crianças, usar luvas ao manusear."
+        "curiosidades": """A mamona produz o óleo de rícino, amplamente utilizado industrialmente, mas suas sementes contêm ricina, uma substância altamente tóxica.""",
+        "origem": """Originária da África, hoje é cultivada em várias regiões tropicais.""",
+        "cuidados": """Cuidados importantes:
+
+- Evitar contato direto com sementes
+- Manter longe de crianças
+- Prefere sol pleno
+- Solo bem drenado"""
     },
+
     {
         "nome": "Espada-de-são-jorge",
         "tipo": "Venenosa",
-        "curiosidades": "Conhecida por purificar o ar e por simbolizar proteção.",
-        "origem": "África",
-        "cuidados": "Pouca água, resistente e ideal para ambientes internos."
+        "curiosidades": """Muito usada como planta ornamental, é conhecida por purificar o ar e por seu simbolismo de proteção espiritual.""",
+        "origem": """Originária da África Ocidental.""",
+        "cuidados": """Fácil de cuidar:
+
+- Pouca rega
+- Resistente a ambientes internos
+- Prefere luz indireta ou meia sombra
+- Evitar excesso de água"""
     },
 
     # AQUÁTICAS
     {
         "nome": "Vitória-régia",
         "tipo": "Aquatica",
-        "curiosidades": "Possui folhas gigantes que podem suportar peso.",
-        "origem": "Amazônia",
-        "cuidados": "Precisa de muita água e luz solar direta."
+        "curiosidades": """Conhecida por suas folhas gigantes que podem suportar peso, é uma das plantas mais icônicas da Amazônia.""",
+        "origem": """Originária da região amazônica.""",
+        "cuidados": """Necessita de condições específicas:
+
+- Água abundante e limpa
+- Exposição ao sol
+- Ambiente quente e úmido
+- Espaço amplo para crescimento"""
     },
+
     {
         "nome": "Lótus",
         "tipo": "Aquatica",
-        "curiosidades": "Símbolo de pureza em várias culturas asiáticas.",
-        "origem": "Ásia",
-        "cuidados": "Água limpa, bastante luz e ambiente calmo."
+        "curiosidades": """Símbolo de pureza e espiritualidade em várias culturas asiáticas, especialmente no budismo.""",
+        "origem": """Originária da Ásia.""",
+        "cuidados": """Para cultivo:
+
+- Água limpa e parada
+- Bastante luz solar
+- Solo lodoso
+- Temperatura estável"""
     },
+
     {
         "nome": "Alface-d'água",
         "tipo": "Aquatica",
-        "curiosidades": "Planta flutuante que ajuda a limpar a água.",
-        "origem": "América Tropical",
-        "cuidados": "Ambiente úmido, água limpa e temperatura estável."
+        "curiosidades": """Planta flutuante que ajuda na filtragem da água e no equilíbrio de ecossistemas aquáticos.""",
+        "origem": """Regiões tropicais das Américas.""",
+        "cuidados": """Cuidados básicos:
+
+- Água limpa
+- Ambiente úmido
+- Boa iluminação
+- Controle de crescimento, pois se espalha rapidamente"""
     }
 ]
+
+
 
 def filter_menu():
     while True:
