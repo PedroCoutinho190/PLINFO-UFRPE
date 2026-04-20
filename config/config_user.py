@@ -12,14 +12,14 @@ def config_menu(name , email):
         clear_screen()
         
         print(colorir("=" * 45, Fore.GREEN))
-        print(colorir(" Configurações do Usuário".center(45), Fore.GREEN))
+        print(colorir("🛠️ Configurações do Usuário 🛠️".center(45), Fore.GREEN))
         print(colorir("=" * 45, Fore.GREEN))
         print()
 
         print(colorir(" [1] ", Fore.CYAN) + " Visualizar Dados ")
         print(colorir(" [2] ", Fore.CYAN) + " Alterar Dados ")
         print(colorir(" [3] ", Fore.CYAN) + " Deletar Conta ")
-        print(colorir(" [0] ", Fore.CYAN) + " Voltar ")
+        print(colorir(" [0] ", Fore.CYAN) + " Voltar ↩️")
         print()
 
         print(colorir("=" * 45, Fore.GREEN))

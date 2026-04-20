@@ -16,9 +16,11 @@ def view_data(email):
         print(colorir("=" * 45, Fore.GREEN))
         print(colorir(" Meus Dados".center(45), Fore.GREEN))
         print(colorir("=" * 45, Fore.GREEN))
+        print()
         print(colorir("Nome: " , Fore.CYAN) + name)
         print(colorir("E-mail: " , Fore.CYAN) + email_atual)
-        print(colorir("[0]" , Fore.CYAN) + " Voltar ")
+        print()
+        print(colorir("[0]" , Fore.CYAN) + " Voltar ↩️")
         print(colorir("=" * 45, Fore.GREEN))
 
         user_choice = option()

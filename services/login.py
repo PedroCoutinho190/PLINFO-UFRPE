@@ -3,6 +3,7 @@ from colorama import Fore
 from database.__database import search_user
 import time
 from interfaces.primary_menu import primary_menu
+import maskpass
 
 """
 Função Login
@@ -14,7 +15,7 @@ def login():
         clear_screen()
 
         email = input(colorir("-> Digite seu E-mail: " , Fore.YELLOW)).strip().lower()
-        password = input(colorir("-> Digite sua Senha: " , Fore.YELLOW)).strip()
+        password = maskpass.askpass(colorir("-> Digite sua Senha: " , Fore.YELLOW) , mask="*").strip()
 
         valid , message = search_user(email , password)
 

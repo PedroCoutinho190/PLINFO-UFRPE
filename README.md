@@ -36,6 +36,7 @@ Desenvolver um sistema capaz de armazenar, organizar e exibir informações sobr
 * sqlite3 → armazenamento de dados
 * colorama → estilização do terminal
 * os → limpeza do terminal
+* maskpass → segurança ao digitar a senha
 
 ⸻
 

@@ -4,6 +4,7 @@ from colorama import Fore
 from interfaces.initial_menu import initial_menu 
 import time
 from database.__database import insert_database ,email_exists
+import maskpass
 
 """ 
 Função para cadastro do usuario!
@@ -56,11 +57,11 @@ def record_newuser():
         clear_screen()
 
         print(colorir("Sua senha deve conter ao menos:\n 01 caractere especial \n 01 Letra Maiúscula \n 01 Número \n E no mínimo 8 caracteres " , Fore.WHITE))
-        password = input(colorir("-> Digite sua senha: " , Fore.YELLOW)).strip()
+        password = maskpass.askpass(colorir("-> Digite sua senha: " , Fore.YELLOW) , mask="*").strip()
         valid , message = validation_password(password) #Aqui o valido entra para receber se é True or False , e o mensagem recebe o tipo de erro la da validation_senha.
 
         if valid:
-            confirmation = input(colorir("-> Confirme sua senha: " , Fore.YELLOW)).strip()   
+            confirmation = maskpass.askpass(colorir("-> Confirme sua senha: " , Fore.YELLOW) , mask="*").strip()   
             if password == confirmation:
                 insert_database(user_name , email , password)
                 print(colorir("Usuário cadastrado com sucesso! ✅" , Fore.GREEN))

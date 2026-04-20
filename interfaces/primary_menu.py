@@ -19,7 +19,7 @@ def primary_menu(name , email): #Utilizar esses parametros para a parte de confi
         print(colorir("[1]" , Fore.CYAN) + " Mostrar Vitrine ")
         print(colorir("[2]" , Fore.CYAN) + " Filtros ")
         print(colorir("[3]" , Fore.CYAN) + " Config.Usuáro ")
-        print(colorir("[0]" , Fore.CYAN) + " Voltar ")
+        print(colorir("[0]" , Fore.CYAN) + " Voltar ↩️")
 
         print()
         print(colorir("=" * 45 , Fore.GREEN))

@@ -18,7 +18,7 @@ def change_dtmenu (name, email):
         print(colorir(" [1] ", Fore.CYAN) + " Alterar Nome ")
         print(colorir(" [2] ", Fore.CYAN) + " Alterar E-mail ")
         print(colorir(" [3] ", Fore.CYAN) + " Alterar Senha ")
-        print(colorir(" [0] ", Fore.CYAN) + " Voltar ")
+        print(colorir(" [0] ", Fore.CYAN) + " Voltar ↩️")
         print()
 
         print(colorir("=" * 45, Fore.GREEN))
