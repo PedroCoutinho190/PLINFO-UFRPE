@@ -19,7 +19,9 @@ O interior das folhas contém um gel rico em compostos bioativos, como polissaca
 - A irrigação deve ser moderada, evitando encharcamento
 - É sensível a baixas temperaturas e geadas
 
-O excesso de água é o principal fator de risco, podendo causar apodrecimento das raízes."""
+O excesso de água é o principal fator de risco, podendo causar apodrecimento das raízes.""",
+        "reflorestamento": """Pode ser utilizada na recuperação de solos degradados, especialmente em regiões secas e com pouca água.""",
+        "cultivo": """Pode ser cultivada facilmente em vasos, desde que tenha boa drenagem, bastante luz solar e pouca rega."""
     },
 
     {
@@ -32,7 +34,9 @@ O excesso de água é o principal fator de risco, podendo causar apodrecimento d
 - Prefere locais com meia sombra
 - Solo deve ser úmido e rico em matéria orgânica
 - Regas frequentes, sem deixar o solo seco
-- Pode se espalhar rapidamente, então é ideal controlar seu crescimento"""
+- Pode se espalhar rapidamente, então é ideal controlar seu crescimento""",
+        "reflorestamento": """Ajuda a atrair insetos polinizadores, contribuindo para a biodiversidade local.""",
+        "cultivo": """Muito fácil de cultivar em vasos, cresce rapidamente e precisa de controle para não se espalhar demais."""
     },
 
     {
@@ -45,7 +49,9 @@ O excesso de água é o principal fator de risco, podendo causar apodrecimento d
 - Necessita de sol moderado
 - Solo leve e bem drenado
 - Regas regulares, evitando excesso de água
-- Prefere climas amenos"""
+- Prefere climas amenos""",
+        "reflorestamento": """Pode auxiliar na recuperação de solos leves e pobres.""",
+        "cultivo": """Pode ser cultivada em vasos pequenos com boa iluminação e regas controladas."""
     },
 
     # VENENOSAS
@@ -59,7 +65,9 @@ O excesso de água é o principal fator de risco, podendo causar apodrecimento d
 - Manter fora do alcance de crianças e animais
 - Evitar contato com a seiva
 - Prefere ambientes internos com luz indireta
-- Regas moderadas"""
+- Regas moderadas""",
+        "reflorestamento": """Não é indicada para reflorestamento devido à sua toxicidade.""",
+        "cultivo": """Pode ser cultivada em casa, mas deve ficar longe de crianças e animais."""
     },
 
     {
@@ -72,7 +80,9 @@ O excesso de água é o principal fator de risco, podendo causar apodrecimento d
 - Evitar contato direto com sementes
 - Manter longe de crianças
 - Prefere sol pleno
-- Solo bem drenado"""
+- Solo bem drenado""",
+        "reflorestamento": """Pode ser utilizada na recuperação de solos, mas com cautela devido à toxicidade.""",
+        "cultivo": """Não é recomendada para cultivo doméstico por ser perigosa."""
     },
 
     {
@@ -85,7 +95,9 @@ O excesso de água é o principal fator de risco, podendo causar apodrecimento d
 - Pouca rega
 - Resistente a ambientes internos
 - Prefere luz indireta ou meia sombra
-- Evitar excesso de água"""
+- Evitar excesso de água""",
+        "reflorestamento": """Mais utilizada em ambientes urbanos do que em projetos de reflorestamento.""",
+        "cultivo": """Extremamente fácil de cultivar em casa, ideal para iniciantes."""
     },
 
     # AQUÁTICAS
@@ -99,7 +111,9 @@ O excesso de água é o principal fator de risco, podendo causar apodrecimento d
 - Água abundante e limpa
 - Exposição ao sol
 - Ambiente quente e úmido
-- Espaço amplo para crescimento"""
+- Espaço amplo para crescimento""",
+        "reflorestamento": """Importante para a manutenção de ecossistemas aquáticos.""",
+        "cultivo": """Muito difícil de cultivar em casa, exige grandes reservatórios de água."""
     },
 
     {
@@ -112,7 +126,9 @@ O excesso de água é o principal fator de risco, podendo causar apodrecimento d
 - Água limpa e parada
 - Bastante luz solar
 - Solo lodoso
-- Temperatura estável"""
+- Temperatura estável""",
+        "reflorestamento": """Ajuda no equilíbrio de ecossistemas aquáticos.""",
+        "cultivo": """Pode ser cultivada em lagos artificiais ou recipientes grandes."""
     },
 
     {
@@ -125,7 +141,9 @@ O excesso de água é o principal fator de risco, podendo causar apodrecimento d
 - Água limpa
 - Ambiente úmido
 - Boa iluminação
-- Controle de crescimento, pois se espalha rapidamente"""
+- Controle de crescimento, pois se espalha rapidamente""",
+        "reflorestamento": """Auxilia na purificação da água em ambientes naturais.""",
+        "cultivo": """Fácil cultivo em aquários e tanques com água limpa."""
     }
 ]
 
@@ -227,6 +245,8 @@ def filter_menu():
                 print(colorir(" [1] ", Fore.CYAN) + "📌 Curiosidades")
                 print(colorir(" [2] ", Fore.CYAN) + "🌍 Origem")
                 print(colorir(" [3] ", Fore.CYAN) + "💧 Cuidados")
+                print(colorir(" [4] ", Fore.CYAN) + "🌳 Reflorestamento")
+                print(colorir(" [5] ", Fore.CYAN) + "🏡 Cultivo em casa")
                 print(colorir(" [0] ", Fore.CYAN) + "↩️  Voltar")
 
                 print()
@@ -249,6 +269,10 @@ def filter_menu():
                     print("\n🌍 Origem:", planta["origem"])
                 elif info == 3:
                     print("\n💧 Cuidados:", planta["cuidados"])
+                elif info == 4:
+                    print("\n🌳", planta["reflorestamento"])
+                elif info == 5:
+                    print("\n🏡", planta["cultivo"])                
                 else:
                     print(colorir("Opção inválida! ❌", Fore.RED))
 
