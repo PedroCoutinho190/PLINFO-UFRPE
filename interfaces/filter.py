@@ -6,7 +6,7 @@ Galeria de Plantas!
 plantas = [
     # MEDICINAIS
     {
-        "nome": "Babosa",
+        "nome": "🌵 Babosa",
         "tipo": "Medicinal",
         "curiosidades": """A babosa (Aloe vera) é uma planta suculenta, perene, pertencente à família Asphodelaceae. Apresenta folhas espessas, carnosas e dispostas em roseta, com bordas serrilhadas. Essas folhas armazenam água, caracterizando sua adaptação a ambientes áridos.
 
@@ -43,7 +43,7 @@ No contexto do bioma Caatinga, sua presença ajuda a reter umidade no solo e cri
     },
 
     {
-        "nome": "Hortelã",
+        "nome": "🍃 Hortelã",
         "tipo": "Medicinal",
         "curiosidades": """A hortelã (Mentha spp.) é uma planta aromática herbácea pertencente à família Lamiaceae. Possui folhas ovais com bordas dentadas e aroma intenso e refrescante devido ao mentol, seu principal composto ativo.
 
@@ -76,7 +76,7 @@ Em projetos agroflorestais, é usada como planta companheira, afastando pragas d
     },
 
     {
-        "nome": "Camomila",
+        "nome": "🌼 Camomila",
         "tipo": "Medicinal",
         "curiosidades": """A camomila (Matricaria chamomilla) é uma planta herbácea anual da família Asteraceae, reconhecida por suas pequenas flores brancas com centro amarelo e aroma suave e adocicado.
 
@@ -111,7 +111,7 @@ Adapta-se bem a climas amenos e temperados, sendo uma das plantas medicinais mai
 
     # VENENOSAS
     {
-        "nome": "Comigo-ninguém-pode",
+        "nome": "💀  Comigo-ninguém-pode",
         "tipo": "Venenosa",
         "curiosidades": """A comigo-ninguém-pode (Dieffenbachia spp.) é uma planta ornamental tropical da família Araceae. Possui folhas largas e variegadas, com padrões de verde e branco ou amarelo, o que a torna muito popular na decoração de interiores.
 
@@ -143,7 +143,7 @@ Seu uso é restrito a ambientes ornamentais e urbanos. Em grandes quantidades, p
     },
 
     {
-        "nome": "Mamona",
+        "nome": "🫘  Mamona",
         "tipo": "Venenosa",
         "curiosidades": """A mamona (Ricinus communis) é uma planta arbustiva da família Euphorbiaceae, podendo atingir até 3 metros de altura. Possui folhas grandes e palmatífidas, de coloração verde ou avermelhada, e frutos espinhosos que contêm as sementes.
 
@@ -175,7 +175,7 @@ No entanto, seu uso em reflorestamentos deve ser feito com cautela, pois sua tox
     },
 
     {
-        "nome": "Espada-de-são-jorge",
+        "nome": "🗡️  Espada-de-são-jorge",
         "tipo": "Venenosa",
         "curiosidades": """A espada-de-são-jorge (Sansevieria trifasciata) é uma planta suculenta da família Asparagaceae, conhecida por suas folhas longas, rígidas e pontiagudas, com listras horizontais em tons de verde e amarelo.
 
@@ -208,7 +208,7 @@ Em algumas regiões, pode se comportar como invasora se introduzida em ambientes
 
     # AQUÁTICAS
     {
-        "nome": "Vitória-régia",
+        "nome": "🪷  Vitória-régia",
         "tipo": "Aquatica",
         "curiosidades": """A vitória-régia (Victoria amazonica) é uma planta aquática da família Nymphaeaceae e um dos maiores símbolos da flora amazônica. Suas folhas circulares podem atingir até 3 metros de diâmetro e suportar cargas de até 40 kg devido a uma estrutura de nervuras semelhante a uma treliça.
 
@@ -239,7 +239,7 @@ Serve de abrigo e local de reprodução para peixes, insetos e anfíbios. Em pro
     },
 
     {
-        "nome": "Lótus",
+        "nome": "🌸 Lótus",
         "tipo": "Aquatica",
         "curiosidades": """O lótus (Nelumbo nucifera) é uma planta aquática sagrada em diversas culturas asiáticas, especialmente no hinduísmo e no budismo, onde simboliza pureza, iluminação e renascimento. Suas flores emergem intactas e limpas da lama, o que inspira seu simbolismo espiritual.
 
@@ -271,7 +271,7 @@ Em projetos de recuperação de lagos e tanques degradados, pode ser utilizado p
     },
 
     {
-        "nome": "Alface-d'água",
+        "nome": "🥬 Alface-d'água",
         "tipo": "Aquatica",
         "curiosidades": """A alface-d'água (Pistia stratiotes) é uma planta aquática flutuante da família Araceae, com folhas verde-claras, aveludadas e dispostas em roseta, semelhantes a uma alface em miniatura.
 

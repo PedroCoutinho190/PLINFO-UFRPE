@@ -143,7 +143,7 @@ Seu uso é restrito a ambientes ornamentais e urbanos. Em grandes quantidades, p
     },
 
     {
-        "nome": "🫘 Mamona",
+        "nome": "🫘  Mamona",
         "tipo": "Venenosa",
         "curiosidades": """A mamona (Ricinus communis) é uma planta arbustiva da família Euphorbiaceae, podendo atingir até 3 metros de altura. Possui folhas grandes e palmatífidas, de coloração verde ou avermelhada, e frutos espinhosos que contêm as sementes.
 
@@ -175,7 +175,7 @@ No entanto, seu uso em reflorestamentos deve ser feito com cautela, pois sua tox
     },
 
     {
-        "nome": "🗡️ Espada-de-são-jorge",
+        "nome": "🗡️  Espada-de-são-jorge",
         "tipo": "Venenosa",
         "curiosidades": """A espada-de-são-jorge (Sansevieria trifasciata) é uma planta suculenta da família Asparagaceae, conhecida por suas folhas longas, rígidas e pontiagudas, com listras horizontais em tons de verde e amarelo.
 
@@ -208,7 +208,7 @@ Em algumas regiões, pode se comportar como invasora se introduzida em ambientes
 
     # AQUÁTICAS
     {
-        "nome": "🪷 Vitória-régia",
+        "nome": "🪷  Vitória-régia",
         "tipo": "Aquatica",
         "curiosidades": """A vitória-régia (Victoria amazonica) é uma planta aquática da família Nymphaeaceae e um dos maiores símbolos da flora amazônica. Suas folhas circulares podem atingir até 3 metros de diâmetro e suportar cargas de até 40 kg devido a uma estrutura de nervuras semelhante a uma treliça.
 
