@@ -5,10 +5,12 @@ import time
 from interfaces.primary_menu import primary_menu
 import maskpass
 
-"""
-Função Login
-"""
+
 def login():
+    """
+    Função para o Login do usuario, recebe a senha e vai buscar na validação se a senha é valida ou não, se for retorna True = valid 
+    Caso não cumpra os parametros, será retornado False e uma message é exibida! (De erro caso o retorno seja Falso e de Acerto caso seja True)
+    """
 
     while True:
 

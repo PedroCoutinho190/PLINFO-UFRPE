@@ -3,10 +3,12 @@ from interfaces.filter import filter_menu
 from interfaces.vitrine import galeria_menu
 from config.config_user import config_menu
 
-"""
-Menu Principal!
-"""
-def primary_menu(name , email): #Utilizar esses parametros para a parte de config do usuario! 
+
+def primary_menu(name , email): #Utilizar esses parametros para a parte de config do usuario!
+    """
+    Menu Principal! Recebe os parametros email e name que são utilizados para buscar/atualizar possíveis mudanças no banco de dados e exibir o nome atualizado
+    no menu.
+    """ 
     while True:  
         
         clear_screen()

@@ -1,11 +1,11 @@
 # Aqui irá ficar as funções que irão guardar os menus:
 from utils.utilities import colorir 
 from colorama import Fore
-
-"""
-Menu Inicial!
-"""
+    
 def initial_menu():
+    """
+    Menu Inicial!
+    """
     print(colorir("=" * 45 , Fore.GREEN))
     print(colorir("🍃 Welcome To Plinfo - UFRPE 🍃".center(45) , Fore.GREEN )) # https://emojitool.com/pt , fonte dos emojis (NADA DE GPTECO)
     print(colorir("=" * 45 , Fore.GREEN))

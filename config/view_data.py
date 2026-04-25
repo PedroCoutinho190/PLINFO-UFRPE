@@ -1,11 +1,12 @@
 from utils.utilities import*
 from colorama import Fore
 from database.__database import get_user_data
-"""
-Vizualização dos Dados dos usuarios!
-"""
+
 
 def view_data(email):
+    """
+    Vizualização dos Dados dos usuarios! Exceto senha, para evitar falha de segurança.
+    """
     while True: 
         clear_screen()
 

@@ -1,9 +1,11 @@
 from utils.utilities import *
 from plantas_data.lista_planta import plantas
-"""
-Galeria de Plantas!
-"""
+
 def galeria_menu():
+    """
+    Galeria de Plantas!
+    """
+
     while True:
 
         clear_screen()

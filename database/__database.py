@@ -1,10 +1,11 @@
 import sqlite3
 
-"""
-Criando o Plinfo.db
-"""
+
 
 def creat_database():
+    """
+    Criando o Plinfo.db
+    """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
 
@@ -18,11 +19,12 @@ def creat_database():
     conexao.commit()
     conexao.close()
     
-"""
-Função para adicionar dados no banco!
-"""
+
 
 def insert_database(user_name, email, password):
+    """
+    Função para adicionar dados no banco!
+    """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
     try:
@@ -38,11 +40,12 @@ def insert_database(user_name, email, password):
     except sqlite3.IntegrityError:    #Aqui ele vai pegar a excessão (que seria quando o usuario ja tem o email cadastrado e ele quer cadastrar outro email igual...)
         conexao.close()               #Impedindo do codigo quebrar por errointegrity do sqlite3.
         return False , "E-mail já cadastrado!"
-"""
-Função para validar o Login
-"""
+
 
 def search_user(email, password):
+    """
+    Função para validar o Login
+    """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
 
@@ -60,11 +63,11 @@ def search_user(email, password):
         return False , "E-mail não encontrado!"
 
 
-"""
-Função para verificar se o email ja esta cadastrado!
-"""
 
 def email_exists(email):
+    """
+    Função para verificar se o email ja esta cadastrado!
+    """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
 
@@ -74,11 +77,12 @@ def email_exists(email):
 
     return result is not None 
 
-"""
-Função para pegar os dados do usuario
-"""
+
 
 def get_user_data(email):
+    """
+    Função para pegar os dados do usuario
+    """
     conexao =sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
 
@@ -87,11 +91,12 @@ def get_user_data(email):
     conexao.close()
     return user
 
-"""
-Deletar Usuário
-"""
+
 
 def delete_user(email):
+    """
+    Deletar Usuário
+    """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
 
@@ -99,11 +104,11 @@ def delete_user(email):
     conexao.commit()
     conexao.close()
 
-"""
-Alteração de nome
-"""
 
 def update_name(email, new_name):
+    """
+    Alteração de nome
+    """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
 
@@ -111,11 +116,11 @@ def update_name(email, new_name):
     conexao.commit()
     conexao.close()
 
-"""
-Alteração de E-mail
-"""
 
 def update_email(old_email, new_email):
+    """
+    Alteração de E-mail
+    """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
     
@@ -124,11 +129,12 @@ def update_email(old_email, new_email):
     conexao.close()
 
 
-"""
-Alteração de Senha
-"""
+
 
 def update_password(email, new_password):
+    """
+    Alteração de Senha
+    """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
     cursor.execute("UPDATE users_informations SET password = ? WHERE email = ?", (new_password, email))

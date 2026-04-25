@@ -4,11 +4,12 @@ from colorama import Fore
 from utils.validations import validation_password
 import time
 
-"""
-Função para troca de senha!
-"""
+
 
 def change_password(email):
+    """
+    Função para troca de senha! recebe o parametro email, para identifiacr o usuario no banco de dados.
+    """
     while True:
         clear_screen()
 

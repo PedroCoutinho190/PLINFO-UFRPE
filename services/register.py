@@ -6,10 +6,12 @@ import time
 from database.__database import insert_database ,email_exists
 import maskpass
 
-""" 
-Função para cadastro do usuario!
-"""
+
 def record_newuser():
+    """ 
+    Função para cadastro de novo usuario! vai passar por 03 verificações: Nome, E-mail, Senha. se todas forem validadas com sucesso e o E-mail que está sendo cadastrado 
+    não existir no banco! ele vai salvar no banco o novo user e ele poderá fazer Login!
+    """
     
     cancel = False #Aqui vai ser meu ponto de retorno , caso o usuario tenha um email cadastrado (Vai voltar pro menu e dar a opção de login!)
 

@@ -3,10 +3,11 @@ from utils.utilities import clear_screen, invalid_option, option, colorir , dese
 from config.view_data import view_data
 from config.delete_account import delete_account  
 from config.change_dtmenu import change_dtmenu
-"""
-Menu da config
-"""
+
 def config_menu(name , email):
+    """
+    Menu da config, recebe os 02 parametros acima para fazer conexao com o menu primario e atualizar o nome exibido la.
+    """
     while True:
 
         clear_screen()

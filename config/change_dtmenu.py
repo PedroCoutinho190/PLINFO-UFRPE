@@ -3,10 +3,11 @@ from utils.utilities import clear_screen, invalid_option, option, colorir , dese
 from services.change_name import change_name
 from services.change_email import change_email
 from services.change_password import change_password
-"""
-Menu de alteração de Dados
-"""
+
 def change_dtmenu (name, email):
+    """
+    Menu de alteração de Dados, retorna valores para conectar com o primary_menu, e assim atualizar o nome exibido la.
+    """
     while True:
         clear_screen()
         

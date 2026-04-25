@@ -4,11 +4,12 @@ from colorama import Fore
 from utils.validations import validadion_email
 import time
 
-"""
-Função para alterar E-mail do usuario
-"""
+
 
 def change_email(email):
+    """
+    Função para alterar E-mail do usuario,  recebe o parametro email, para identificar o user no banco de dados e alterar o proprio!
+    """
     while True:
         clear_screen()
 

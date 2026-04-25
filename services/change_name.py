@@ -4,11 +4,12 @@ from colorama import Fore
 from utils.validations import validation_name
 import time
 
-"""
-Função para alterar nome do usuario
-"""
+
 
 def change_name(email):
+    """
+    Função para alterar nome do usuario, recebe o parametro email, para identificar o user no banco de dados!
+    """
     while True:
         clear_screen()
 
