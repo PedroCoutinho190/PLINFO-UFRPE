@@ -13,7 +13,7 @@ def config_menu(name , email):
         clear_screen()
         
         print(colorir("=" * 45, Fore.GREEN))
-        print(colorir("🛠️ Configurações do Usuário 🛠️".center(45), Fore.GREEN))
+        print(colorir("🛠️  Configurações do Usuário 🛠️".center(45), Fore.GREEN))
         print(colorir("=" * 45, Fore.GREEN))
         print()
 

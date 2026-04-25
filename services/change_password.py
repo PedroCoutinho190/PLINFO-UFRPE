@@ -3,7 +3,7 @@ from database.__database import update_password, search_user
 from colorama import Fore
 from utils.validations import validation_password
 import time
-
+from utils.email_service import check_code
 
 
 def change_password(email):
@@ -25,6 +25,8 @@ def change_password(email):
                 print(colorir("A nova senha deve ser diferente da atual!", Fore.RED))
                 time.sleep(2)
             else:
+                if not check_code(email):
+                    return 
                 update_password(email, new_password)
                 print(colorir("Senha alterada com sucesso!", Fore.GREEN))
                 time.sleep(2)

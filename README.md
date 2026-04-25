@@ -44,6 +44,11 @@ Desenvolver um sistema capaz de armazenar, organizar e exibir informações sobr
 * random → Utilizado para a geração do código de verificação de 2 etapas.
 
 ⸻
+📌 Como iniciar o projeto:
+
+* O Projeto deve ser rodado no arquivo 'main.py'
+
+⸻
 
 📌 Melhorias Futuras para a RELEASE 2.0
 

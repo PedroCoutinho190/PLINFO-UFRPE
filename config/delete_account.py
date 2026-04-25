@@ -4,6 +4,7 @@ import time
 from database.__database import search_user
 from database.__database import delete_user
 import maskpass
+from utils.email_service import check_code
 
 def delete_account(email):
     """
@@ -29,7 +30,10 @@ def delete_account(email):
         time.sleep(2)
         return False
     
+    if not check_code(email):
+        return False #Aqui é para o retorno ser falso caso a verificação não seja concluida, ele retorna pro menu anterior!
+        
     delete_user(email)
     print(colorir("🚨 Conta deletada com sucesso. Até logo!👋" , Fore.GREEN))
     time.sleep(2)
-    return True
+    return True #config_user caso retorne true o delete_account ele ja faaz logout!

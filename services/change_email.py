@@ -3,7 +3,7 @@ from database.__database import update_email , email_exists
 from colorama import Fore
 from utils.validations import validadion_email
 import time
-
+from utils.email_service import check_code
 
 
 def change_email(email):
@@ -22,6 +22,8 @@ def change_email(email):
                 time.sleep(2)
                 continue
             else:
+                if not check_code(email): #Toda a Logica de envio, verificação do cod... está aqui! se for valido ele passa, se n ele cancela!
+                    return None #Retorna'algo' para atualizar a variavel em memoria do primary_menu (name do user exibido na tela)
                 update_email(email, new_email)
                 print(colorir("E-mail alterado com sucersso!", Fore.GREEN))
                 time.sleep(2)
