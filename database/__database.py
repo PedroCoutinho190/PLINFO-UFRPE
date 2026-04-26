@@ -44,7 +44,7 @@ def insert_database(user_name, email, password):
 
 def search_user(email, password):
     """
-    Função para validar o Login
+    Função para validar o Login do usuario, vai buscar as informações a partir do E-mail do usuario e comparar com oq ele colocou!
     """
     conexao = sqlite3.connect("Plinfo.db")
     cursor = conexao.cursor()
@@ -58,7 +58,7 @@ def search_user(email, password):
         if user[3] == password:
             return True , user[1]  #Vai retornar o nome do usuario!(Operação de login deu certo!)
         else:
-            return False , "Senha incorreta!"  #Retorna a senha incorrreta ou email n encontrado!
+            return False , "Senha incorreta!"  #Retorna a senha incorrreta!
     else:
         return False , "E-mail não encontrado!"
 

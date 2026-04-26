@@ -17,9 +17,13 @@ def login():
         clear_screen()
 
         email = input(colorir("-> Digite seu E-mail: " , Fore.YELLOW)).strip().lower()
-        password = maskpass.askpass(colorir("-> Digite sua Senha: " , Fore.YELLOW) , mask="*").strip()
-
-        valid , message = search_user(email , password)
+        try:
+            password = maskpass.askpass(colorir("-> Digite sua Senha: " , Fore.YELLOW) , mask="*").strip()
+        except Exception:
+            print(colorir("❌ Erro ao ler a senha, evite caracteres com acentuação(ç, á, à...)", Fore.RED))
+            time.sleep(2)   #Isso Vai tratar o erro de UTF-8 que o maskpass n lida bem.
+            continue
+        valid, message = search_user(email , password)
 
         if valid:
             print(colorir(f"Bem vindo, {message}! ✅" , Fore.GREEN)) #Esse message guarda o user_information [1] = name , do banco de dados !
