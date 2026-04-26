@@ -30,7 +30,6 @@ def primary_menu(name , email): #Utilizar esses parametros para a parte de confi
 
         if user_choice == 1:
             galeria_menu()
-            time.sleep(2)
         elif user_choice == 2:
             filter_menu()
         elif user_choice == 3:
