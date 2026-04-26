@@ -21,12 +21,14 @@ def delete_account(email):
         print(colorir("❌ Operação cancelada." , Fore.YELLOW))
         time.sleep(2)
         return False
+    
     try:
         senha = maskpass.askpass(colorir("-> Confirme sua senha para deletar: " , Fore.YELLOW) , mask="*").strip()
     except Exception:
         print(colorir("❌ Erro ao ler a senha, evite caracteres com acentuação(ç, á, à...)", Fore.RED))
         time.sleep(2)   #Isso Vai tratar o erro de UTF-8 que o maskpass n lida bem.
         return False
+    
     valid , _ = search_user(email , senha) #Aqui o message fica guardado , mas não to chamdno ele! poderia usar o _ tbm
 
     if not valid:
