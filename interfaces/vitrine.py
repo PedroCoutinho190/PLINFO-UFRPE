@@ -50,7 +50,7 @@ def galeria_menu():
             clear_screen()
 
             print(colorir("=" * 45, Fore.GREEN))
-            print(colorir(f"🌱 {planta['nome']} 🌱".center(45), Fore.GREEN))
+            print(colorir(f" {planta['nome']} ".center(45), Fore.GREEN))
             print(colorir("=" * 45, Fore.GREEN))
             print()
 
