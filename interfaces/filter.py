@@ -3,7 +3,13 @@ from plantas_data.lista_planta import plantas
 
 def filter_menu():
     """
-    Filtro de Plantas!
+    Função responsável por filtrar plantas por categoria (medicinal, venenosa e aquática).
+
+Escolha um tipo de planta
+Visualização apenas plantas daquele tipo
+Selecionamento de uma planta específica
+Acesso à informações detalhadas como curiosidades, origem, cuidados,
+reflorestamento e cultivo em casa.
     """
 
     while True:
