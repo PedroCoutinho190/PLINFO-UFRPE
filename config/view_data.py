@@ -5,7 +5,7 @@ from database.__database import get_user_data
 
 def view_data(email):
     """
-    Vizualização dos Dados dos usuarios! Exceto senha, para evitar falha de segurança.
+    Visualização dos Dados dos usuarios! Exceto senha, para evitar falha de segurança.
     """
     while True: 
         clear_screen()

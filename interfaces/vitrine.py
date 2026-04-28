@@ -3,7 +3,12 @@ from plantas_data.lista_planta import plantas
 
 def galeria_menu():
     """
-    Galeria de Plantas!
+    Função responsável por exibir a galeria completa de plantas.
+
+Visualização de todas as plantas cadastradas
+Selecionamento de uma planta específica
+Acesso à informações detalhadas como curiosidades, origem, cuidados,
+reflorestamento e cultivo em casa.
     """
 
     while True:
