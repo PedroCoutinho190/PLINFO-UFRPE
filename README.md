@@ -58,16 +58,16 @@ Desenvolver um sistema capaz de:
 ## ▶️ Como Executar o Projeto
 
 ### 1. Clone o repositório:
-bash git clone https://github.com/PedroCoutinho190/PLINFO-UFRPE 
+```bash git clone https://github.com/PedroCoutinho190/PLINFO-UFRPE```
 
 ### 2. Acesse o diretório:
-bash cd PLINFO-UFRPE 
+```bash cd PLINFO-UFRPE```
 
 ### 3. Instale as dependências necessárias:
-bash pip install colorama maskpass 
+```bash pip install colorama maskpass``` 
 
 ### 4. Execute a aplicação:
-bash python main.py 
+```bash python main.py``` 
 
 ---
 
