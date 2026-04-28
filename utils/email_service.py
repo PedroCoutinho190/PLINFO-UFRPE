@@ -5,9 +5,13 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from colorama import Fore
 from utils.utilities import colorir
+from dotenv import load_dotenv
+import os
 
-EMAIL_REMETENTE = 'plinfo.ufrpe@gmail.com'
-SENHA_APP = 'pjoe skky ouei dcel'
+load_dotenv()
+
+EMAIL_REMETENTE = os.getenv('EMAIL_REMETENTE')
+SENHA_APP = os.getenv('SENHA_APP')
 
 def send_code(email_destino):
     """
