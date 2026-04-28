@@ -51,7 +51,8 @@ Desenvolver um sistema capaz de:
 - os: Limpeza de tela  
 - maskpass: Ocultação de senha  
 - smtplib: Envio de e-mails para autenticação  
-- random: Geração de códigos de verificação  
+- random: Geração de códigos de verificação 
+- dotenv.
 
 ---
 
@@ -69,7 +70,7 @@ cd PLINFO-UFRPE
 
 ### 3. Instale as dependências necessárias:
 ```bash
-pip install colorama maskpass
+pip install colorama, maskpass, dotonev
 ```
 
 ### 4. Execute a aplicação:
