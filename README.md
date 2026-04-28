@@ -1,67 +1,86 @@
-* Projeto para Disciplina de PISI1.
+# 🌿 Plinfo
 
-⸻
+Sistema desenvolvido para a disciplina de PISI1, com foco no gerenciamento de informações sobre plantas por meio de uma aplicação em Python, executada diretamente no terminal.
 
-📌 Plinfo
+---
 
-Projeto desenvolvido para a disciplina de PISI1, com o objetivo de reunir e gerenciar informações sobre plantas por meio de um sistema em Python executado no terminal.
+## 📌 Sobre o Projeto
 
-⸻
+O Plinfo foi desenvolvido com o objetivo de aplicar conceitos fundamentais de programação, integrando autenticação de usuários, organização de dados e navegação interativa em uma solução prática, funcional e estruturada.
 
-🌱 Objetivo do projeto
+A aplicação permite cadastrar usuários, realizar login seguro e registrar informações sobre plantas de maneira simples, eficiente e organizada.
 
-Desenvolver um sistema capaz de armazenar, organizar e exibir informações sobre plantas, permitindo ao usuário interagir com os dados de forma simples e eficiente, ao mesmo tempo em que aplica conceitos fundamentais de programação.
+---
 
-⸻
+## 🌱 Objetivo
 
-🚀 RELEASE 1.0
+Desenvolver um sistema capaz de:
 
-* 👤 Cadastro de usuários.
-* 🔐 Sistema de login com validação.
-* 🌿 Registro e consulta de informações sobre plantas.
-* 📋 Menu interativo no terminal.
-* ⚠️ Tratamento de erros para evitar falhas durante a execução.
-* 🔄 Navegação entre diferentes telas do sistema.
-* Verificação de 02 etapas para o editamento de dados.
+- Armazenar e organizar informações sobre plantas  
+- Gerenciar usuários com autenticação segura  
+- Validar dados de entrada  
+- Oferecer uma navegação intuitiva em terminal  
+- Aplicar fundamentos essenciais do desenvolvimento em Python  
 
-⸻
+---
 
-🛠️ Tecnologias utilizadas
+## 🚀 Funcionalidades — RELEASE 1.0
 
-* Python 3
+- 👤 Cadastro de usuários  
+- 🔐 Sistema de login com validação  
+- 🌿 Registro e consulta de plantas  
+- 📋 Menu interativo no terminal  
+- ⚠️ Tratamento de erros e prevenção de falhas  
+- 🔄 Navegação entre diferentes telas  
+- 🛡️ Verificação em duas etapas para edição de dados  
 
-⸻
+---
 
-📚 Bibliotecas utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-* re (Regex) → validação de Dados ('nome' 'e-mail' 'senha')
-* time → Controle do tempo de aparição das mensagens vistas pelo usuario.
-* sqlite3 → Armazenamento de Dados dos usuarios.
-* colorama → Coloração / Estilização de frases de: 'erro' 'aviso' 'acerto' ..., no Terminal.
-* os → Limpeza do Terminal, garantindo melhor experiencia ao usuario.
-* maskpass → Ocultação da senha do usuario ao digitar, 'pip install maskpass'.
-* smtplib → Utilizada para envio do E-mail com o código de verificação de 2 etapas.
-* random → Utilizado para a geração do código de verificação de 2 etapas.
+- Python 3  
 
-⸻
-📌 Como iniciar o projeto:
+---
 
-* O Projeto deve ser rodado no arquivo 'main.py'
+## 📚 Bibliotecas Aplicadas
 
-⸻
+- re (Regex): Validação de nome, e-mail e senha  
+- time: Controle de tempo para mensagens  
+- sqlite3: Armazenamento de dados  
+- colorama: Estilização visual do terminal  
+- os: Limpeza de tela  
+- maskpass: Ocultação de senha  
+- smtplib: Envio de e-mails para autenticação  
+- random: Geração de códigos de verificação  
 
-📌 Melhorias Futuras para a RELEASE 2.0
+---
 
-* Aplicar Programação Orientada a Objetos (POO). 
-* Melhorar validações de entrada de dados. 
-* Criar uma interface mais intuitiva (possivelmente interface gráfica). 
-* Tornar o sistema mais robusto e corrigir bugs.
-* Sistema de Favoritas interreses. 
+## ▶️ Como Executar o Projeto
 
+### 1. Clone o repositório:
+bash git clone https://github.com/PedroCoutinho190/PLINFO-UFRPE 
 
-⸻
+### 2. Acesse o diretório:
+bash cd PLINFO-UFRPE 
 
-👨‍💻 Autores
+### 3. Instale as dependências necessárias:
+bash pip install colorama maskpass 
 
-* Renato Rodrigues Barbosa Filho
-* Pedro Coutinho
+### 4. Execute a aplicação:
+bash python main.py 
+
+---
+
+## 🔄 Futuras Implementações — RELEASE 2.0
+
+- Aplicação de Programação Orientada a Objetos (POO)  
+- Interface gráfica  
+- Melhorias nas validações  
+- Sistema de favoritos  
+- Correção de bugs e otimização geral  
+
+---
+
+## 👨‍💻 Autores
+- **[Renato Rodrigues](https://github.com/Renato-SI)**
+- **[Pedro Coutinho](https://github.com/PedroCoutinho190)**
