@@ -29,7 +29,11 @@ reflorestamento e cultivo em casa.
         print()
         print(colorir("=" * 45, Fore.GREEN))
 
-        entrada = input(colorir("-> Digite uma opção: " , Fore.YELLOW)).strip()
+        try:
+            entrada = input(colorir("-> Digite uma opção: " , Fore.YELLOW)).strip()
+        except EOFError:
+            print(colorir("Entrada inválida (Ctrl+Z).", Fore.RED))
+            continue
 
         if not entrada.isdigit():
             print(colorir("Digite apenas números!", Fore.RED))
@@ -73,7 +77,11 @@ reflorestamento e cultivo em casa.
             print()
             print(colorir("=" * 45, Fore.GREEN))
 
-            entrada = input("Escolha a planta: ").strip()
+            try:
+                entrada = input("Escolha a planta: ").strip()
+            except EOFError: 
+                print(colorir("Entrada inválida (Ctrl+Z).", Fore.RED))
+                continue
 
             if not entrada.isdigit():
                 print(colorir("Digite apenas números!", Fore.RED))
@@ -114,7 +122,11 @@ reflorestamento e cultivo em casa.
                 print()
                 print(colorir("=" * 45, Fore.GREEN))
 
-                entrada = input("-> Digite uma opção: ").strip()
+                try:
+                    entrada = input("-> Digite uma opção: ").strip()
+                except EOFError: 
+                    print(colorir("Entrada inválida (Ctrl+Z).", Fore.RED))
+                    continue
 
                 if not entrada.isdigit():
                     print(colorir("Digite apenas números!", Fore.RED))
