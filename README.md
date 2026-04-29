@@ -53,6 +53,7 @@ Desenvolver um sistema capaz de:
 - smtplib: Envio de e-mails para autenticação  
 - random: Geração de códigos de verificação 
 - dotenv.
+- msvcrt: Limpeza do Buffer do Teclado entre um input e outro.
 
 ---
 

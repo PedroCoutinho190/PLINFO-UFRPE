@@ -1,7 +1,7 @@
 import os
 from colorama import Back , Fore , Style 
 import time
-
+import msvcrt
 def clear_screen ():
     """
     Função para limpar a tela
@@ -21,6 +21,7 @@ def option ():
     """
     Função que da uma Opção ao usuario e ja trata erros, usada nos menus de navegação do projeto!
     """
+    clear_buffer()
     try:
         return int(input(colorir("-> Digite uma opção: " , Fore.YELLOW)))
     except:
@@ -42,5 +43,13 @@ def desenvolvimento():
     """
     print(colorir("Em desenvolvimento..." , Fore.BLUE))
     time.sleep(2)
+
+
+def clear_buffer():
+    """
+    Essa Função evita que teclas que foram pressionadas anteriormente sejam processadas, ela limpa o Buffer do Teclado, previnindo problemas
+    """
+    while msvcrt.kbhit():
+        msvcrt.getch()
 
 
