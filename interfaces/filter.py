@@ -33,6 +33,7 @@ reflorestamento e cultivo em casa.
             entrada = input(colorir("-> Digite uma opção: " , Fore.YELLOW)).strip()
         except EOFError:
             print(colorir("Entrada inválida (Ctrl+Z).", Fore.RED))
+            time.sleep(1)
             continue
 
         if not entrada.isdigit():
@@ -81,6 +82,7 @@ reflorestamento e cultivo em casa.
                 entrada = input("Escolha a planta: ").strip()
             except EOFError: 
                 print(colorir("Entrada inválida (Ctrl+Z).", Fore.RED))
+                time.sleep(1)
                 continue
 
             if not entrada.isdigit():
@@ -126,6 +128,7 @@ reflorestamento e cultivo em casa.
                     entrada = input("-> Digite uma opção: ").strip()
                 except EOFError: 
                     print(colorir("Entrada inválida (Ctrl+Z).", Fore.RED))
+                    time.sleep(1)
                     continue
 
                 if not entrada.isdigit():
