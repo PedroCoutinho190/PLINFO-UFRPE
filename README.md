@@ -71,7 +71,7 @@ cd PLINFO-UFRPE
 
 ### 3. Instale as dependências necessárias:
 ```bash
-pip install colorama, maskpass, dotonev
+pip install colorama maskpass dotonev
 ```
 
 ### 4. Execute a aplicação:
