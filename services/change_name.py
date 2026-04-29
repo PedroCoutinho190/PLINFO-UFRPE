@@ -1,4 +1,4 @@
-from utils.utilities import clear_screen , colorir
+from utils.utilities import clear_screen , colorir, clear_buffer
 from database.__database import update_name
 from colorama import Fore
 from utils.validations import validation_name
@@ -12,6 +12,7 @@ def change_name(email):
     """
     while True:
         clear_screen()
+        clear_buffer()
 
         new_name = input(colorir("-> Digite o novo nome: " , Fore.YELLOW)).strip()
         valid = validation_name(new_name)

@@ -1,4 +1,4 @@
-from utils.utilities import colorir , clear_screen
+from utils.utilities import colorir, clear_screen, clear_buffer
 from utils.validations import*
 from colorama import Fore
 from interfaces.initial_menu import initial_menu 
@@ -18,7 +18,7 @@ def record_newuser():
     while True:
 
         clear_screen()
-
+        clear_buffer()
 
         user_name = input(colorir("-> Digite seu Nome: ", Fore.YELLOW)).strip()
         test_name = validation_name(user_name)
@@ -34,6 +34,7 @@ def record_newuser():
     while True:
         
         clear_screen()
+        clear_buffer()
 
         email = input(colorir("-> Digite seu E-mail (NOME.SOBRENOME@ufrpe.br): ", Fore.YELLOW)).strip().lower()
         result = validadion_email(email)
@@ -58,6 +59,7 @@ def record_newuser():
     while True:
 
         clear_screen()
+        clear_buffer()
 
         print(colorir("Sua senha deve conter ao menos:\n 01 caractere especial \n 01 Letra Maiúscula \n 01 Número \n E no mínimo 8 caracteres ", Fore.WHITE))
         try:

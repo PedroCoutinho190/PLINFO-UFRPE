@@ -1,4 +1,4 @@
-from utils.utilities import clear_screen , colorir
+from utils.utilities import clear_screen , colorir, clear_buffer
 from colorama import Fore
 from database.__database import search_user
 import time
@@ -15,6 +15,7 @@ def login():
     while True:
 
         clear_screen()
+        clear_buffer()
 
         email = input(colorir("-> Digite seu E-mail: " , Fore.YELLOW)).strip().lower()
         try:

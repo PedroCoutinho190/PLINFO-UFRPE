@@ -1,4 +1,4 @@
-from utils.utilities import clear_screen , colorir
+from utils.utilities import clear_screen , colorir, clear_buffer
 from database.__database import update_email , email_exists
 from colorama import Fore
 from utils.validations import validadion_email
@@ -12,6 +12,7 @@ def change_email(email):
     """
     while True:
         clear_screen()
+        clear_buffer()
 
         new_email = input(colorir("Digite seu novo E-mail: " , Fore.YELLOW)).strip().lower()
         valid = validadion_email(new_email)

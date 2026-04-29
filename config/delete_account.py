@@ -1,4 +1,4 @@
-from utils.utilities import clear_screen , colorir
+from utils.utilities import clear_screen, colorir, clear_buffer
 from colorama import Fore
 import time
 from database.__database import search_user
@@ -11,6 +11,7 @@ def delete_account(email):
     Menu de deletamento de conta, caso a conta seja deletada o usuario recebe Logout na hora, e caso ele erre algo, ele sai do menu automaticamente.
     """
     clear_screen()
+    clear_buffer()
     
     print(colorir("=" * 45, Fore.GREEN))
     print(colorir("🗑️ Deletar Conta 🗑️".center(45) , Fore.GREEN))

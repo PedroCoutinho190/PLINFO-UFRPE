@@ -1,4 +1,4 @@
-from utils.utilities import clear_screen, colorir
+from utils.utilities import clear_screen, colorir, clear_buffer
 from database.__database import update_password, search_user
 from colorama import Fore
 from utils.validations import validation_password
@@ -12,6 +12,7 @@ def change_password(email):
     """
     while True:
         clear_screen()
+        clear_buffer()
 
         new_password = input(colorir("Digite sua nova Senha: ", Fore.YELLOW)).strip()
         valid, message = validation_password(new_password)
