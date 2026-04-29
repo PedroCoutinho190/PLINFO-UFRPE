@@ -19,6 +19,7 @@ def record_newuser():
 
         clear_screen()
 
+
         user_name = input(colorir("-> Digite seu Nome: ", Fore.YELLOW)).strip()
         test_name = validation_name(user_name)
 

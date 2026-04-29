@@ -20,7 +20,7 @@ def change_email(email):
             if email_exists(new_email):
                 print(colorir("E-mail já cadastrado!", Fore.RED))
                 time.sleep(2)
-                continue
+                break
             else:
                 if not check_code(email): #Toda a Logica de envio, verificação do cod... está aqui! se for valido ele passa, se n ele cancela!
                     return None #Retorna'algo' para atualizar a variavel em memoria do primary_menu (name do user exibido na tela)
