@@ -104,4 +104,4 @@ python main.py
 ---
 
 ## 📌Link do Youtube explicando um pouco do Projeto:
-- **https://acesse.one/projeto-pisi1-plinfo**
+- **https://youtu.be/M5J5lSkvCTk**
