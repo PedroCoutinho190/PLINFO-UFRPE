@@ -1,93 +1,50 @@
-from utils.utilities import colorir, clear_screen, clear_buffer
-from utils.validations import*
-from colorama import Fore
-from interfaces.initial_menu import initial_menu 
-import time
-from database.__database import insert_database ,email_exists
-import maskpass
+from database.__database import db
+from utils.validations   import Validation
 
 
-def record_newuser():
-    """ 
-    Função para cadastro de novo usuario! vai passar por 03 verificações: Nome, E-mail, Senha. se todas forem validadas com sucesso e o E-mail que está sendo cadastrado 
-    não existir no banco! ele vai salvar no banco o novo user e ele poderá fazer Login!
+class RegisterService:
     """
-    
-    cancel = False #Aqui vai ser meu ponto de retorno , caso o usuario tenha um email cadastrado (Vai voltar pro menu e dar a opção de login!)
+    Responsável pelo cadastro de novos usuários.
+    Sem I/O — só validações e banco de dados.
+    A tela (RegisterScreen) cuida de pedir e exibir dados.
 
-    while True:
+    Mantém a mesma estrutura de métodos separados por etapa:
+    collect_name → collect_email → collect_password
+    Agora cada um valida e retorna resultado em vez de usar input/print.
+    """
 
-        clear_screen()
-        clear_buffer()
+    def __init__(self, db):
+        self.db = db
 
-        user_name = input(colorir("-> Digite seu Nome: ", Fore.YELLOW)).strip()
-        test_name = validation_name(user_name)
+    def validate_name(self, name: str) -> bool:
+        """Retorna True se o nome for válido."""
+        return Validation.validation_name(name)
 
-        if test_name:
-            print(colorir("Ótimo belo nome!", Fore.GREEN))
-            time.sleep(2)
-            break
-        else:
-            print(colorir("⚠️ Ops! Acho que você colocou seu nome errado...", Fore.RED))
-            time.sleep(2)
+    def validate_email(self, email: str) -> tuple[bool, str]:
+        """
+        Valida formato e verifica se já existe no banco.
+        Retorna (True, '') ou (False, mensagem_de_erro).
+        """
+        if not Validation.validadion_email(email):
+            return False, "E-mail inválido — use: nome.sobrenome@ufrpe.br"
+        if self.db.email_exists(email):
+            return False, "E-mail já cadastrado. Faça login."
+        return True, ""
 
-    while True:
-        
-        clear_screen()
-        clear_buffer()
+    def validate_password(self, password: str) -> tuple[bool, str]:
+        """
+        Valida força da senha.
+        Retorna (True, msg_sucesso) ou (False, msg_erro).
+        """
+        return Validation.validation_password(password)
 
-        email = input(colorir("-> Digite seu E-mail (NOME.SOBRENOME@ufrpe.br): ", Fore.YELLOW)).strip().lower()
-        result = validadion_email(email)
+    def register(self, name: str, email: str, password: str) -> tuple[bool, str]:
+        """
+        Insere o usuário no banco.
+        Retorna (True, msg_sucesso) ou (False, msg_erro).
+        """
+        return self.db.insert_database(name, email, password)
 
-        if result:
-            if email_exists(email):
-                print(colorir("⚠️  E-mail já cadastrado! Faça Login.", Fore.YELLOW))
-                time.sleep(2)
-                cancel = True
-                break
-            else:
-                print(colorir("  E-mail validado ✅", Fore.GREEN))
-                time.sleep(2)
-                break
-        else:
-            print(colorir(" E-mail Inválido ❌  , Tente novamente!", Fore.RED))
-            time.sleep(2) 
-    
-    if cancel:
-        return #Vai retornar para meu ponto de retorno , ou seja , vai encerrar os loops e ir para o menu inicial!
 
-    while True:
-
-        clear_screen()
-        clear_buffer()
-
-        print(colorir("Sua senha deve conter ao menos:\n 01 caractere especial \n 01 Letra Maiúscula \n 01 Número \n E no mínimo 8 caracteres ", Fore.WHITE))
-        try:
-            password = maskpass.askpass(colorir("-> Digite sua senha: ", Fore.YELLOW), mask="*").strip()
-        except Exception:
-            print(colorir("❌ Erro ao ler a senha, evite caracteres com acentuação(ç, á, à...)", Fore.RED))
-            time.sleep(2)   #Isso Vai tratar o erro de UTF-8 que o maskpass n lida bem.
-            continue
-
-        valid, message = validation_password(password) #Aqui o valido entra para receber se é True or False , e o mensagem recebe o tipo de erro la da validation_senha.
-
-        if valid:
-            try:
-                confirmation = maskpass.askpass(colorir("-> Confirme sua senha: ", Fore.YELLOW), mask="*").strip()
-            except Exception:
-                print(colorir("❌ Erro ao ler a senha, evite caracteres com acentuação(ç, á, à...)", Fore.RED))
-                time.sleep(2)   #Isso Vai tratar o erro de UTF-8 que o maskpass n lida bem.
-                continue
-               
-            if password == confirmation:
-                insert_database(user_name, email, password)
-                print(colorir("Usuário cadastrado com sucesso! ✅", Fore.GREEN))
-                time.sleep(2)
-                break
-            else:
-                print(colorir("⚠️ As senhas não correspondem!", Fore.RED))
-                time.sleep(2)
-        else:
-            print(colorir(message , Fore.RED))
-            time.sleep(2)
-            continue
+# Objeto global — importado pelas screens
+register = RegisterService(db)
