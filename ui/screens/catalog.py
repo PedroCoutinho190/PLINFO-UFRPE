@@ -62,7 +62,7 @@ class CatalogView(Screen):
         t.add_columns("Nome", "Tipo")
         for p in plantas:
             nome, tipo = p.get("nome",""), p.get("tipo","")
-            if self._filter and tipo != self._filter:
+            if self._filter and tipo != self._filter: #DUVIDA
                 continue
             if self._search and self._search not in nome.lower() and self._search not in tipo.lower():
                 continue

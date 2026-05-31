@@ -44,7 +44,7 @@ class PlantDetailModal(ModalScreen):
         with Vertical(id="detail-box"):
             with Vertical(id="detail-header"):
                 yield Static(p["nome"], id="plant-nome")
-                yield Static(p["tipo"], id="plant-tipo")
+                yield Static(p["tipo"], id="plant-tipo") #DUVIDA
             with ScrollableContainer(id="detail-body"):
                 for key, label in self._SECTIONS:
                     if key in p:
