@@ -3,7 +3,7 @@ plantas = [
 {
     "id": 1,
     "nome": "🌵 Babosa",
-    "tipos": ["Medicinal"],
+    "tipo": ["Medicinal"],
     "curiosidades": """A babosa (Aloe vera) é uma planta suculenta conhecida pelo gel presente em suas folhas. Esse gel possui compostos amplamente utilizados em cosméticos, medicamentos e produtos para cuidados com a pele.
 
 É muito popular no tratamento de queimaduras leves, hidratação capilar e cuidados dermatológicos.""",
@@ -34,7 +34,7 @@ O excesso de água pode apodrecer as raízes.""",
 {
     "id": 2,
     "nome": "🍃 Hortelã",
-    "tipos": ["Medicinal", "Culinaria", "Aromatica"],
+    "tipo": ["Medicinal", "Culinaria", "Aromatica"],
     "curiosidades": """A hortelã (Mentha spp.) é uma erva aromática muito utilizada em chás, sobremesas, sucos e pratos culinários.
 
 Seu aroma refrescante é resultado da presença de mentol, substância associada a propriedades digestivas e relaxantes.""",
@@ -65,7 +65,7 @@ Pode espalhar-se rapidamente pelo canteiro.""",
 {
     "id": 3,
     "nome": "🌼 Camomila",
-    "tipos": ["Medicinal", "Aromatica"],
+    "tipo": ["Medicinal", "Aromatica"],
     "curiosidades": """A camomila (Matricaria chamomilla) é famosa por suas flores pequenas e aromáticas.
 
 É amplamente utilizada na produção de chás calmantes e produtos naturais voltados para relaxamento e bem-estar.""",
@@ -96,7 +96,7 @@ Não tolera excesso de calor por longos períodos.""",
 {
     "id": 4,
     "nome": "🍀 Boldo",
-    "tipos": ["Medicinal"],
+    "tipo": ["Medicinal"],
     "curiosidades": """O boldo é uma das plantas medicinais mais conhecidas no Brasil.
 
 Suas folhas possuem sabor amargo característico e são tradicionalmente utilizadas em infusões relacionadas ao sistema digestivo.""",
@@ -127,7 +127,7 @@ Tolera bem o clima tropical.""",
 {
     "id": 5,
     "nome": "🍃 Guaco",
-    "tipos": ["Medicinal", "Nativa"],
+    "tipo": ["Medicinal", "Nativa"],
     "curiosidades": """O guaco (Mikania glomerata) é uma trepadeira medicinal bastante utilizada na medicina popular brasileira.
 
 É conhecido principalmente pelo uso tradicional relacionado ao sistema respiratório.""",
@@ -158,7 +158,7 @@ Apresenta crescimento vigoroso.""",
 {
     "id": 6,
     "nome": "🌱 Erva-cidreira",
-    "tipos": ["Medicinal", "Aromatica"],
+    "tipo": ["Medicinal", "Aromatica"],
     "curiosidades": """A erva-cidreira é conhecida pelo aroma suave semelhante ao limão.
 
 É amplamente utilizada em chás e preparações naturais voltadas para relaxamento e conforto.""",
@@ -189,7 +189,7 @@ Apresenta crescimento rápido.""",
 {
     "id": 7,
     "nome": "🌾 Capim-santo",
-    "tipos": ["Medicinal", "Aromatica"],
+    "tipo": ["Medicinal", "Aromatica"],
     "curiosidades": """O capim-santo (Cymbopogon citratus) é uma planta aromática muito utilizada na preparação de chás e óleos essenciais.
 
 Seu aroma cítrico é uma de suas características mais marcantes.""",
@@ -220,7 +220,7 @@ Tolera altas temperaturas.""",
 {
     "id": 8,
     "nome": "🌿 Alecrim",
-    "tipos": ["Medicinal", "Culinaria", "Aromatica"],
+    "tipo": ["Medicinal", "Culinaria", "Aromatica"],
     "curiosidades": """O alecrim (Salvia rosmarinus) é uma erva aromática amplamente utilizada em receitas culinárias e preparações medicinais.
 
 Suas folhas são ricas em óleos essenciais responsáveis pelo aroma intenso característico.""",
@@ -251,7 +251,7 @@ Tolera períodos de estiagem.""",
 {
     "id": 9,
     "nome": "🌿 Manjericão",
-    "tipos": ["Culinaria", "Aromatica", "Medicinal"],
+    "tipo": ["Culinaria", "Aromatica", "Medicinal"],
     "curiosidades": """O manjericão (Ocimum basilicum) é uma das ervas aromáticas mais utilizadas na culinária mundial, especialmente em molhos, massas e saladas.
 
 Suas folhas possuem aroma intenso e agradável, sendo também utilizadas em chás e preparações tradicionais.""",
@@ -282,7 +282,7 @@ Podas frequentes estimulam novas folhas.""",
 {
     "id": 10,
     "nome": "🌿 Orégano",
-    "tipos": ["Culinaria", "Aromatica"],
+    "tipo": ["Culinaria", "Aromatica"],
     "curiosidades": """O orégano (Origanum vulgare) é amplamente utilizado como tempero em pizzas, massas, carnes e molhos.
 
 Suas folhas possuem óleos essenciais responsáveis pelo aroma característico e sabor marcante.""",
@@ -313,7 +313,7 @@ Tolera períodos curtos de seca.""",
 {
     "id": 11,
     "nome": "🌿 Tomilho",
-    "tipos": ["Culinaria", "Aromatica", "Medicinal"],
+    "tipo": ["Culinaria", "Aromatica", "Medicinal"],
     "curiosidades": """O tomilho (Thymus vulgaris) é uma erva aromática bastante utilizada para temperar carnes, molhos e sopas.
 
 Também é conhecido pela presença de compostos aromáticos utilizados em produtos naturais.""",
@@ -344,7 +344,7 @@ Não tolera encharcamento.""",
 {
     "id": 12,
     "nome": "🌿 Salsa",
-    "tipos": ["Culinaria", "Aromatica"],
+    "tipo": ["Culinaria", "Aromatica"],
     "curiosidades": """A salsa (Petroselinum crispum) é um dos temperos mais populares da culinária brasileira.
 
 Suas folhas são utilizadas frescas em saladas, molhos, carnes e diversos pratos.""",
@@ -375,7 +375,7 @@ Necessita de colheitas regulares.""",
 {
     "id": 13,
     "nome": "🌱 Cebolinha",
-    "tipos": ["Culinaria", "Aromatica"],
+    "tipo": ["Culinaria", "Aromatica"],
     "curiosidades": """A cebolinha (Allium schoenoprasum) é amplamente utilizada para finalizar pratos e dar sabor a receitas.
 
 Possui folhas finas, verdes e aromáticas, muito populares na culinária brasileira.""",
@@ -406,7 +406,7 @@ Apresenta rápido rebrote após a colheita.""",
 {
     "id": 14,
     "nome": "🍂 Louro",
-    "tipos": ["Culinaria", "Aromatica", "Medicinal"],
+    "tipo": ["Culinaria", "Aromatica", "Medicinal"],
     "curiosidades": """O louro (Laurus nobilis) é conhecido por suas folhas aromáticas utilizadas em caldos, feijões e ensopados.
 
 Além da culinária, possui longa história de uso tradicional em diversas culturas.""",
@@ -437,7 +437,7 @@ Pode ser cultivado em vasos grandes.""",
 {
     "id": 15,
     "nome": "🌿 Coentro",
-    "tipos": ["Culinaria", "Aromatica"],
+    "tipo": ["Culinaria", "Aromatica"],
     "curiosidades": """O coentro (Coriandrum sativum) é muito utilizado na culinária nordestina e em pratos típicos brasileiros.
 
 Suas folhas e sementes possuem aromas característicos bastante apreciados na gastronomia.""",
@@ -468,7 +468,7 @@ Possui ciclo relativamente curto.""",
 {
     "id": 16,
     "nome": "🌶️ Pimenta-malagueta",
-    "tipos": ["Culinaria", "Aromatica"],
+    "tipo": ["Culinaria", "Aromatica"],
     "curiosidades": """A pimenta-malagueta (Capsicum frutescens) é conhecida pelo sabor picante e pela ampla utilização em molhos e temperos.
 
 Os frutos contêm capsaicina, substância responsável pela ardência característica.""",
@@ -499,7 +499,7 @@ Produz melhor sob temperaturas elevadas.""",
 {
     "id": 17,
     "nome": "🍎 Cajueiro",
-    "tipos": ["Frutifera", "Nativa", "Culinaria"],
+    "tipo": ["Frutifera", "Nativa", "Culinaria"],
     "curiosidades": """O cajueiro (Anacardium occidentale) é uma das árvores mais importantes do Nordeste brasileiro.
 
 Produz o caju, utilizado em sucos, doces e diversas receitas, além da castanha-de-caju, amplamente consumida no Brasil e no exterior.""",
@@ -530,7 +530,7 @@ Tolera períodos de seca.""",
 {
     "id": 18,
     "nome": "🥭 Mangueira",
-    "tipos": ["Frutifera", "Culinaria"],
+    "tipo": ["Frutifera", "Culinaria"],
     "curiosidades": """A mangueira (Mangifera indica) produz uma das frutas mais consumidas do mundo.
 
 Existem centenas de variedades de manga, com diferentes tamanhos, sabores e cores.""",
@@ -561,7 +561,7 @@ Produz melhor em regiões quentes.""",
 {
     "id": 19,
     "nome": "🍒 Pitangueira",
-    "tipos": ["Frutifera", "Nativa", "Culinaria"],
+    "tipo": ["Frutifera", "Nativa", "Culinaria"],
     "curiosidades": """A pitangueira (Eugenia uniflora) produz frutos pequenos e aromáticos muito utilizados em sucos, geleias e doces.
 
 Também possui grande valor ornamental devido à copa densa e aos frutos coloridos.""",
@@ -592,7 +592,7 @@ Tolera podas leves.""",
 {
     "id": 20,
     "nome": "🥥 Coqueiro",
-    "tipos": ["Frutifera", "Culinaria"],
+    "tipo": ["Frutifera", "Culinaria"],
     "curiosidades": """O coqueiro (Cocos nucifera) é uma das plantas mais emblemáticas das regiões litorâneas tropicais.
 
 Praticamente todas as partes da planta possuem utilidade econômica, alimentar ou artesanal.""",
@@ -623,7 +623,7 @@ Tolera salinidade.""",
 {
     "id": 21,
     "nome": "🍈 Mangabeira",
-    "tipos": ["Frutifera", "Nativa", "Culinaria"],
+    "tipo": ["Frutifera", "Nativa", "Culinaria"],
     "curiosidades": """A mangabeira (Hancornia speciosa) produz a mangaba, fruta muito apreciada para sucos, sorvetes e doces.
 
 É uma espécie importante para a cultura e economia de diversas comunidades nordestinas.""",
@@ -653,8 +653,8 @@ Tolera períodos secos.""",
 
 {
     "id": 22,
-    "nome": "🫐 Jabuticabeira",
-    "tipos": ["Frutifera", "Nativa", "Culinaria"],
+    "nome": "🫐  Jabuticabeira",
+    "tipo": ["Frutifera", "Nativa", "Culinaria"],
     "curiosidades": """A jabuticabeira (Plinia cauliflora) é famosa por produzir frutos diretamente no tronco e nos galhos.
 
 Suas frutas são consumidas frescas e utilizadas em geleias, vinhos e licores.""",
@@ -685,7 +685,7 @@ Desenvolve-se lentamente nos primeiros anos.""",
 {
     "id": 23,
     "nome": "🍍 Abacaxizeiro",
-    "tipos": ["Frutifera", "Culinaria"],
+    "tipo": ["Frutifera", "Culinaria"],
     "curiosidades": """O abacaxizeiro (Ananas comosus) produz uma das frutas tropicais mais consumidas do mundo.
 
 Seu fruto é rico em sabor, aroma e utilizado em sucos, doces e receitas variadas.""",
@@ -716,7 +716,7 @@ Não tolera encharcamento.""",
 {
     "id": 24,
     "nome": "🍌 Bananeira",
-    "tipos": ["Frutifera", "Culinaria"],
+    "tipo": ["Frutifera", "Culinaria"],
     "curiosidades": """A bananeira (Musa spp.) é uma das plantas alimentícias mais cultivadas do planeta.
 
 Produz cachos com dezenas de frutos e possui grande importância econômica.""",
@@ -747,7 +747,7 @@ Prefere temperaturas elevadas.""",
 {
     "id": 25,
     "nome": "🥑 Abacateiro",
-    "tipos": ["Frutifera", "Culinaria"],
+    "tipo": ["Frutifera", "Culinaria"],
     "curiosidades": """O abacateiro (Persea americana) produz frutos ricos em óleos naturais e nutrientes.
 
 O abacate é amplamente utilizado em receitas doces, salgadas e preparações saudáveis.""",
@@ -778,7 +778,7 @@ Pode atingir grande porte.""",
 {
     "id": 26,
     "nome": "🌵 Mandacaru",
-    "tipos": ["Nativa"],
+    "tipo": ["Nativa"],
     "curiosidades": """O mandacaru (Cereus jamacaru) é um dos maiores símbolos da Caatinga brasileira. Pode atingir mais de 5 metros de altura e possui grande resistência à seca.
 
 Durante períodos críticos, seus caules podem servir como fonte de alimento para animais após a remoção dos espinhos.""",
@@ -811,7 +811,7 @@ Auxilia na conservação do solo e serve de abrigo para diversas espécies.""",
 {
     "id": 27,
     "nome": "🌵 Xique-xique",
-    "tipos": ["Nativa"],
+    "tipo": ["Nativa"],
     "curiosidades": """O xique-xique (Pilosocereus gounellei) é um cacto típico da Caatinga conhecido por seus longos ramos espinhosos.
 
 Produz flores e frutos que servem de alimento para a fauna local.""",
@@ -844,7 +844,7 @@ Contribui para a manutenção da biodiversidade regional.""",
 {
     "id": 28,
     "nome": "🌳 Umbuzeiro",
-    "tipos": ["Nativa", "Frutifera", "Culinaria"],
+    "tipo": ["Nativa", "Frutifera", "Culinaria"],
     "curiosidades": """O umbuzeiro (Spondias tuberosa) é conhecido como a árvore sagrada do sertão.
 
 Produz frutos muito utilizados em sucos, doces, geleias e sorvetes.""",
@@ -877,7 +877,7 @@ Ajuda a preservar a fauna e a flora locais.""",
 {
     "id": 29,
     "nome": "🌳 Juazeiro",
-    "tipos": ["Nativa"],
+    "tipo": ["Nativa"],
     "curiosidades": """O juazeiro (Ziziphus joazeiro) é uma das poucas árvores da Caatinga que permanece verde durante longos períodos de seca.
 
 Suas folhas servem de alimento para animais em épocas de escassez.""",
@@ -910,7 +910,7 @@ Fornece sombra e abrigo para a fauna.""",
 {
     "id": 30,
     "nome": "🌿 Catingueira",
-    "tipos": ["Nativa"],
+    "tipo": ["Nativa"],
     "curiosidades": """A catingueira (Poincianella pyramidalis) é uma das árvores mais comuns da Caatinga.
 
 Produz flores vistosas e desempenha importante papel ecológico no bioma.""",
@@ -943,7 +943,7 @@ Auxilia na recuperação da vegetação nativa.""",
 {
     "id": 31,
     "nome": "🌳 Jurema-preta",
-    "tipos": ["Nativa"],
+    "tipo": ["Nativa"],
     "curiosidades": """A jurema-preta (Mimosa tenuiflora) é uma árvore muito importante para os ecossistemas do semiárido.
 
 Possui crescimento relativamente rápido e grande capacidade de regeneração.""",
@@ -976,7 +976,7 @@ Contribui para a recuperação de solos degradados.""",
 {
     "id": 32,
     "nome": "🌳 Aroeira-do-sertão",
-    "tipos": ["Nativa", "Medicinal"],
+    "tipo": ["Nativa", "Medicinal"],
     "curiosidades": """A aroeira-do-sertão (Myracrodruon urundeuva) é uma árvore de grande porte e madeira muito resistente.
 
 Também é conhecida por aplicações tradicionais relacionadas à medicina popular.""",
@@ -1009,7 +1009,7 @@ Ajuda na recomposição de ecossistemas nativos.""",
 {
     "id": 33,
     "nome": "🌴 Carnaúba",
-    "tipos": ["Nativa"],
+    "tipo": ["Nativa"],
     "curiosidades": """A carnaúba (Copernicia prunifera) é conhecida como a "árvore da vida" devido à enorme quantidade de produtos obtidos a partir dela.
 
 Sua cera natural é amplamente utilizada nas indústrias alimentícia, cosmética, farmacêutica e automobilística, sendo um dos produtos vegetais mais importantes do Nordeste brasileiro.""",
@@ -1042,7 +1042,7 @@ Tolera longos períodos de estiagem.""",
 {
     "id": 34,
     "nome": "🌴 Licuri",
-    "tipos": ["Nativa", "Frutifera"],
+    "tipo": ["Nativa", "Frutifera"],
     "curiosidades": """O licuri (Syagrus coronata) é uma palmeira típica da Caatinga que produz pequenos frutos muito apreciados pela fauna silvestre.
 
 Seus frutos podem ser consumidos in natura ou utilizados na produção de doces, óleos e outros alimentos regionais.""",
@@ -1075,7 +1075,7 @@ Tolera estiagens prolongadas.""",
 {
     "id": 35,
     "nome": "🌿 Macambira",
-    "tipos": ["Nativa"],
+    "tipo": ["Nativa"],
     "curiosidades": """A macambira (Bromelia laciniosa) é uma bromélia terrestre muito comum na Caatinga.
 
 Possui folhas resistentes e espinhosas, adaptadas às condições extremas do semiárido. Em períodos de seca severa, pode servir como fonte complementar de alimento para animais.""",
@@ -1108,7 +1108,7 @@ Também oferece abrigo para pequenos animais e contribui para a biodiversidade l
 {
     "id": 36,
     "nome": "🌹 Rosa",
-    "tipos": ["Ornamental"],
+    "tipo": ["Ornamental"],
     "curiosidades": """A rosa (Rosa spp.) é uma das flores ornamentais mais conhecidas do mundo. Possui centenas de variedades com diferentes cores, tamanhos e aromas.
 
 Além do valor ornamental, algumas espécies são utilizadas na produção de perfumes, cosméticos e chás.""",
@@ -1139,7 +1139,7 @@ A poda estimula novas florações.""",
 {
     "id": 37,
     "nome": "🌺 Hibisco",
-    "tipos": ["Ornamental", "Medicinal"],
+    "tipo": ["Ornamental", "Medicinal"],
     "curiosidades": """O hibisco (Hibiscus rosa-sinensis) é conhecido por suas flores grandes e coloridas.
 
 Algumas espécies também são utilizadas na preparação de chás e produtos naturais.""",
@@ -1170,7 +1170,7 @@ Floresce durante grande parte do ano.""",
 {
     "id": 38,
     "nome": "🌸 Orquídea",
-    "tipos": ["Ornamental"],
+    "tipo": ["Ornamental"],
     "curiosidades": """As orquídeas pertencem a uma das maiores famílias de plantas do mundo.
 
 São valorizadas pelas flores exóticas e pela enorme diversidade de espécies.""",
@@ -1201,7 +1201,7 @@ Evitar excesso de água nas raízes.""",
 {
     "id": 39,
     "nome": "🌿 Bromélia",
-    "tipos": ["Ornamental", "Nativa"],
+    "tipo": ["Ornamental", "Nativa"],
     "curiosidades": """As bromélias formam reservatórios naturais de água entre suas folhas.
 
 Esses reservatórios servem de abrigo para diversos pequenos animais.""",
@@ -1232,7 +1232,7 @@ Evitar encharcamento excessivo.""",
 {
     "id": 40,
     "nome": "🌸 Azaleia",
-    "tipos": ["Ornamental"],
+    "tipo": ["Ornamental"],
     "curiosidades": """A azaleia (Rhododendron spp.) é muito apreciada pela floração intensa e colorida.
 
 É uma das plantas ornamentais mais utilizadas em jardins residenciais.""",
@@ -1263,7 +1263,7 @@ Necessita de podas ocasionais.""",
     {
     "id": 41,
     "nome": "🪷 Vitória-régia",
-    "tipos": ["Aquatica", "Nativa", "Ornamental"],
+    "tipo": ["Aquatica", "Nativa", "Ornamental"],
     "curiosidades": """A vitória-régia (Victoria amazonica) é uma das maiores plantas aquáticas do mundo.
 
 Suas folhas circulares podem atingir vários metros de diâmetro e suportar considerável peso graças à estrutura reforçada de suas nervuras.""",
@@ -1294,7 +1294,7 @@ Não tolera frio intenso.""",
 {
     "id": 42,
     "nome": "🌸 Lótus",
-    "tipos": ["Aquatica", "Ornamental"],
+    "tipo": ["Aquatica", "Ornamental"],
     "curiosidades": """O lótus (Nelumbo nucifera) é considerado uma planta sagrada em diversas culturas asiáticas.
 
 Suas flores emergem da água com grande beleza e simbolizam pureza e renovação.""",
@@ -1325,7 +1325,7 @@ Prefere ambientes tranquilos.""",
 {
     "id": 43,
     "nome": "🥬 Alface-d'água",
-    "tipos": ["Aquatica"],
+    "tipo": ["Aquatica"],
     "curiosidades": """A alface-d'água (Pistia stratiotes) é uma planta flutuante conhecida pela aparência semelhante a uma alface.
 
 É utilizada em sistemas naturais de filtragem da água devido à sua capacidade de absorver nutrientes.""",
@@ -1356,7 +1356,7 @@ Pode se espalhar rapidamente.""",
 {
     "id": 44,
     "nome": "💜 Aguapé",
-    "tipos": ["Aquatica", "Ornamental"],
+    "tipo": ["Aquatica", "Ornamental"],
     "curiosidades": """O aguapé (Eichhornia crassipes) é conhecido pelas flores arroxeadas e pela rápida multiplicação.
 
 É considerado uma das plantas aquáticas mais eficientes na absorção de nutrientes da água.""",
@@ -1387,7 +1387,7 @@ Pode tornar-se invasora.""",
 {
     "id": 45,
     "nome": "🌿 Papiro",
-    "tipos": ["Aquatica", "Ornamental"],
+    "tipo": ["Aquatica", "Ornamental"],
     "curiosidades": """O papiro (Cyperus papyrus) é uma planta aquática famosa por ter sido utilizada na produção dos antigos papiros egípcios.
 
 Possui hastes altas e aparência bastante ornamental.""",
@@ -1418,7 +1418,7 @@ Desenvolve-se próximo a lagos e espelhos d'água.""",
 {
     "id": 46,
     "nome": "💀 Comigo-ninguém-pode",
-    "tipos": ["Venenosa", "Ornamental"],
+    "tipo": ["Venenosa", "Ornamental"],
     "curiosidades": """A comigo-ninguém-pode (Dieffenbachia spp.) é uma planta muito popular na decoração de interiores devido às folhas grandes e variegadas.
 
 Apesar da beleza, possui substâncias tóxicas capazes de causar irritação intensa na boca, língua e garganta quando ingeridas.""",
@@ -1449,7 +1449,7 @@ Manter longe de crianças e animais.""",
 {
     "id": 47,
     "nome": "🫘 Mamona",
-    "tipos": ["Venenosa"],
+    "tipo": ["Venenosa"],
     "curiosidades": """A mamona (Ricinus communis) é conhecida pela produção do óleo de rícino, utilizado em diversos setores industriais.
 
 Suas sementes contêm ricina, uma das toxinas naturais mais perigosas conhecidas.""",
@@ -1480,7 +1480,7 @@ Evitar contato com sementes.""",
 {
     "id": 48,
     "nome": "🗡️ Espada-de-são-jorge",
-    "tipos": ["Venenosa", "Ornamental"],
+    "tipo": ["Venenosa", "Ornamental"],
     "curiosidades": """A espada-de-são-jorge (Dracaena trifasciata) é uma das plantas ornamentais mais cultivadas no Brasil.
 
 É conhecida pela resistência e pelas crenças populares relacionadas à proteção espiritual.""",
@@ -1511,7 +1511,7 @@ Não tolera excesso de água.""",
 {
     "id": 49,
     "nome": "🌺 Espirradeira",
-    "tipos": ["Venenosa", "Ornamental"],
+    "tipo": ["Venenosa", "Ornamental"],
     "curiosidades": """A espirradeira (Nerium oleander) é um arbusto ornamental muito valorizado por suas flores vistosas.
 
 Todas as partes da planta são tóxicas, incluindo folhas, flores e seiva.""",
@@ -1542,7 +1542,7 @@ Evitar contato da seiva com pele e olhos.""",
 {
     "id": 50,
     "nome": "🍃 Tinhorão",
-    "tipos": ["Venenosa", "Ornamental"],
+    "tipo": ["Venenosa", "Ornamental"],
     "curiosidades": """O tinhorão (Caladium bicolor) é uma planta ornamental muito apreciada pelas folhas coloridas e decorativas.
 
 Possui cristais de oxalato de cálcio que podem causar irritação quando ingeridos ou manipulados sem cuidado.""",

@@ -30,11 +30,11 @@ class LoginView(Screen):
     def _validate_email(self) -> None:
         from utils.validations import Validation
         field = self.query_one("#email", Input)
-        v = field.value.strip()
-        if not v:
+        valid = field.value.strip().lower()
+        if not valid:
             field.remove_class("invalid")
             return
-        if Validation.validadion_email(v):
+        if Validation.validadion_email(valid):
             field.remove_class("invalid")
         else:
             field.add_class("invalid")

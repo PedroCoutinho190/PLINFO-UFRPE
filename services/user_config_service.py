@@ -18,7 +18,7 @@ class UserConfigService:
         self.db   = db
         self.user = user
 
-    # ── Nome ──────────────────────────────────────────────
+    #Parte do nome
     def update_name(self, new_name: str) -> tuple[bool, str]:
         """
         Valida e salva o novo nome.
@@ -30,7 +30,7 @@ class UserConfigService:
         self.user.user_name = new_name   # atualiza o objeto em memória
         return True, ""
 
-    # ── E-mail ────────────────────────────────────────────
+    #Parte do E-mail
     def validate_email(self, new_email: str) -> tuple[bool, str]:
         """
         Só valida — não salva.
@@ -47,7 +47,7 @@ class UserConfigService:
         self.db.update_email(self.user.email, new_email)
         self.user.email = new_email   # atualiza o objeto em memória
 
-    # ── Senha ─────────────────────────────────────────────
+    #Parte da Senha
     def validate_password(self, new_password: str, confirm: str) -> tuple[bool, str]:
         """
         Só valida — não salva.
@@ -67,7 +67,7 @@ class UserConfigService:
         """Salva a nova senha após verificação confirmada."""
         self.db.update_password(self.user.email, new_password)
 
-    # ── Deletar conta ─────────────────────────────────────
+    #Parte do Deletar conta
     def validate_delete(self, password: str) -> tuple[bool, str]:
         """
         Confirma a senha antes de deletar.

@@ -49,7 +49,7 @@ class RegisterView(Screen):
         if fid == "name" and v:
             self._set_invalid("name", not Validation.validation_name(v))
         elif fid == "email" and v:
-            self._set_invalid("email", not Validation.validadion_email(v))
+            self._set_invalid("email", not Validation.validadion_email(v.lower()))
         elif fid == "password" and v:
             ok, _ = Validation.validation_password(v)
             self._set_invalid("password", not ok)

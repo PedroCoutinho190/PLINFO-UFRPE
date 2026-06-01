@@ -50,6 +50,11 @@ class CatalogView(Screen):
             yield Button("Medicinais", id="f-med", classes="f-btn")
             yield Button("Venenosas",  id="f-ven", classes="f-btn")
             yield Button("Aquáticas",  id="f-aqu", classes="f-btn")
+            yield Button("Frutíferas",  id="f-fru", classes="f-btn")
+            yield Button("Ornamentais",  id="f-orn", classes="f-btn")
+            yield Button("Aromáticas",  id="f-aro", classes="f-btn")
+            yield Button("Nativas",  id="f-nat", classes="f-btn")
+            yield Button("Culinárias",  id="f-cul", classes="f-btn")
         yield DataTable(id="table", cursor_type="row")
         yield Label("Pressione Enter ou clique para ver detalhes", id="hint")
 
@@ -59,17 +64,22 @@ class CatalogView(Screen):
     def _refresh(self) -> None:
         t = self.query_one("#table", DataTable)
         t.clear(columns=True)
-        t.add_columns("Nome", "Tipo")
+        t.add_columns("Nome", "Tipo Principal", "Tipo Secundário", "Tipo Terciário")
         for p in plantas:
             nome, tipo = p.get("nome",""), p.get("tipo","")
-            if self._filter and tipo != self._filter: #DUVIDA
+            if self._filter and self._filter not in tipo: #DUVIDA
                 continue
-            if self._search and self._search not in nome.lower() and self._search not in tipo.lower():
+            if self._search and self._search not in nome.lower() and self._search not in " ".join(tipo).lower():
                 continue
-            t.add_row(nome, tipo, key=nome)
+            t.add_row(
+                nome,
+                tipo[0], #Vai mostrar o Tipo principal
+                tipo[1] if len(tipo) > 1 else "", #Vai mostrar o secundário caso houver
+                tipo[2] if len(tipo) > 2 else "", #Vai mostrar o Terciário caso houver
+                key=nome) #Pegando o Tipo principal da planta(Caso houver mais de 01, acesso pelo index 0 da Lista que contem os tipos).
 
     def _set_active(self, btn_id: str) -> None:
-        for b in ["f-all","f-med","f-ven","f-aqu"]:
+        for b in ["f-all","f-med","f-ven","f-aqu","f-fru", "f-orn", "f-aro", "f-nat", "f-cul"]:
             self.query_one(f"#{b}").remove_class("active")
         self.query_one(f"#{btn_id}").add_class("active")
 
@@ -98,6 +108,26 @@ class CatalogView(Screen):
         elif bid == "f-aqu":
             self._filter = "Aquatica"
             self._set_active("f-aqu")
+            self._refresh()
+        elif bid == "f-fru":
+            self._filter = "Frutifera"
+            self._set_active("f-fru")
+            self._refresh()
+        elif bid == "f-orn":
+            self._filter = "Ornamental"
+            self._set_active("f-orn")
+            self._refresh()
+        elif bid == "f-aro":
+            self._filter = "Aromatica"
+            self._set_active("f-aro")
+            self._refresh()
+        elif bid == "f-nat":
+            self._filter = "Nativa"
+            self._set_active("f-nat")
+            self._refresh()
+        elif bid == "f-cul":
+            self._filter = "Culinaria"
+            self._set_active("f-cul")
             self._refresh()
 
     def on_data_table_row_selected(self, event: DataTable.RowSelected) -> None:

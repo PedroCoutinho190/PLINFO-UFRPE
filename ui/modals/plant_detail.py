@@ -44,7 +44,7 @@ class PlantDetailModal(ModalScreen):
         with Vertical(id="detail-box"):
             with Vertical(id="detail-header"):
                 yield Static(p["nome"], id="plant-nome")
-                yield Static(p["tipo"], id="plant-tipo") #DUVIDA
+                yield Static(", ".join(p["tipo"]), id="plant-tipo") #Transformando o Tipo da planta de lista para str com o join, exibir para o modal quando clicar na planta!(Descrição melhor)
             with ScrollableContainer(id="detail-body"):
                 for key, label in self._SECTIONS:
                     if key in p:
