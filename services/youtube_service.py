@@ -21,8 +21,7 @@ class YoutubeService:
                 q = f"{nome_receita}, receita", # O "q" que faz a consulta(pesquisa)
                 part = "snippet", # Busca Simples (Channel, Descrição, Título...)
                 maxResults = 1,
-                type = "video",
-                order = "viewCount").execute()
+                type = "video",).execute()
         )
 
         if not resultado["items"]:
@@ -30,7 +29,7 @@ class YoutubeService:
         
         video_id = (
             resultado["items"][0]
-            ["id"]["videoid"]
+            ["id"]["videoId"]
         )
 
         return(f"https://www.youtube.com/watch?v={video_id}")

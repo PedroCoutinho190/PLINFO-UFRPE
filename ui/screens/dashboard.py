@@ -22,6 +22,7 @@ class DashboardView(Screen):
                     classes="subtitle"
                 )
                 yield Button("Catálogo de Plantas", id="btn-catalog")
+                yield Button("Receitas", id="btn-recipes")
                 yield Button("Configurações",        id="btn-settings")
                 yield Button("Sair",                    id="btn-logout", variant="error")
 
@@ -29,6 +30,11 @@ class DashboardView(Screen):
         if event.button.id == "btn-catalog":
             from ui.screens.catalog import CatalogView
             self.app.push_screen(CatalogView())
+            return
+        
+        if event.button.id == "btn-recipes":
+            from ui.screens.recipes import RecipesView
+            self.app.push_screen(RecipesView())
             return
 
         if event.button.id == "btn-settings":
