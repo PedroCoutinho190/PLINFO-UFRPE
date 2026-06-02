@@ -3,7 +3,7 @@ from textual.screen     import Screen
 from textual.widgets    import Static, Button, Input, Label, DataTable
 from textual.containers import Vertical, Horizontal
 
-from plantas_data.lista_planta import plantas
+from data.lista_planta import plantas
 
 CATALOG_CSS = """
 #topbar {
