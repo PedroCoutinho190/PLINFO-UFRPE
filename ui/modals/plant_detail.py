@@ -55,3 +55,4 @@ class PlantDetailModal(ModalScreen):
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "btn-close":
             self.dismiss()
+            
