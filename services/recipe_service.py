@@ -24,7 +24,7 @@ class RecipeService:
 
     Regras obrigatórias:
 
-    - Retorne no máximo 3 receitas.
+    - Retorne no máximo 5 receitas.
     - Cada receita deve possuir apenas os campos "nome" e "descricao".
     - Use nomes completos e específicos das receitas.
     - A descrição deve ser breve e objetiva.

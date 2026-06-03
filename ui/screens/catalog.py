@@ -7,7 +7,7 @@ from data.lista_planta import plantas
 
 CATALOG_CSS = """
 #topbar {
-    height: 3;
+    height: 5;
     align: left middle;
     background: $panel;
     border-bottom: solid $primary;
@@ -15,7 +15,7 @@ CATALOG_CSS = """
 }
 #topbar Static { width: 1fr; text-style: bold; }
 #filter-row {
-    height: 3;
+    height: 4;
     align: left middle;
     padding: 0 2;
     background: $surface;

@@ -14,7 +14,7 @@ RecipesView {
     background: $surface;
 }
 #topbar {
-    height: 3;
+    height: 5;
     align: left middle;
     background: $panel;
     border-bottom: solid $primary;
@@ -22,7 +22,7 @@ RecipesView {
 }
 #topbar Static { width: 1fr; text-style: bold; }
 #search-row {
-    height: 3;
+    height: 4;
     align: left middle;
     padding: 0 2;
     background: $surface;
