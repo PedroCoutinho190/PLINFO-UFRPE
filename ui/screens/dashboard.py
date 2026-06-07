@@ -22,10 +22,11 @@ class DashboardView(Screen):
                     classes="subtitle"
                 )
                 yield Button("Catálogo de Plantas", id="btn-catalog")
+                yield Button("Catálogo de Pragas", id="btn-pests")
                 yield Button("Receitas", id="btn-recipes")
-                yield Button("Pragas", id="btn-pests")
-                yield Button("Configurações",        id="btn-settings")
-                yield Button("Sair",                    id="btn-logout", variant="error")
+                yield Button("Simuladador de Ambiente", id="btn-simulator")
+                yield Button("Configurações", id="btn-settings")
+                yield Button("Sair", id="btn-logout", variant="error")
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "btn-catalog":
@@ -33,14 +34,19 @@ class DashboardView(Screen):
             self.app.push_screen(CatalogView())
             return
         
+        if event.button.id == "btn-pests":
+            from ui.screens.pragas import PragasView
+            self.app.push_screen(PragasView())
+            return
+        
         if event.button.id == "btn-recipes":
             from ui.screens.recipes import RecipesView
             self.app.push_screen(RecipesView())
             return
 
-        if event.button.id == "btn-pests":
-            from ui.screens.pragas import PragasView
-            self.app.push_screen(PragasView())
+        if event.button.id == "btn-simulator":
+            from ui.screens.simulator import SimulatorView
+            self.app.push_screen(SimulatorView())
             return
 
         if event.button.id == "btn-settings":

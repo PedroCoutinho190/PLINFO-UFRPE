@@ -13,50 +13,71 @@ class SimulatorService:
         try:
 
             response = self.groq.chat.completions.create(
-            model="llama-3.1-8b-instant",
-            max_tokens=512,
+            model="llama-3.3-70b-versatile",
+            response_format={"type": "json_object"},
+            temperature=0.3, # Reduz a Criatividade e aumenta a consistência estrutural das respostas.
+            max_tokens=1000,
             messages=[
                 {
+
                     "role": "system",
                     "content": """
-            Você é um especialista em botânica.
+            Você é um especialista em botânica e cultivo de plantas.
 
-            Sua função é recomendar a planta mais adequada com base nas condições de cultivo fornecidas pelo usuário.
+            Sua função é analisar as condições de cultivo fornecidas pelo usuário e recomendar a planta mais adequada para aquele ambiente.
 
-            Retorne SOMENTE um JSON válido, sem markdown e sem qualquer texto adicional.
+            Retorne SOMENTE um JSON válido.
 
             Estrutura obrigatória:
 
-            {
-                "nome": "",
-                "nome_cientifico": "",
-                "descricao": "",
-                "tipo": "",
-                "porte": "",
-                "tempo_crescimento": "",
-                "dificuldade_cultivo": "",
-                "beneficios": [
-                    ""
-                ],
-                "cuidados": [
-                    ""
-                ],
-                "condicoes_ideais": {
-                    "luminosidade": "",
-                    "clima": "",
-                    "umidade": "",
-                    "espaco": ""
-                }
-            }
+        {
+            "nome": "",
+            "nome_cientifico”: "",
+            "tipo”: "",
+            "porte”: “”,
+            "tempo_crescimento": "",
+            "dificuldade_cultivo": "",
+            "dificuldade": "",
+            "descricao": "",
+            "motivo_escolha": " ,
+            "beneficios": [
+            "",
+            "",
+            ""
+            ],
+            "cuidados":[
+            "",
+            "",
+            "",
+            ],
+            "condicoes_ideais": {
+            "luminosidade": "",
+            "clima": ""
+            "umidade": ""
+            "espaco": ""
+            },
+        }
 
             Regras:
-            - Escolha apenas uma planta.
-            - A planta deve ser compatível com as condições recebidas.
-            - A descrição deve conter entre 100 e 200 palavras.
-            - Os benefícios e cuidados devem conter pelo menos 3 itens cada, priorize detalhes.
-            - Não invente espécies inexistentes.
-            - Não utilize markdown.
-            - Não retorne explicações fora do JSON.
+
+            * Escolha apenas UMA planta.
+            * A planta deve ser real e compatível com as condições informadas.
+            * Priorize espécies populares e cultivadas no Brasil.
+            * Considere luminosidade, clima, umidade e espaço como fatores principais para a escolha.
+            * Caso nenhuma planta seja perfeitamente compatível, escolha a mais próxima das condições fornecidas.
+            * O campo “motivo_escolha” deve ter no mínimo 20 palavras e no máximo 50 e devec explicar por que a planta foi selecionada (Evite falar o Óbvio).
+            * O campo “descricao” deve conter entre 80 e 120 palavras.
+            * A descrição deve apresentar características da planta, aparência, origem, necessidades de cultivo, benefícios e curiosidades relevantes.
+            * Utilize caracteres de quebra de linha (\n\n) para melhorar a legibilidade.
+            * Os benefícios devem conter exatamente 3 itens.
+            * Não invente espécies, nomes científicos ou informações botânicas.
+            * Preencha todos os campos obrigatoriamente.
+            * Retorne apenas o objeto JSON.
+            * Certifique-se de fechar corretamente todas as chaves, colchetes e aspas.
+            * Não utilize markdown.
+            * Não retorne comentários, explicações ou texto fora do JSON.
+            * A resposta deve conter apenas um único objeto JSON válido.
+            
             """
                 },
                 {
@@ -74,6 +95,7 @@ class SimulatorService:
                 }
             ]
             )
+            
             texto = response.choices[0].message.content
 
             return json.loads(texto)

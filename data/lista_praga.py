@@ -17,7 +17,7 @@ pragas = [
         "Inspecionar folhas regularmente",
         "Evitar excesso de adubação nitrogenada"
     ],
-    "video_url": ""
+    "video_url": "https://youtu.be/3T2zW-OS_6M?si=7X2ZmMykqEkgA58w"
 },
 {
     "id": 2,
@@ -37,7 +37,7 @@ pragas = [
         "Garantir boa ventilação",
         "Monitorar folhas e caules"
     ],
-    "video_url": ""
+    "video_url": "https://youtube.com/shorts/l_0jPWOEZ2g?si=YAPk6rdsf4PXkKhk"
 },
 {
     "id": 3,
@@ -57,7 +57,7 @@ pragas = [
         "Manter boa circulação de ar",
         "Realizar inspeções frequentes"
     ],
-    "video_url": ""
+    "video_url": "https://youtu.be/6K4E3G8kJNE?si=pi2cVLIn5X_9UISV"
 },
 {
     "id": 4,
@@ -77,7 +77,7 @@ pragas = [
         "Evitar ambiente excessivamente seco",
         "Monitorar a parte inferior das folhas"
     ],
-    "video_url": ""
+    "video_url": "https://youtu.be/UJn3M3or6v0?si=CqfCjuyj_cVfMdQr"
 },
 {
     "id": 5,
@@ -96,7 +96,7 @@ pragas = [
         "Inspecionar brotos e folhas",
         "Remover ovos encontrados"
     ],
-    "video_url": ""
+    "video_url": "https://youtu.be/lCRwfM4D2jw?si=4PnwmssPYr-1dAjv"
 },
 {
     "id": 6,
@@ -115,7 +115,7 @@ pragas = [
         "Evitar excesso de umidade",
         "Manter o local limpo"
     ],
-    "video_url": ""
+    "video_url": "https://youtu.be/kuW-q5kyqbU?si=fFx7fpghxZP1_0ea"
 },
 {
     "id": 7,
@@ -134,7 +134,7 @@ pragas = [
         "Eliminar esconderijos úmidos",
         "Monitorar o jardim à noite"
     ],
-    "video_url": ""
+    "video_url": "https://youtu.be/kuW-q5kyqbU?si=fFx7fpghxZP1_0ea"
 },
 {
     "id": 8,
@@ -153,7 +153,7 @@ pragas = [
         "Monitorar flores e brotos",
         "Evitar plantas muito estressadas"
     ],
-    "video_url": ""
+    "video_url": "https://youtube.com/shorts/OjFudOvt-UE?si=2JUlu5ZGHxHIFwIq"
 },
 {
     "id": 9,
@@ -172,7 +172,7 @@ pragas = [
         "Evitar excesso de umidade",
         "Garantir boa circulação de ar"
     ],
-    "video_url": ""
+    "video_url": "https://youtu.be/aIbVu_TLExA?si=M4vd96P6dTTx9qDQ"
 },
 {
     "id": 10,
@@ -192,6 +192,6 @@ pragas = [
         "Garantir boa drenagem",
         "Evitar encharcamento"
     ],
-    "video_url": ""
+    "video_url": "https://youtu.be/kCG_GCuU8JA?si=ny1g2JPZSQI9NSEu"
 }  
 ]
