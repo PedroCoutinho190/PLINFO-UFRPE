@@ -1,6 +1,5 @@
-plantas = [
+plantas = [{
     #--------------------MEDICINAIS--------------------
-{
     "id": 1,
     "nome": "🌵 Babosa",
     "tipo": ["Medicinal"],
@@ -28,7 +27,11 @@ O excesso de água pode apodrecer as raízes.""",
 - Vasos com drenagem
 - Rega apenas quando o solo secar
 - Multiplicação por filhotes
-- Crescimento rápido"""
+- Crescimento rápido""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Torna-se adulta em cerca de 2 anos.
+Pode viver de 10 a 25 anos."""
 },
 
 {
@@ -59,7 +62,11 @@ Pode espalhar-se rapidamente pelo canteiro.""",
 - Vasos ou canteiros
 - Propagação por estacas
 - Crescimento rápido
-- Colheita frequente"""
+- Colheita frequente""",
+
+    "linha_do_tempo": """Germina em 1 a 2 semanas.
+Torna-se adulta em cerca de 3 meses.
+Pode viver de 3 a 5 anos."""
 },
 
 {
@@ -90,7 +97,11 @@ Não tolera excesso de calor por longos períodos.""",
 - Fácil germinação
 - Crescimento rápido
 - Boa adaptação
-- Colheita das flores após abertura"""
+- Colheita das flores após abertura""",
+
+    "linha_do_tempo": """Germina em 1 a 2 semanas.
+Floresce em cerca de 3 meses.
+Completa seu ciclo de vida em aproximadamente 1 ano."""
 },
 
 {
@@ -121,7 +132,11 @@ Tolera bem o clima tropical.""",
 - Propagação por estacas
 - Crescimento rápido
 - Fácil manutenção
-- Cultivo em vasos ou canteiros"""
+- Cultivo em vasos ou canteiros""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Torna-se adulto em cerca de 1 ano.
+Pode viver de 5 a 10 anos."""
 },
 
 {
@@ -152,7 +167,11 @@ Apresenta crescimento vigoroso.""",
 - Multiplicação por estacas
 - Crescimento rápido
 - Pouca manutenção
-- Colheita regular das folhas"""
+- Colheita regular das folhas""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Torna-se adulto em cerca de 1 ano.
+Pode viver por mais de 10 anos."""
 },
 
 {
@@ -183,7 +202,11 @@ Apresenta crescimento rápido.""",
 - Vasos ou canteiros
 - Crescimento vigoroso
 - Colheitas frequentes
-- Multiplicação por divisão"""
+- Multiplicação por divisão""",
+
+    "linha_do_tempo": """Germina em 1 a 3 semanas.
+Torna-se adulta em cerca de 6 meses.
+Pode viver de 5 a 10 anos."""
 },
 
 {
@@ -214,7 +237,11 @@ Tolera altas temperaturas.""",
 - Multiplicação por touceiras
 - Crescimento vigoroso
 - Pouca manutenção
-- Produção abundante de folhas"""
+- Produção abundante de folhas""",
+
+    "linha_do_tempo": """Brota em 1 a 3 semanas.
+Torna-se adulto em cerca de 6 meses.
+Pode viver de 5 a 10 anos."""
 },
 
 {
@@ -245,7 +272,11 @@ Tolera períodos de estiagem.""",
 - Vasos ou jardins
 - Multiplicação por estacas
 - Crescimento moderado
-- Colheita frequente"""
+- Colheita frequente""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Torna-se adulto em cerca de 1 ano.
+Pode viver de 10 a 15 anos."""
 },
     #--------------------CÚLINARIAS--------------------
 {
@@ -276,7 +307,11 @@ Podas frequentes estimulam novas folhas.""",
 - Vasos ou canteiros
 - Crescimento rápido
 - Colheitas frequentes
-- Multiplicação por sementes"""
+- Multiplicação por sementes""",
+
+    "linha_do_tempo": """Germina em 5 a 10 dias.
+Torna-se adulto em cerca de 3 meses.
+Pode viver aproximadamente 1 ano."""
 },
 
 {
@@ -307,7 +342,11 @@ Tolera períodos curtos de seca.""",
 - Vasos ou canteiros
 - Crescimento moderado
 - Fácil manutenção
-- Colheita constante"""
+- Colheita constante""",
+
+    "linha_do_tempo": """Germina em 1 a 2 semanas.
+Torna-se adulto em cerca de 6 meses.
+Pode viver de 5 a 10 anos."""
 },
 
 {
@@ -338,7 +377,11 @@ Não tolera encharcamento.""",
 - Vasos ou jardins
 - Crescimento moderado
 - Podas ocasionais
-- Colheita frequente"""
+- Colheita frequente""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Torna-se adulto em cerca de 1 ano.
+Pode viver de 5 a 6 anos."""
 },
 
 {
@@ -369,7 +412,11 @@ Necessita de colheitas regulares.""",
 - Plantio por sementes
 - Crescimento rápido
 - Fácil manutenção
-- Produção constante"""
+- Produção constante""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Torna-se adulta em cerca de 1 ano.
+Pode viver aproximadamente 2 anos."""
 },
 
 {
@@ -400,7 +447,11 @@ Apresenta rápido rebrote após a colheita.""",
 - Vasos ou canteiros
 - Multiplicação por divisão
 - Crescimento rápido
-- Colheita contínua"""
+- Colheita contínua""",
+
+    "linha_do_tempo": """Germina em 1 a 2 semanas.
+Torna-se adulta em cerca de 1 ano.
+Pode viver de 3 a 5 anos."""
 },
 
 {
@@ -431,7 +482,11 @@ Pode ser cultivado em vasos grandes.""",
 - Plantio por mudas
 - Podas ocasionais
 - Fácil manutenção
-- Longa vida útil"""
+- Longa vida útil""",
+
+    "linha_do_tempo": """Germina em 1 a 2 meses.
+Torna-se adulto em cerca de 5 anos.
+Pode viver por mais de 50 anos."""
 },
 
 {
@@ -462,7 +517,11 @@ Possui ciclo relativamente curto.""",
 - Crescimento rápido
 - Colheita precoce
 - Fácil manejo
-- Produção constante"""
+- Produção constante""",
+
+    "linha_do_tempo": """Germina em 1 a 2 semanas.
+Torna-se adulto em cerca de 3 meses.
+Pode viver aproximadamente 1 ano."""
 },
 
 {
@@ -493,7 +552,11 @@ Produz melhor sob temperaturas elevadas.""",
 - Plantio por sementes
 - Crescimento rápido
 - Frutificação abundante
-- Fácil manutenção"""
+- Fácil manutenção""",
+
+    "linha_do_tempo": """Germina em 1 a 3 semanas.
+Torna-se adulta em cerca de 5 meses.
+Pode viver de 2 a 5 anos."""
 },
     #--------------------FRUTÍFERAS--------------------
 {
@@ -524,7 +587,11 @@ Tolera períodos de seca.""",
 - Plantio por sementes ou mudas
 - Produção de frutos após alguns anos
 - Boa resistência ao calor
-- Fácil adaptação"""
+- Fácil adaptação""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Produz frutos em cerca de 4 anos.
+Pode viver de 40 a 60 anos."""
 },
 
 {
@@ -555,7 +622,11 @@ Produz melhor em regiões quentes.""",
 - Plantio por mudas
 - Crescimento vigoroso
 - Longa vida útil
-- Produção abundante"""
+- Produção abundante""",
+
+    "linha_do_tempo": """Germina em 2 a 8 semanas.
+Produz frutos em cerca de 6 anos.
+Pode viver mais de 100 anos."""
 },
 
 {
@@ -586,7 +657,11 @@ Tolera podas leves.""",
 - Plantio por sementes ou mudas
 - Crescimento moderado
 - Frutificação frequente
-- Fácil manutenção"""
+- Fácil manutenção""",
+
+    "linha_do_tempo": """Germina em 3 a 6 semanas.
+Produz frutos em cerca de 3 anos.
+Pode viver de 30 a 50 anos."""
 },
 
 {
@@ -617,7 +692,11 @@ Tolera salinidade.""",
 - Plantio por coco germinado
 - Crescimento lento
 - Longa vida útil
-- Produção contínua"""
+- Produção contínua""",
+
+    "linha_do_tempo": """Germina em 1 a 3 meses.
+Produz cocos em cerca de 6 anos.
+Pode viver de 60 a 80 anos."""
 },
 
 {
@@ -648,7 +727,11 @@ Tolera períodos secos.""",
 - Plantio por sementes
 - Crescimento moderado
 - Produção de frutos saborosos
-- Boa adaptação ao calor"""
+- Boa adaptação ao calor""",
+
+    "linha_do_tempo": """Germina em 1 a 2 meses.
+Produz frutos em cerca de 5 anos.
+Pode viver de 30 a 50 anos."""
 },
 
 {
@@ -679,7 +762,11 @@ Desenvolve-se lentamente nos primeiros anos.""",
 - Crescimento lento
 - Longa vida útil
 - Produção abundante na fase adulta
-- Fácil manutenção"""
+- Fácil manutenção""",
+
+    "linha_do_tempo": """Germina em 1 a 2 meses.
+Produz frutos em cerca de 8 anos.
+Pode viver mais de 100 anos."""
 },
 
 {
@@ -710,7 +797,11 @@ Não tolera encharcamento.""",
 - Propagação pela coroa do fruto
 - Crescimento moderado
 - Boa produtividade
-- Fácil manejo"""
+- Fácil manejo""",
+
+    "linha_do_tempo": """Brota em 2 a 4 semanas.
+Produz frutos em cerca de 18 meses.
+Pode viver de 2 a 3 anos."""
 },
 
 {
@@ -741,7 +832,11 @@ Prefere temperaturas elevadas.""",
 - Multiplicação por mudas
 - Produção constante
 - Fácil manejo
-- Alta produtividade"""
+- Alta produtividade""",
+
+    "linha_do_tempo": """Brota em 2 a 4 semanas.
+Produz frutos em cerca de 1 ano.
+Pode viver de 5 a 25 anos."""
 },
 
 {
@@ -772,7 +867,11 @@ Pode atingir grande porte.""",
 - Crescimento vigoroso
 - Longa vida útil
 - Produção abundante
-- Fácil adaptação"""
+- Fácil adaptação""",
+
+    "linha_do_tempo": """Germina em 2 a 8 semanas.
+Produz frutos em cerca de 5 anos.
+Pode viver de 50 a 100 anos."""
 },
     #--------------------NATIVAS DE PERNAMBUCO--------------------
 {
@@ -805,7 +904,11 @@ Auxilia na conservação do solo e serve de abrigo para diversas espécies.""",
 - Plantio por mudas ou estacas
 - Crescimento moderado
 - Pouca manutenção
-- Alta resistência"""
+- Alta resistência""",
+
+    "linha_do_tempo": """Germina em 2 a 6 semanas.
+Torna-se adulto em cerca de 5 anos.
+Pode viver mais de 100 anos."""
 },
 
 {
@@ -838,7 +941,11 @@ Contribui para a manutenção da biodiversidade regional.""",
 - Crescimento lento
 - Baixa manutenção
 - Propagação por estacas
-- Alta resistência"""
+- Alta resistência""",
+
+    "linha_do_tempo": """Germina em 2 a 6 semanas.
+Torna-se adulto em cerca de 4 anos.
+Pode viver mais de 50 anos."""
 },
 
 {
@@ -871,7 +978,11 @@ Ajuda a preservar a fauna e a flora locais.""",
 - Crescimento moderado
 - Longa vida útil
 - Produção de frutos abundante
-- Boa adaptação"""
+- Boa adaptação""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Produz frutos em cerca de 8 anos.
+Pode viver mais de 100 anos."""
 },
 
 {
@@ -904,7 +1015,11 @@ Fornece sombra e abrigo para a fauna.""",
 - Plantio por sementes
 - Crescimento moderado
 - Pouca manutenção
-- Alta resistência"""
+- Alta resistência""",
+
+    "linha_do_tempo": """Germina em 3 a 6 semanas.
+Torna-se adulto em cerca de 6 anos.
+Pode viver mais de 100 anos."""
 },
 
 {
@@ -937,7 +1052,11 @@ Auxilia na recuperação da vegetação nativa.""",
 - Plantio por sementes
 - Crescimento moderado
 - Boa resistência
-- Baixa manutenção"""
+- Baixa manutenção""",
+
+    "linha_do_tempo": """Germina em 1 a 3 semanas.
+Torna-se adulta em cerca de 3 anos.
+Pode viver de 30 a 50 anos."""
 },
 
 {
@@ -970,7 +1089,11 @@ Contribui para a recuperação de solos degradados.""",
 - Plantio por sementes
 - Crescimento rápido
 - Baixa manutenção
-- Boa adaptação"""
+- Boa adaptação""",
+
+    "linha_do_tempo": """Germina em 1 a 3 semanas.
+Torna-se adulta em cerca de 3 anos.
+Pode viver de 20 a 40 anos."""
 },
 
 {
@@ -1003,7 +1126,11 @@ Ajuda na recomposição de ecossistemas nativos.""",
 - Crescimento lento
 - Longa vida útil
 - Alta resistência
-- Boa adaptação"""
+- Boa adaptação""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Torna-se adulta em cerca de 5 anos.
+Pode viver de 50 a 100 anos."""
 },
 
 {
@@ -1036,7 +1163,11 @@ Tolera longos períodos de estiagem.""",
 - Crescimento lento
 - Longa vida útil
 - Baixa manutenção
-- Alta resistência ao calor e à seca"""
+- Alta resistência ao calor e à seca""",
+
+    "linha_do_tempo": """Germina em 1 a 3 meses.
+Torna-se adulta em cerca de 8 anos.
+Pode viver mais de 100 anos."""
 },
 
 {
@@ -1069,7 +1200,11 @@ Tolera estiagens prolongadas.""",
 - Crescimento moderado
 - Boa adaptação
 - Pouca manutenção
-- Produção de frutos após alguns anos"""
+- Produção de frutos após alguns anos""",
+
+    "linha_do_tempo": """Germina em 1 a 3 meses.
+Torna-se adulta em cerca de 6 anos.
+Pode viver de 50 a 100 anos."""
 },
 
 {
@@ -1102,7 +1237,11 @@ Também oferece abrigo para pequenos animais e contribui para a biodiversidade l
 - Crescimento moderado
 - Baixa manutenção
 - Fácil adaptação
-- Alta resistência ao clima semiárido"""
+- Alta resistência ao clima semiárido""",
+
+    "linha_do_tempo": """Germina em 1 a 2 meses.
+Torna-se adulta em cerca de 4 anos.
+Pode viver de 20 a 50 anos."""
 },
     #--------------------ORNAMENTAIS--------------------
 {
@@ -1133,7 +1272,11 @@ A poda estimula novas florações.""",
 - Plantio por mudas
 - Podas frequentes
 - Adubação periódica
-- Floração recorrente"""
+- Floração recorrente""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Floresce em cerca de 1 ano.
+Pode viver de 15 a 30 anos."""
 },
 
 {
@@ -1164,7 +1307,11 @@ Floresce durante grande parte do ano.""",
 - Plantio por estacas
 - Crescimento rápido
 - Fácil manutenção
-- Floração abundante"""
+- Floração abundante""",
+
+    "linha_do_tempo": """Germina em 1 a 4 semanas.
+Floresce em cerca de 1 ano.
+Pode viver de 10 a 20 anos."""
 },
 
 {
@@ -1195,7 +1342,11 @@ Evitar excesso de água nas raízes.""",
 - Substrato leve
 - Boa drenagem
 - Adubação periódica
-- Floração anual"""
+- Floração anual""",
+
+    "linha_do_tempo": """Germina em 1 a 6 meses.
+Floresce em cerca de 5 anos.
+Pode viver mais de 20 anos."""
 },
 
 {
@@ -1226,7 +1377,11 @@ Evitar encharcamento excessivo.""",
 - Vasos ou troncos
 - Crescimento moderado
 - Pouca manutenção
-- Boa adaptação"""
+- Boa adaptação""",
+
+    "linha_do_tempo": """Germina em 1 a 3 meses.
+Floresce em cerca de 3 anos.
+Pode viver de 3 a 10 anos."""
 },
 
 {
@@ -1257,11 +1412,14 @@ Necessita de podas ocasionais.""",
 - Plantio por mudas
 - Crescimento moderado
 - Floração abundante
-- Fácil manutenção"""
+- Fácil manutenção""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Floresce em cerca de 3 anos.
+Pode viver de 30 a 50 anos."""
 },
     #--------------------ÁQUATICAS--------------------
-    {
-    "id": 41,
+{  "id": 41,
     "nome": "🪷 Vitória-régia",
     "tipo": ["Aquatica", "Nativa", "Ornamental"],
     "curiosidades": """A vitória-régia (Victoria amazonica) é uma das maiores plantas aquáticas do mundo.
@@ -1288,7 +1446,11 @@ Não tolera frio intenso.""",
 - Lagos ou tanques grandes
 - Água aquecida
 - Boa incidência solar
-- Manutenção especializada"""
+- Manutenção especializada""",
+
+    "linha_do_tempo": """Germina em 1 a 2 semanas.
+Floresce em cerca de 6 meses.
+Pode viver de 1 a 2 anos."""
 },
 
 {
@@ -1319,7 +1481,11 @@ Prefere ambientes tranquilos.""",
 - Plantio por rizomas
 - Crescimento moderado
 - Floração sazonal
-- Fácil manutenção após estabelecido"""
+- Fácil manutenção após estabelecido""",
+
+    "linha_do_tempo": """Germina em 1 a 2 semanas.
+Floresce em cerca de 6 meses.
+Pode viver por décadas."""
 },
 
 {
@@ -1350,7 +1516,11 @@ Pode se espalhar rapidamente.""",
 - Não necessita substrato
 - Multiplicação rápida
 - Fácil manejo
-- Remoção periódica recomendada"""
+- Remoção periódica recomendada""",
+
+    "linha_do_tempo": """Germina em poucos dias.
+Torna-se adulta em cerca de 1 mês.
+Pode viver de 1 a 2 anos."""
 },
 
 {
@@ -1381,7 +1551,11 @@ Pode tornar-se invasora.""",
 - Crescimento acelerado
 - Multiplicação natural
 - Pouca manutenção
-- Monitoramento necessário"""
+- Monitoramento necessário""",
+
+    "linha_do_tempo": """Germina em poucos dias.
+Floresce em cerca de 3 meses.
+Pode viver de 1 a 5 anos."""
 },
 
 {
@@ -1412,7 +1586,11 @@ Desenvolve-se próximo a lagos e espelhos d'água.""",
 - Plantio por divisão
 - Crescimento rápido
 - Fácil adaptação
-- Boa resistência"""
+- Boa resistência""",
+
+    "linha_do_tempo": """Germina em 1 a 3 semanas.
+Torna-se adulto em cerca de 1 ano.
+Pode viver mais de 20 anos."""
 },
     #--------------------VENENOSAS--------------------
 {
@@ -1443,7 +1621,11 @@ Manter longe de crianças e animais.""",
 - Vasos com drenagem
 - Boa luminosidade indireta
 - Multiplicação por estacas
-- Manutenção simples"""
+- Manutenção simples""",
+
+    "linha_do_tempo": """Brota em 2 a 4 semanas.
+Torna-se adulta em cerca de 1 ano.
+Pode viver mais de 10 anos."""
 },
 
 {
@@ -1474,7 +1656,11 @@ Evitar contato com sementes.""",
 - Plantio por sementes
 - Alta resistência
 - Pouca manutenção
-- Monitoramento necessário"""
+- Monitoramento necessário""",
+
+    "linha_do_tempo": """Germina em 1 a 2 semanas.
+Produz sementes em cerca de 5 meses.
+Pode viver de 1 a 3 anos."""
 },
 
 {
@@ -1505,7 +1691,11 @@ Não tolera excesso de água.""",
 - Vasos pequenos ou grandes
 - Crescimento lento
 - Pouca manutenção
-- Fácil propagação"""
+- Fácil propagação""",
+
+    "linha_do_tempo": """Brota em 3 a 6 semanas.
+Torna-se adulta em cerca de 3 anos.
+Pode viver mais de 20 anos."""
 },
 
 {
@@ -1536,7 +1726,11 @@ Evitar contato da seiva com pele e olhos.""",
 - Plantio por mudas
 - Boa resistência
 - Floração abundante
-- Fácil adaptação"""
+- Fácil adaptação""",
+
+    "linha_do_tempo": """Germina em 2 a 4 semanas.
+Floresce em cerca de 2 anos.
+Pode viver de 30 a 50 anos."""
 },
 
 {
@@ -1567,5 +1761,9 @@ Manter fora do alcance de crianças e animais.""",
 - Plantio por tubérculos
 - Crescimento moderado
 - Boa adaptação
-- Manutenção fácil"""
-}]
+- Manutenção fácil""",
+
+    "linha_do_tempo": """Brota em 2 a 6 semanas.
+Torna-se adulta em cerca de 1 ano.
+Pode viver de 10 a 20 anos."""
+}] 
