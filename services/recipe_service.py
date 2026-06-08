@@ -13,7 +13,7 @@ class RecipeService:
         try:
             response = self.groq.chat.completions.create(
                 model="llama-3.1-8b-instant",
-                max_tokens=512,
+                max_tokens=600,
                 messages=[
                     {
                         "role": "system",

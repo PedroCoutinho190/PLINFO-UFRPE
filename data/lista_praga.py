@@ -61,7 +61,7 @@ pragas = [
 },
 {
     "id": 4,
-    "nome": "🕷️ Ácaro",
+    "nome": "   Ácaro",
     "descricao": "Praga microscópica comum em ambientes secos.",
     "sintomas": [
         "Teias finas",
@@ -196,7 +196,7 @@ pragas = [
 },
 {
     "id": 11,
-    "nome": "🪰 Minador-das-folhas",
+    "nome": "   Minador-das-folhas",
     "descricao": "Larva de inseto que cria túneis dentro das folhas ao se alimentar.",
     "sintomas": [
         "Linhas esbranquiçadas nas folhas",
@@ -216,7 +216,7 @@ pragas = [
 
 {
     "id": 12,
-    "nome": "🪲 Besouro",
+    "nome": "   Besouro",
     "descricao": "Inseto que pode consumir folhas, flores e frutos de diversas plantas.",
     "sintomas": [
         "Buracos nas folhas",
@@ -256,7 +256,7 @@ pragas = [
 
 {
     "id": 14,
-    "nome": "🪳 Broca-do-caule",
+    "nome": "   Broca-do-caule",
     "descricao": "Larva que perfura caules e galhos comprometendo a planta.",
     "sintomas": [
         "Furos no caule",

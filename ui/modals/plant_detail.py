@@ -33,6 +33,7 @@ class PlantDetailModal(ModalScreen):
         ("cuidados",        "Cuidados"),
         ("reflorestamento", "Reflorestamento"),
         ("cultivo",         "Cultivo"),
+        ("linha_do_tempo",  "Linha do Tempo")
     ]
 
     def __init__(self, planta: dict) -> None:
