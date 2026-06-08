@@ -193,5 +193,203 @@ pragas = [
         "Evitar encharcamento"
     ],
     "video_url": "https://youtu.be/kCG_GCuU8JA?si=ny1g2JPZSQI9NSEu"
-}  
-]
+},
+{
+    "id": 11,
+    "nome": "🪰 Minador-das-folhas",
+    "descricao": "Larva de inseto que cria túneis dentro das folhas ao se alimentar.",
+    "sintomas": [
+        "Linhas esbranquiçadas nas folhas",
+        "Folhas deformadas",
+        "Redução da fotossíntese"
+    ],
+    "tratamento": [
+        "Remover folhas afetadas",
+        "Aplicar inseticida apropriado"
+    ],
+    "prevencao": [
+        "Inspecionar folhas regularmente",
+        "Eliminar partes infestadas"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=xPs5VITN5tA"
+},
+
+{
+    "id": 12,
+    "nome": "🪲 Besouro",
+    "descricao": "Inseto que pode consumir folhas, flores e frutos de diversas plantas.",
+    "sintomas": [
+        "Buracos nas folhas",
+        "Danos em flores",
+        "Presença de besouros"
+    ],
+    "tratamento": [
+        "Remoção manual",
+        "Controle biológico"
+    ],
+    "prevencao": [
+        "Monitorar plantas frequentemente",
+        "Manter o jardim limpo"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=NdbiSM6Df8k"
+},
+
+{
+    "id": 13,
+    "nome": "🐜 Formiga-cortadeira",
+    "descricao": "Formiga que corta folhas para cultivar fungos em seus ninhos.",
+    "sintomas": [
+        "Folhas cortadas",
+        "Desfolhamento rápido",
+        "Trilhas de formigas"
+    ],
+    "tratamento": [
+        "Utilizar iscas específicas",
+        "Localizar e tratar o formigueiro"
+    ],
+    "prevencao": [
+        "Monitorar trilhas",
+        "Controlar colônias próximas"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=3TskKWh6F8U"
+},
+
+{
+    "id": 14,
+    "nome": "🪳 Broca-do-caule",
+    "descricao": "Larva que perfura caules e galhos comprometendo a planta.",
+    "sintomas": [
+        "Furos no caule",
+        "Galhos secos",
+        "Serragem próxima aos furos"
+    ],
+    "tratamento": [
+        "Remover partes afetadas",
+        "Aplicar controle específico"
+    ],
+    "prevencao": [
+        "Realizar podas adequadas",
+        "Inspecionar troncos e galhos"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=QuQmtZaQLf0"
+},
+
+{
+    "id": 15,
+    "nome": "🦋 Mariposa-das-folhas",
+    "descricao": "Inseto cujas larvas podem causar danos significativos às folhas.",
+    "sintomas": [
+        "Folhas mastigadas",
+        "Presença de ovos",
+        "Danos em brotos"
+    ],
+    "tratamento": [
+        "Remover ovos e larvas",
+        "Aplicar controle biológico"
+    ],
+    "prevencao": [
+        "Inspecionar folhas frequentemente",
+        "Atrair predadores naturais"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=gz9YRSum_hM"
+},
+
+{
+    "id": 16,
+    "nome": "🍂 Ferrugem",
+    "descricao": "Doença fúngica que produz manchas alaranjadas ou marrons nas folhas.",
+    "sintomas": [
+        "Manchas ferruginosas",
+        "Queda de folhas",
+        "Enfraquecimento da planta"
+    ],
+    "tratamento": [
+        "Aplicar fungicida",
+        "Remover folhas afetadas"
+    ],
+    "prevencao": [
+        "Evitar excesso de umidade",
+        "Garantir boa ventilação"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=g5PX8z3Xe44"
+},
+
+{
+    "id": 17,
+    "nome": "⚫ Mancha-negra",
+    "descricao": "Doença fúngica que provoca manchas escuras nas folhas.",
+    "sintomas": [
+        "Pontos pretos nas folhas",
+        "Amarelecimento",
+        "Queda precoce das folhas"
+    ],
+    "tratamento": [
+        "Aplicar fungicida",
+        "Retirar folhas contaminadas"
+    ],
+    "prevencao": [
+        "Evitar molhar as folhas",
+        "Melhorar circulação de ar"
+    ],
+    "video_url": "https://www.youtube.com/shorts/AI6y4fpiS0c"
+},
+
+{
+    "id": 18,
+    "nome": "🦠 Míldio",
+    "descricao": "Doença causada por microrganismos que atacam folhas e caules.",
+    "sintomas": [
+        "Manchas amareladas",
+        "Mofo na parte inferior das folhas",
+        "Folhas secando"
+    ],
+    "tratamento": [
+        "Aplicar fungicida",
+        "Remover partes afetadas"
+    ],
+    "prevencao": [
+        "Evitar excesso de umidade",
+        "Espaçar adequadamente as plantas"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=yRy9u_2nUf4"
+},
+
+{
+    "id": 19,
+    "nome": "🐛 Nematoide",
+    "descricao": "Vermes microscópicos que atacam as raízes das plantas.",
+    "sintomas": [
+        "Crescimento reduzido",
+        "Murcha frequente",
+        "Raízes deformadas"
+    ],
+    "tratamento": [
+        "Trocar o solo contaminado",
+        "Utilizar controle biológico"
+    ],
+    "prevencao": [
+        "Usar mudas saudáveis",
+        "Realizar rotação de culturas"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=VSOJOlsxp90"
+},
+
+{
+    "id": 20,
+    "nome": "🦗 Cigarrinha",
+    "descricao": "Inseto sugador que pode transmitir doenças para as plantas.",
+    "sintomas": [
+        "Folhas amareladas",
+        "Crescimento lento",
+        "Presença de insetos saltadores"
+    ],
+    "tratamento": [
+        "Aplicar inseticida apropriado",
+        "Remover plantas muito afetadas"
+    ],
+    "prevencao": [
+        "Monitorar a plantação",
+        "Eliminar plantas hospedeiras"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=ncrbESntNTo"
+}]
