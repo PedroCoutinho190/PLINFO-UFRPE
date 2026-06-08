@@ -5,7 +5,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class YoutubeService:
-
+    """
+    Responsável Por sugerir Vídeos de Receitas da planta que o recupe_service.py sugeriu ao Usuário.
+    Utiliza a API do Google.
+    """
     def __init__(self):
         self.youtube = build( #Cria uma Conexão com a API do YT
             "youtube",
@@ -14,6 +17,10 @@ class YoutubeService:
             )
         
     def buscar_video(self, nome_receita):
+        """
+        Método que vai receber como parâmetro o nome da receita gerada lá no recipe_service.py, e a partir disso vai buscar um vídeo
+        de como preparar a receita.
+        """
 
         resultado = ( #Tudo que está aqui dentro faz parte da "Convenção da API do YT"
             self.youtube.search()

@@ -13,7 +13,9 @@ from utils.password_toggle import toggle_password
 
 
 class DeleteAccountView(Screen):
-
+    """
+    Responsável pela Formação da Screen de Deletar a Conta
+    """
     def __init__(self, user: User) -> None:
         super().__init__()
         self.current_user = user

@@ -27,6 +27,9 @@ PragaDetailModal { align: center middle; }
 
 
 class PragaDetailModal(ModalScreen):
+    """
+    Responsável pela formação do Menu Interno das Pragas do Sistema.
+    """
     CSS = DETAIL_CSS
 
     def __init__(self, praga: dict) -> None:

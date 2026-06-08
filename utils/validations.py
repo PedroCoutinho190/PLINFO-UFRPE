@@ -2,7 +2,9 @@ import re
 from utils.utilities import colorir
 from colorama import Fore
 class Validation:
-
+    """
+    Responsável pela validação de dados relacionados aos usuários.
+    """
     @staticmethod
     def validation_name (user_name) -> bool:
         """

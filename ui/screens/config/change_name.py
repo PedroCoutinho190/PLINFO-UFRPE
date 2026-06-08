@@ -9,7 +9,9 @@ from database.__database import db
 
 
 class ChangeNameView(Screen):
-
+    """
+    Responsável pela Formação da Screen da Troca de Nome
+    """   
     def __init__(self, user: User) -> None:
         super().__init__()
         self.current_user = user

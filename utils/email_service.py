@@ -11,6 +11,9 @@ import os
 load_dotenv()
 
 class EmailService:
+    """
+    Responsávelpelo serviço de envio de E-mail ao Usuário.
+    """
     def __init__(self):
         
         self.EMAIL_REMETENTE = os.getenv('EMAIL_REMETENTE')

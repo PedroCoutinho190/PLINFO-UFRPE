@@ -5,11 +5,19 @@ from groq import Groq
 load_dotenv()
 
 class SimulatorService:
-
+    """
+    Responsável por Fazer a sugestão de Plantas ao usuário baseado nas informações do seu ambiente.
+    Além de, Retornar várias informações da Planta sugerida, Utiliza a API Do Groq
+    """
     def __init__(self):
         self.groq = Groq()
 
     def ambient_simulator(self, luminosidade, espaco, clima, umidade):
+        """
+        Método que recebe alguns parâmetros relacionados ao ambiente do usuário e com base nestes, faz a recomendação de Plantas
+        para o usuário cultivar em seu ambiente, junto com algumas informações da Planta sugerida. O retorno dessas informações ocorrem 
+        no formato JSON.
+        """
         try:
 
             response = self.groq.chat.completions.create(

@@ -30,7 +30,7 @@ class UserConfigService:
         self.user.user_name = new_name   # atualiza o objeto em memória
         return True, ""
 
-    #Parte do E-mail
+    #Parte do E-mai
     def validate_email(self, new_email: str) -> tuple[bool, str]:
         """
         Só valida — não salva.

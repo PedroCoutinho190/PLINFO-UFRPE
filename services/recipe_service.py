@@ -5,11 +5,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class RecipeService:
-
+    """
+    Responsável por sugerir Nome de Receitas de uma Planta escolhida pelo usuário, além de uma breve descrição sobre a receita.
+    """
     def __init__(self):
         self.groq = Groq()
 
     def buscar_receitas(self, planta: str) -> list | dict:
+        """
+        Método que Utiliza a API_KEY do Groq para retornar até 05 receitas, recebe planta como parâmetro e caso seja comestível, 
+        retorna um JSON contendo (Nome da Receita x Breve Descrição) para facilitar a extração de informações.
+        """
         try:
             response = self.groq.chat.completions.create(
                 model="llama-3.1-8b-instant",

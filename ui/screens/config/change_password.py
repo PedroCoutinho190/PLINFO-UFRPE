@@ -16,6 +16,9 @@ def _clean(t): return re.sub(r"\x1b\[[0-9;]*m", "", str(t))
 
 
 class ChangePasswordView(Screen):
+    """
+    Responsável pela Formação da Screen da Troca de senha
+    """
 
     def __init__(self, user: User) -> None:
         super().__init__()

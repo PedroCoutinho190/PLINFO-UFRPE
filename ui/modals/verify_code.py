@@ -17,6 +17,11 @@ VerifyCodeModal {
 """
 
 class VerifyCodeModal(ModalScreen[bool]):
+    """
+    Responsável pela formação da Tela de verificação de código Via-Email.
+    """
+
+
     CSS = VERIFY_CSS
 
     def __init__(self, email: str, code: str) -> None:

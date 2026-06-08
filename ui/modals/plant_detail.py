@@ -25,6 +25,9 @@ PlantDetailModal { align: center middle; }
 """
 
 class PlantDetailModal(ModalScreen):
+    """
+    Responsável pela formação do Menu Interno das Plantas do sistema.
+    """
     CSS = DETAIL_CSS
 
     _SECTIONS = [

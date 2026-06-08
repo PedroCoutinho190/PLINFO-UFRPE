@@ -12,7 +12,9 @@ from utils.email_service  import email_service
 
 
 class ChangeEmailView(Screen):
-
+    """
+    Responsável pela Formação da Screen da Troca de E-mail
+    """
     def __init__(self, user: User) -> None:
         super().__init__()
         self.current_user = user
