@@ -36,6 +36,7 @@ class PragaDetailModal(ModalScreen):
         super().__init__()
         self.praga = praga
 
+    #Faz a Composição do Menu interno das Pragas.
     def compose(self) -> ComposeResult:
         p = self.praga
         with Vertical(id="pd-card"):
@@ -61,6 +62,7 @@ class PragaDetailModal(ModalScreen):
 
             yield Button("← Voltar", id="btn-close", variant="primary")
 
+    #Assim como no Menu interno das Plantas, esse aqui apresenta apenas o Botçao de Voltar ao menu anterior
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "btn-close":
             self.dismiss()

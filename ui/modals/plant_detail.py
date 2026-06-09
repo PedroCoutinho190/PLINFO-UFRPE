@@ -43,6 +43,7 @@ class PlantDetailModal(ModalScreen):
         super().__init__()
         self.planta = planta
 
+    #Faz a Composição da Tela do Menu Interno das Plantas.
     def compose(self) -> ComposeResult:
         p = self.planta
         with Vertical(id="detail-box"):
@@ -56,6 +57,7 @@ class PlantDetailModal(ModalScreen):
                         yield Label(p[key], classes="sec-body")
             yield Button("← Voltar", id="btn-close", variant="primary")
 
+    #Lida com os Botões (Nesse caso o Menu Interno das plantas tem Apenas a Opção de voltar já que é algo Visual)
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "btn-close":
             self.dismiss()

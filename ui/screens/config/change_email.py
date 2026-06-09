@@ -35,7 +35,7 @@ class ChangeEmailView(Screen):
 
     def on_input_changed(self, event: Input.Changed) -> None:
         from utils.validations import Validation
-        v = event.value.strip()
+        v = event.value.strip().lower()
         self.query_one("#message", Label).update("")
         if v:
             f = self.query_one("#email", Input)

@@ -30,6 +30,7 @@ class VerifyCodeModal(ModalScreen[bool]):
         self.real_code    = code
         self.attempts     = 3
 
+    #Faz a composição da Verificação de  E-mail.
     def compose(self) -> ComposeResult:
         with Center():
             with Vertical(id="verify-box"):
@@ -42,11 +43,16 @@ class VerifyCodeModal(ModalScreen[bool]):
 
     def on_mount(self) -> None:
         self.query_one("#code").focus()
-
+    
+    #Lida com alterações no Input
     def on_input_changed(self, event: Input.Changed) -> None:
         self.query_one("#message", Label).update("")
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
+        """
+        Lida com os Botões clicados: se o código digitado for equivalente ao enviado ele Faz o dismiss True 
+        Caso o código não seja equivalente ele vai mostrar a quantidade de tentavivas restantes além de informar o Erro.
+        """
         if event.button.id == "btn-cancel":
             self.dismiss(False)
             return
@@ -65,6 +71,7 @@ class VerifyCodeModal(ModalScreen[bool]):
                 else:
                     self.app.notify("Tentativas esgotadas.", severity="error")
                     self.dismiss(False)
-
+                    
+    #Lida com o Botão de Submissão
     def on_input_submitted(self, event: Input.Submitted) -> None:
         self.on_button_pressed(type("E", (), {"button": type("B", (), {"id": "btn-verify"})()})())
