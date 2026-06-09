@@ -1,273 +1,145 @@
-🌿 PLINFO Release 2.0
+PLINFO Release 2.0 🌿
 
-<p align="center">
-  <img src="docs/screenshots/tela_inicial.png" alt="Tela Inicial do PLINFO" width="900">
-</p>
-<p align="center">
-  <strong>Sistema de Informações Botânicas com Inteligência Artificial</strong>
-</p>
-<p align="center">
-  Desenvolvido por Renato Rodrigues e Pedro Coutinho
-</p>
-
-⸻
-
-📖 Sobre o Projeto
-
-O PLINFO (Plant Information System) é um sistema desenvolvido com o objetivo de auxiliar estudantes, produtores, pesquisadores e entusiastas da área agrícola no acesso a informações relacionadas ao cultivo de plantas, identificação de pragas e obtenção de recomendações inteligentes para o manejo agrícola.
-
-A plataforma reúne informações botânicas, recursos de busca avançada, catálogo de pragas, simulador de ambientes e integração com Inteligência Artificial para geração de receitas e recomendações relacionadas às espécies cadastradas.
-
-O projeto foi desenvolvido utilizando a linguagem Python e segue uma arquitetura orientada a objetos, proporcionando maior organização, escalabilidade e facilidade de manutenção.
-
-⸻
-
-🎯 Objetivos
-
-* Centralizar informações sobre espécies vegetais.
-* Facilitar a consulta de dados botânicos.
-* Auxiliar na identificação de pragas.
-* Disponibilizar recomendações de prevenção e tratamento.
-* Oferecer recursos multimídia para aprendizado.
-* Utilizar Inteligência Artificial para geração de receitas e conteúdos relacionados às plantas.
-* Simular condições ambientais ideais para cultivo.
+O *PLINFO* é uma aplicação de interface de terminal (TUI) desenvolvida como projeto prático para o curso de *Sistemas de Informação* da *UFRPE*. A plataforma visa conectar usuários ao mundo da botânica, oferecendo um catálogo interativo de plantas com informações detalhadas sobre cuidados, origem, curiosidades, reflorestamento e linha do tempo, além de um módulo completo para identificação e tratamento de pragas.
 
-⸻
+---
 
-🚀 Funcionalidades
+## Bibliotecas usadas
 
-👤 Gerenciamento de Usuários
+### Bibliotecas externas
 
-* Cadastro de usuários.
-* Sistema de login.
-* Verificação por e-mail.
-* Gerenciamento de conta.
-* Configuração de perfil.
+| Biblioteca                  | Objetivo no projeto                                                                                       |
+| --------------------------- | --------------------------------------------------------------------------------------------------------- |
+| textual                   | Criar a interface gráfica em terminal, com telas, botões, inputs, labels e navegação entre páginas.       |
+| groq                      | Integração com IA (llama-3.1-8b-instant e llama-3.3-70b-versatile) para sugestões e consultas inteligentes. |
+| google-api-python-client  | Integração com a YouTube Data API v3 para busca e exibição de vídeos relacionados às plantas e pragas.   |
+| python-dotenv             | Carregar variáveis de ambiente do arquivo .env, como chaves de API e credenciais de e-mail.            |
+| colorama                  | Aplicar cores e estilos no terminal para melhorar a experiência visual da interface.                     |
 
-🌱 Catálogo de Plantas
+### Bibliotecas nativas do Python
 
-* Listagem de espécies vegetais.
-* Busca por nome.
-* Filtros avançados.
-* Informações detalhadas das plantas.
-* Linha do tempo de crescimento.
-* Recomendações de cultivo.
+| Biblioteca     | Objetivo no projeto                                                              |
+| -------------- | -------------------------------------------------------------------------------- |
+| sqlite3      | Criar e manipular o banco de dados local SQLite.                                 |
+| smtplib      | Enviar e-mails via Gmail SMTP para verificação de conta e recuperação de senha.  |
+| re           | Validar campos como nome, e-mail e senha com expressões regulares.               |
+| asyncio      | Gerenciar operações assíncronas da interface Textual e chamadas às APIs externas. |
+| dataclasses  | Organizar modelos de dados de forma limpa e tipada entre as camadas da aplicação.|
+| json         | Serializar e desserializar dados trocados entre módulos e APIs externas.         |
 
-🐛 Catálogo de Pragas
+---
 
-* Consulta de pragas agrícolas.
-* Identificação por sintomas.
-* Métodos de prevenção.
-* Métodos de tratamento.
-* Conteúdos educativos.
+## 🏗️ Arquitetura
 
-🤖 Inteligência Artificial
+O projeto é organizado em *3 camadas* bem definidas:
 
-* Geração de receitas utilizando IA.
-* Sugestões baseadas na planta selecionada.
-* Respostas contextualizadas por meio da API Groq.
 
-🎥 Integração com YouTube
+UI (Textual Screens) → Services (lógica pura) → Database / APIs
 
-* Busca automática de vídeos relacionados.
-* Conteúdo educativo complementar.
-* Receitas em vídeo.
-* Vídeos explicativos sobre pragas.
 
-🌡️ Simulador de Ambiente
+- *UI* — Telas e componentes visuais construídos com Textual
+- *Services* — Regras de negócio isoladas, sem dependência de interface
+- *Database / APIs* — Acesso ao SQLite local e integrações com Groq, YouTube e Gmail SMTP
 
-* Simulação de condições ideais de cultivo.
-* Análise de temperatura.
-* Análise de umidade.
-* Recomendações para desenvolvimento saudável das plantas.
+---
 
-⸻
+## ⚙️ Funcionalidades elaboradas e seus objetivos
 
-🏗️ Arquitetura do Projeto
+### ✅ Funcionalidades entregues na versão 1.0 — Primeira VA
 
-O sistema segue uma arquitetura modular baseada em Programação Orientada a Objetos.
+As funcionalidades da *Release 1.0* foram organizadas para oferecer uma experiência inicial completa ao usuário, desde o cadastro até a navegação pelo catálogo de plantas com informações botânicas detalhadas e filtros por categoria.
 
-PLINFO/
-│
-├── app.py
-├── main.py
-│
-├── data/
-│   ├── lista_planta.py
-│   └── lista_praga.py
-│
-├── database/
-│   └── __database.py
-│
-├── models/
-│   └── user.py
-│
-├── services/
-│   ├── login.py
-│   ├── register.py
-│   ├── recipe_service.py
-│   ├── simulator.py
-│   ├── user_config_service.py
-│   └── youtube_service.py
-│
-├── ui/
-│   ├── screens/
-│   └── modals/
-│
-└── docs/
-    └── screenshots/
+---
 
-⸻
+### 🔐 Autenticação e segurança
 
-🛠️ Tecnologias Utilizadas
+| Funcionalidade                       | Descrição                                                                   | Objetivo                                                                               |
+| ------------------------------------ | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| *Cadastro de usuário*              | Permite que novos usuários criem uma conta informando nome, e-mail e senha. | Registrar usuários no sistema de forma organizada e segura.                            |
+| *Validação de dados*               | Valida nome, e-mail, senha e confirmação de senha durante o cadastro.       | Evitar dados inválidos, incompletos ou inconsistentes no banco de dados.               |
+| *Verificação de e-mail por código* | Envia um código via Gmail SMTP antes de finalizar o cadastro.               | Confirmar que o e-mail realmente pertence ao usuário.                                  |
+| *Login de usuário*                 | Permite o acesso ao sistema usando e-mail e senha cadastrados.              | Garantir que apenas usuários autenticados acessem as telas internas.                   |
+| *Criptografia de senhas*           | Armazena as senhas usando hash seguro com salt aleatório.                   | Proteger as credenciais dos usuários e evitar o armazenamento de senhas em texto puro. |
 
-Linguagem de Programação
+---
 
-* Python 3
+### 👤 Configurações da conta
 
-Interface Gráfica
+| Funcionalidade          | Descrição                                                                | Objetivo                                                               |
+| ----------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| *Atualização de nome* | Permite que o usuário altere o nome exibido no perfil.                   | Manter os dados do usuário atualizados.                                |
+| *Alteração de senha*  | Permite trocar a senha informando a senha atual e uma nova senha válida. | Oferecer uma forma segura de atualizar as credenciais da conta.        |
+| *Exclusão de conta*   | Permite que o usuário remova sua conta do sistema.                       | Dar ao usuário controle sobre seus próprios dados dentro da aplicação. |
 
-* Textual
+---
 
-Banco de Dados
+### 🌿 Catálogo e galeria de plantas
 
-* SQLite
+| Funcionalidade            | Descrição                                                                      | Objetivo                                                                         |
+| ------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| *Galeria geral*         | Exibe todas as plantas cadastradas no sistema em formato de catálogo visual.   | Oferecer uma visão completa do acervo disponível para exploração livre.          |
+| *Filtro por medicinais* | Permite filtrar e listar apenas as plantas com propriedades medicinais.        | Facilitar a busca de plantas úteis para fins terapêuticos e de saúde.           |
+| *Filtro por venenosas*  | Permite filtrar e listar apenas as plantas classificadas como venenosas.       | Alertar e informar o usuário sobre espécies que oferecem risco à saúde.         |
+| *Filtro por aquáticas*  | Permite filtrar e listar apenas as plantas de ambiente aquático.               | Atender usuários interessados em espécies específicas de habitats aquáticos.    |
+| *Como Cuidar*           | Exibe orientações sobre rega, luz, solo e manutenção de cada planta.           | Auxiliar o usuário a manter suas plantas saudáveis com informações confiáveis.  |
+| *Reflorestamento*       | Apresenta o papel da planta em projetos de recuperação ambiental.              | Conscientizar o usuário sobre a importância ecológica das espécies cadastradas. |
+| *Origem*                | Informa a origem geográfica e o histórico da espécie.                          | Enriquecer o conhecimento do usuário sobre a procedência das plantas.           |
+| *Curiosidades*          | Apresenta fatos interessantes e pouco conhecidos sobre cada planta.            | Tornar a experiência mais envolvente e educativa.                                |
+| *Linha do tempo*        | Exibe marcos históricos importantes relacionados à planta ao longo do tempo.   | Contextualizar historicamente cada espécie de forma visual e organizada.        |
+---
 
-APIs e Serviços
+### ✅ Funcionalidades entregues na versão 2.0 — Segunda VA (Atual)
 
-* Groq API
-* YouTube Data API
-* SMTP (envio de e-mails)
+As funcionalidades da *Release 2.0* ampliaram o PLINFO com uma interface completamente renovada via Textual, inteligência artificial com Groq, integração com YouTube e um módulo dedicado ao manejo de pragas.
 
-Configuração
+Essa versão teve como foco transformar o sistema em uma plataforma mais robusta, interativa e útil tanto para entusiastas quanto para usuários com necessidades práticas no trato com plantas.
 
-* Python Dotenv
+---
 
-⸻
+### 🏗️ Arquitetura e interface
 
-📷 Demonstração do Sistema
+| Funcionalidade                          | Descrição                                                                                                                          | Objetivo                                                                            |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| *Migração para POO*                   | Refatora o código para aplicar Programação Orientada a Objetos, organizando telas, serviços, modelos e repositórios separadamente. | Melhorar a manutenção, a organização, a reutilização e a escalabilidade do projeto. |
+| *Migração para interface com Textual* | Substitui a interface anterior por uma TUI completa desenvolvida com a biblioteca textual.                                       | Oferecer uma experiência visual mais rica, navegável e profissional no terminal.    |
+| *Melhorias gerais de arquitetura*     | Revisão e reestruturação dos módulos internos, consolidando as 3 camadas UI → Services → Database/APIs.                           | Garantir um código mais limpo, coeso e preparado para novas expansões.              |
 
-🌱 Consulta de Plantas
+---
 
-<p align="center">
-  <img src="docs/screenshots/amostragem_planta.png" alt="Consulta de Plantas" width="900">
-</p>
+### 🌱 Expansão do catálogo
 
-⸻
+| Funcionalidade               | Descrição                                                              | Objetivo                                                                           |
+| ---------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| *Expansão para 50 plantas* | Amplia o catálogo com novas espécies cadastradas e documentadas.       | Oferecer uma base de dados mais completa e diversificada para os usuários.         |
+| *Novos filtros*            | Adiciona critérios adicionais de filtragem no catálogo.                | Melhorar a experiência de busca e navegação pelo acervo de plantas.                |
+| *Pesquisa avançada*        | Permite buscas mais detalhadas por nome, característica ou categoria.  | Facilitar a localização de plantas específicas em um catálogo maior.               |
 
-🤖 Receitas Geradas por Inteligência Artificial
+---
 
-<p align="center">
-  <img src="docs/screenshots/receitas.png" alt="Receitas com IA" width="900">
-</p>
+### 🤖 Inteligência artificial e receitas
 
-⸻
+| Funcionalidade            | Descrição                                                                                | Objetivo                                                                         |
+| ------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| *Integração com Groq*   | Conecta a aplicação aos modelos llama-3.1-8b-instant e llama-3.3-70b-versatile via API. | Oferecer respostas e sugestões dinâmicas geradas por inteligência artificial.    |
+| *Sugestão de receitas com IA* | Sugere receitas culinárias, medicinais ou de uso prático com base na planta selecionada. | Agregar valor prático ao catálogo, explorando o uso das plantas no cotidiano. |
+| *Simulador de ambiente com IA* | Simula diferentes condições de ambiente e seu impacto no desenvolvimento das plantas. | Auxiliar o usuário a escolher o ambiente mais adequado para cada espécie.    |
 
-🌡️ Simulador de Ambiente
+---
 
-<p align="center">
-  <img src="docs/screenshots/simulador.png" alt="Simulador de Ambiente" width="900">
-</p>
+### 🎥 Integração com YouTube
 
-⸻
+| Funcionalidade             | Descrição                                                                       | Objetivo                                                                         |
+| -------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| *Integração com YouTube* | Busca e exibe vídeos via YouTube Data API v3 relacionados à planta selecionada. | Enriquecer o conteúdo com material audiovisual prático e acessível ao usuário.  |
+| *Vídeos sobre pragas*    | Apresenta vídeos específicos sobre identificação e tratamento de pragas.        | Facilitar a compreensão visual do problema e das soluções disponíveis.           |
 
-📦 Instalação
+---
 
-1. Clonar o repositório
+### 🐛 Módulo de pragas
 
-git clone https://github.com/seu-usuario/plinfo.git
-
-2. Acessar o diretório
-
-cd plinfo
-
-3. Criar ambiente virtual
-
-python -m venv venv
-
-4. Ativar ambiente virtual
-
-Windows
-
-venv\Scripts\activate
-
-Linux/macOS
-
-source venv/bin/activate
-
-5. Instalar dependências
-
-pip install -r requirements.txt
-
-6. Configurar variáveis de ambiente
-
-Criar um arquivo .env contendo:
-
-GROQ_API_KEY=SUA_CHAVE
-YOUTUBE_API_KEY=SUA_CHAVE
-EMAIL=SUA_CONTA
-EMAIL_PASSWORD=SUA_SENHA
-
-7. Executar o sistema
-
-python main.py
-
-⸻
-
-📈 Evolução do Projeto
-
-Release 1.0
-
-* Sistema de cadastro.
-* Sistema de login.
-* Verificação por e-mail.
-* Catálogo inicial de plantas.
-* Busca básica.
-* Informações detalhadas das espécies.
-* Gerenciamento de conta.
-
-Release 2.0
-
-* Migração completa para Programação Orientada a Objetos.
-* Migração para interface Textual.
-* Ampliação do catálogo para mais de 50 espécies.
-* Novos filtros de pesquisa.
-* Busca avançada.
-* Integração com Inteligência Artificial.
-* Integração com YouTube.
-* Catálogo de pragas.
-* Tratamentos e prevenções.
-* Simulador de ambiente.
-* Linha do tempo de crescimento das plantas.
-
-⸻
-
-🎓 Aplicação Acadêmica
-
-O PLINFO foi desenvolvido como projeto acadêmico com foco na aplicação de conceitos de:
-
-* Programação Orientada a Objetos.
-* Estruturas de Dados.
-* Engenharia de Software.
-* Integração com APIs.
-* Desenvolvimento de Interfaces.
-* Persistência de Dados.
-* Inteligência Artificial Aplicada.
-
-⸻
-
-👨‍💻 Autores
-
-Renato Rodrigues
-
-Desenvolvimento do sistema, arquitetura, integração com APIs, banco de dados, interface gráfica e documentação.
-
-Pedro Coutinho
-
-Desenvolvimento, modelagem de requisitos, testes e validação do sistema.
-
-⸻
-
-📄 Licença
-
-Este projeto foi desenvolvido para fins acadêmicos e educacio
+| Funcionalidade         | Descrição                                                                         | Objetivo                                                                                 |
+| ---------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| *Consulta de pragas* | Permite ao usuário pesquisar pragas que afetam as plantas cadastradas no sistema. | Centralizar informações sobre agentes nocivos e facilitar o diagnóstico pelo usuário.    |
+| *Sintomas*           | Exibe os principais sintomas causados por cada praga nas plantas afetadas.        | Ajudar o usuário a identificar rapidamente se sua planta está sendo atacada.             |
+| *Tratamentos*        | Lista os tratamentos recomendados para combater cada praga identificada.          | Orientar o usuário sobre as melhores práticas para eliminar ou controlar a praga.        |
+| *Prevenção*          | Apresenta medidas preventivas para evitar o surgimento de pragas nas plantas.     | Incentivar boas práticas de cultivo e reduzir a incidência de problemas fitossanitários. |
