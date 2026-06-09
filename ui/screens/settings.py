@@ -7,6 +7,9 @@ from models.user import User
 
 
 class SettingsView(Screen):
+    """
+    Responsável pela formação da Tela de Configuerações do Usuário
+    """
 
     def __init__(self, user: User) -> None:
         super().__init__()

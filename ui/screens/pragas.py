@@ -35,6 +35,9 @@ PragasView {
 
 
 class PragasView(Screen):
+    """
+    Responsável pela formação da tela do Catálogo de pragas.
+    """
     CSS = PRAGAS_CSS
 
     def __init__(self) -> None:

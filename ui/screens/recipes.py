@@ -80,6 +80,9 @@ RecipesView {
 
 
 class RecipesView(Screen):
+    """
+    Responsável pela Formação da Tela de sugestção de Receitas
+    """
     CSS = RECIPES_CSS
 
     def __init__(self) -> None:

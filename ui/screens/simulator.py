@@ -32,6 +32,9 @@ Select { width: 100%; margin-bottom: 0; }
 
 
 class SimulatorView(Screen):
+    """
+    Responsável pela Formação da tela do simulador
+    """
     CSS = SIMULATOR_CSS
 
     _valores = {"luminosidade": None, "espaco": None, "clima": None, "umidade": None}

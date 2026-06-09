@@ -52,6 +52,9 @@ SimulatorResultView {
 
 
 class SimulatorResultView(Screen):
+    """
+    Responsável pela tela da resposta do simulador.
+    """
     CSS = RESULT_CSS
 
     def __init__(self, resultado: dict) -> None:
