@@ -350,4 +350,4 @@ python main.py
 
 ## 👨‍💻 Autores
 Pedro Coutinho e Renato Barbosa
-Projeto acadêmico desenvolvido para a disciplina de **Sistemas de Informação** na **UFRPE**.
+
