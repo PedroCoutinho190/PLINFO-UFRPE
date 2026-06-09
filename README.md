@@ -211,7 +211,7 @@ As funcionalidades da Primeira VA foram organizadas para oferecer uma experiênc
 | **Origem**                | Informa a origem geográfica e o histórico da espécie.                          | Enriquecer o conhecimento do usuário sobre a procedência das plantas.           |
 | **Curiosidades**          | Apresenta fatos interessantes e pouco conhecidos sobre cada planta.            | Tornar a experiência mais envolvente e educativa.                                |
 | **Linha do tempo**        | Exibe marcos históricos importantes relacionados à planta ao longo do tempo.   | Contextualizar historicamente cada espécie de forma visual e organizada.        |
-| **Informações botânicas** | Exibe dados técnicos como nome científico, família e classificação da espécie. | Oferecer uma referência botânica completa para usuários com interesse acadêmico.|
+
 
 ---
 
@@ -349,5 +349,5 @@ python main.py
 ---
 
 ## 👨‍💻 Autores
-
+Pedro Coutinho e Renato Barbosa
 Projeto acadêmico desenvolvido para a disciplina de **Sistemas de Informação** na **UFRPE**.
