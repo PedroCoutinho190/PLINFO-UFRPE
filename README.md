@@ -357,13 +357,13 @@ Pedro Henrique Albuquerque Coutinho
 
 ## 🎯 Drive contendo a Planilha de Funcionalidades + Artigo em PDF
 
-https://drive.google.com/drive/folders/1b35CsPMOBCuEuYnAT25FKOF2Z7jiajzE?usp=drive_link
+- https://drive.google.com/drive/folders/1b35CsPMOBCuEuYnAT25FKOF2Z7jiajzE?usp=drive_link
 
 ---
 
 ## 🎯 Link do Artigo do OverLeaf
 
-https://www.overleaf.com/read/cxgndpxmgptg#abe0d5
+- https://www.overleaf.com/read/cxgndpxmgptg#abe0d5
 
 ---
 
