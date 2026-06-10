@@ -273,16 +273,16 @@ A Segunda VA teve como foco transformar o PLINFO em uma plataforma mais robusta,
 ## 📸 Capturas de Tela
 
 ### 🏠 Tela Inicial
-![Tela Inicial](screenshots/tela_inicial.png)
+![Tela Inicial](docs/screenshots/tela_inicial.png)
 
 ### 🌿 Amostragem de Planta
-![Amostragem de Planta](screenshots/amostragem_planta.png)
+![Amostragem de Planta](docs/screenshots/amostragem_planta.png)
 
 ### 🌡️ Simulador de Ambiente
-![Simulador de Ambiente](screenshots/simulador.png)
+![Simulador de Ambiente](docs/screenshots/simulador.png)
 
 ### 🤖 Sugestão de Receitas com IA e YouTube
-![Receitas com IA](screenshots/receitas.png)
+![Receitas com IA](docs/screenshots/receitas.png)
 
 ---
 
@@ -364,24 +364,4 @@ python main.py
 ---
 
 ## 👨‍💻 Autores
-
-Renato Rodrigues Barbosa Filho
-Pedro Henrique Albuquerque Coutinho
-
----
-
-## 🎯 Drive contendo a Planilha de Funcionalidades + Artigo em PDF
-
-https://drive.google.com/drive/folders/1b35CsPMOBCuEuYnAT25FKOF2Z7jiajzE?usp=drive_link
-
----
-
-## 🎯 Link do Artigo do OverLeaf
-
-https://www.overleaf.com/read/cxgndpxmgptg#abe0d5
-
----
-
-## 🎯 Link da DemoDay
-
-- https://youtu.be/rmaiuhSFgos
+Pedro Coutinho e Renato Rodrigues
