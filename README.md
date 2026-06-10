@@ -212,7 +212,6 @@ As funcionalidades da Primeira VA foram organizadas para oferecer uma experiênc
 | **Curiosidades**          | Apresenta fatos interessantes e pouco conhecidos sobre cada planta.            | Tornar a experiência mais envolvente e educativa.                                |
 | **Linha do tempo**        | Exibe marcos históricos importantes relacionados à planta ao longo do tempo.   | Contextualizar historicamente cada espécie de forma visual e organizada.        |
 
-
 ---
 
 ### ✅ Funcionalidades entregues na versão 2.0 — Segunda VA (Atual)
@@ -268,6 +267,22 @@ A Segunda VA teve como foco transformar o PLINFO em uma plataforma mais robusta,
 | **Sintomas**           | Exibe os principais sintomas causados por cada praga nas plantas afetadas.        | Ajudar o usuário a identificar rapidamente se sua planta está sendo atacada.             |
 | **Tratamentos**        | Lista os tratamentos recomendados para combater cada praga identificada.          | Orientar o usuário sobre as melhores práticas para eliminar ou controlar a praga.        |
 | **Prevenção**          | Apresenta medidas preventivas para evitar o surgimento de pragas nas plantas.     | Incentivar boas práticas de cultivo e reduzir a incidência de problemas fitossanitários. |
+
+---
+
+## 📸 Capturas de Tela
+
+### 🏠 Tela Inicial
+![Tela Inicial](screenshots/tela_inicial.png)
+
+### 🌿 Amostragem de Planta
+![Amostragem de Planta](screenshots/amostragem_planta.png)
+
+### 🌡️ Simulador de Ambiente
+![Simulador de Ambiente](screenshots/simulador.png)
+
+### 🤖 Sugestão de Receitas com IA e YouTube
+![Receitas com IA](screenshots/receitas.png)
 
 ---
 
@@ -357,13 +372,13 @@ Pedro Henrique Albuquerque Coutinho
 
 ## 🎯 Drive contendo a Planilha de Funcionalidades + Artigo em PDF
 
-- https://drive.google.com/drive/folders/1b35CsPMOBCuEuYnAT25FKOF2Z7jiajzE?usp=drive_link
+https://drive.google.com/drive/folders/1b35CsPMOBCuEuYnAT25FKOF2Z7jiajzE?usp=drive_link
 
 ---
 
 ## 🎯 Link do Artigo do OverLeaf
 
-- https://www.overleaf.com/read/cxgndpxmgptg#abe0d5
+https://www.overleaf.com/read/cxgndpxmgptg#abe0d5
 
 ---
 
