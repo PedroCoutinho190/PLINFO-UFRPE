@@ -5,7 +5,7 @@ PLINFO é uma plataforma educacional interativa desenvolvida em Python com inter
 O projeto foi desenvolvido como trabalho acadêmico para o curso de **Sistemas de Informação** da **UFRPE**.
 
 ---
-https://vscode.dev/github/PedroCoutinho190/f-lix-genio/blob/main/docs/screenshots/tela_inicial.png
+
 ## 🚀 Release 2.0 (Atual)
 
 ### 🌱 Catálogo de Plantas
